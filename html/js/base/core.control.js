@@ -8,10 +8,14 @@ core.control  = {
 		return output.join("\r");
 	},
 	compile : function(html, record){
+		var that = this;
 		var pattern = /{{([^}]*)}}/g;
 		html= html.replace(pattern, function(tag){
 			var key = tag.replace('{{', '').replace('}}', '');
 			var value = record[key];
+			if(key == 'creationTime') {
+				value = that.getDate(value); 
+			}
 			if(typeof value == 'string') {
 				if(value.length === 0) {
 					return ' ';
@@ -20,6 +24,10 @@ core.control  = {
 			return value;
 		});
 		return html;			
+	},
+	getDate: function(value){
+		var dateObject = new Date(value*1000);
+		return dateObject.getDay() + '/' + (dateObject.getMonth() + 1) + '/' + dateObject.getFullYear() + ' ' + dateObject.getHours() + ':' + dateObject.getMinutes();
 	},
 	getHTML: function(){
 		return $('<em>It works</em>');

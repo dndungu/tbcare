@@ -2,7 +2,7 @@ core.control.extend('grid', function(){
 	var control = this;
 	var _private = {
 			form: new String(),
-			sandbox: new sandbox(),
+			sandbox: new core.sandbox(),
 			source: new String(),
 			template: new String(),
 			html: new Object(),
@@ -40,8 +40,8 @@ core.control.extend('grid', function(){
 				this.initEditForm();
 			},
 			renderLegend: function(){
-				var template = new String($('.gridFooter>div>span' ,$(this.template)).html());
-				var footer = $('.gridFooter>div>span', this.html);
+				var template = new String($('.gridFooter>span' ,$(this.template)).html());
+				var footer = $('.gridFooter>span', this.html);
 				var records = this.records.footer;
 				var rowCount = this.records.footer['rowCount'];
 				var rowLimit = (parseInt(records['rowOffset'])+parseInt(records['rowLimit']));
@@ -62,7 +62,7 @@ core.control.extend('grid', function(){
 					i = ((j-i) < 4) ? (((j-4) > 0) ? (j-4) : i) : i;
 					var buttons = new Array();
 					while(i <= j){ 
-						buttons.push(' <li><a class="button" name="'+i+'">' + i++ +'</a></li> ');
+						buttons.push(' <li><a class="pagenavigator" name="'+i+'">' + i++ +'</a></li> ');
 					}
 					template.parent('li').after(buttons.join(''));
 					pagination.parent('li').parent('ul').html(template.parent('li').parent('ul').html());
@@ -212,7 +212,7 @@ core.control.extend('grid', function(){
 				});
 			},
 			setForm: function(source){
-				_private.form = _private.sandbox.createControl('form', source);
+				_private.form = _private.sandbox.getControl('form', source);
 				_private.form.setCommand('update');
 			},			
 			getRecords: function(){

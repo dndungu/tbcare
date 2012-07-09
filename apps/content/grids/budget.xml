@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="budget" title="finance.budget" editable="true" searchable="false" sortable="true" paginatable="true" columnBar="true" footerBar="true">
+    <records>
+        <leftjoin>`financier` on (`budget`.`financier_code` = `financier`.`financier_code`)</leftjoin>
+        <ordercolumn>title</ordercolumn>
+        <orderdirection>asc</orderdirection>
+        <search parameters="3">`title` LIKE '%s' OR `firstname` LIKE '%s' OR `lastname` LIKE '%s'</search>
+    </records>
+    <columns primarykey="`budget`.`ID`">
+        <column name="title" field="title" title="finance.budget" class="grid2of10 column"></column>
+        <column name="budget_line_id" field="budget_line_id" title="budget_line_id.label" class="grid2of10 column"></column>
+        <column name="financier_name" field="financier_name" title="financier_name.label" class="grid2of10 column"></column>
+        <column name="balance" field="balance" title="balance.label" class="grid2of10 column"></column>
+        <column name="creationTime" field="`budget`.`creationTime`" title="creationTime.label" class="grid2of10 column"></column>
+    </columns>
+</grid>

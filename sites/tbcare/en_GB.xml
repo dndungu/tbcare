@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language code="GB" name="English UK">
+    <label index="age.seconds">seconds ago</label>
+    <label index="age.minutes">minutes ago</label>
+    <label index="age.hours">hours ago</label>
+    <label index="uploaded">uploaded</label>
+    <label index="photo">photo</label>
+    <label index="photos">photos</label>
+    <label index="video">video</label>
+    <label index="videos">videos</label>
+    <label index="home">Home</label>
+    <label index="myaccount">My Account</label>
+    <label index="accountcreated">Your account at TB Care</label>
+    <label index="donation">Donate</label>
+    <label index="action.add">Add</label>
+    <label index="action.search">Search</label>
+    <label index="action.continue">Continue</label>
+    <label index="action.donate">Donate</label>
+    <label index="action.complete">Complete</label>
+    <label index="date.placeholder">MM-DD-YYYY</label>
+    <label index="medium.label">How do you wish to donate</label>
+    <label index="login.required">You need to sign in to perform this operation</label>
+    <label index="invalid.email">Please provide a valid email address</label>
+    <label index="email.inuse"> is already registered on this app.</label>
+    <label index="validator_firstname">Please provide a first name</label>
+    <label index="validator_lastname">Please provide a last name</label>
+    <label index="validator_country">Please provide a country</label>
+    <label index="validator_required">Required</label>
+    <label index="validator_string">Please provide a value</label>
+    <label index="validator_integer">Please provide an integer</label>
+    <label index="validator_positiveinteger">Please provide a positive integer</label>
+    <label index="validator_negativeinteger">Please provide a negative integer</label>
+    <label index="validator_currency">Please provide a decimal with not more than 2 decimal places</label>
+    <label index="validator_decimal">Please provide a decimal</label>
+    <label index="validator_positivedecimal">Please provide a positive decimal</label>
+    <label index="validator_negativedecimal">Please provide a negative decimal</label>
+    <label index="validator_phone">Please provide a phone number</label>
+    <label index="validator_year">Please provide an year</label>
+    <label index="validator_date">MM-DD-YYYY</label>
+    <label index="validator_DOB">MM-DD-YYYY</label>
+    <label index="validator_gender">Please provide a gender</label>
+    <label index="validator_ip">Please provide an IP address</label>
+    <label index="validator_password">Please provide a password with at least six characters and no more than 32 characters long</label>
+    <label index="validator_passwordstrong">Please provide a strong password</label>
+    <label index="validator_email">Please provide an email address</label>
+    <label index="validator_domain">Please provide a domain name</label>
+    <label index="validator_subdomain">Only letters, numbers and - allowed</label>
+    <label index="validator_aliasexists"> is taken</label>
+    <label index="validator_loginexists"> is taken</label>
+    <label index="validator_html">Please provide valid HTML</label>
+    <label index="validator_url">Please provide a valid URL</label>
+    <label index="invalid.login">Please provide a valid login</label>
+    <label index="invalid.token">Please provide a valid token</label>
+    <label index="invalid.password">Please provide a password with at least six characters and no more than 32 characters long</label>
+    <label index="mismatched.passwords">The passwords you provided to not match</label>
+    <label index="incorrect.login">The login you provided does not exist in this system</label>
+    <label index="incorrect.password">The password you provided was not valid for that account</label>
+    <label index="signup">Sign Up</label>
+    <label index="signin">Sign In</label>
+    <label index="signout">Sign Out</label>
+    <label index="user.sign.out">You have successfully signed out</label>
+    <label index="resetpassword">Reset Password</label>
+    <label index="resetpassword.checkemail">Please check your email for instructions on how to complete your password reset process.</label>
+    <label index="changepassword">Change Password</label>
+    <label index="password.changed">You have successfully changed your password, sign in to continue</label>
+    <label index="firstname.label">First name</label>
+    <label index="lastname.label">Last name</label>
+    <label index="phone.label">Contact number</label>
+    <label index="mobile.label">Mobile number</label>
+    <label index="confirmationcode.label">Transaction code</label>
+    <label index="gender.label">Gender</label>
+    <label index="male.label">Male</label>
+    <label index="female.label">Female</label>
+    <label index="DOB.label">Date of birth</label>
+    <label index="country.label">Country</label>
+    <label index="login.label">Username</label>
+    <label index="login.placeholder">Please choose a username</label>
+    <label index="email.label">E-mail</label>
+    <label index="email.placeholder">Please enter your email address</label>
+    <label index="password.label">Password</label>
+    <label index="password.placeholder"></label>
+    <label index="password.label">Password</label>
+    <label index="password.confirm.label">Confirm Password</label>
+    <label index="password.current.label">Current Password</label>
+    <label index="action.submit">Submit</label>
+    <label index="action.reset">Cancel</label>
+    <label index="action.signup">Sign Up</label>
+    <label index="action.signin">Sign In</label>
+    <label index="action.resetpassword">Reset Password</label>
+    <label index="action.changepassword">Change Password</label>
+    <label index="pagination.legend">Showing {{rowOffset}} to {{rowLimit}} of {{rowCount}} entries</label>
+    <label index="pagination.first"> |&lt; </label>
+    <label index="pagination.previous"> &lt;&lt; </label>
+    <label index="pagination.next"> &gt;&gt; </label>
+    <label index="pagination.last"> &gt;| </label> 
+    <label index="resetpassword.mail">
+		Dear {{FirstName}},
+		
+		To reset the password for your {{login}} login, click the web address below or copy and paste it into your browser:
+		
+		http://{{alias}}/recoverpassword?token={{token}}&amp;login={{login}}
+		
+		This link will expire within 60 minutes. If you do not wish to reset your password, simply ignore this email and nothing will be changed.
+		
+		If you have questions or need further assistance, feel free to contact us through the provided channels.
+		
+		The TB Care Team        
+    </label>
+    <label index="userautocreate.mail">
+		Dear {{FirstName}},
+		
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        
+        Praesent dolor felis, pulvinar adipiscing volutpat et, blandit et magna.
+        
+        Suspendisse eleifend, ligula ac elementum egestas, ligula quam sagittis nunc, eu consequat sem est eu lectus. 
+        
+        Cras condimentum, nibh eu tincidunt adipiscing, odio purus convallis ante, a placerat dolor sapien vitae massa. 
+        
+        Proin dapibus odio eu est tristique porta.
+        		
+		The TB Care Team        
+    </label>
+    <label index="summary">Summary</label>
+    <label index="overview">Overview</label>
+    <label index="users">Users</label>
+    <label index="users.administrators">Administrators</label>
+    <label index="users.editors">Editors</label>
+    <label index="users.patients">Patients</label>
+    <label index="users.readers">Readers</label>
+    <label index="contacts">Contacts</label>
+    <label index="funds">Funds</label>
+    <label index="funds.overview">Funds</label>
+    <label index="funds.withdraw">WIthdraw</label>
+    <label index="funds.history">History</label>
+    <label index="funds.bank.accounts">Bank Accounts</label>
+    <label index="content">Content</label>
+    <label index="content.posts">Content</label>
+    <label index="content.pages">Pages</label>
+    <label index="content.comments">Comments</label>
+    <label index="content.navigation">Navigation</label>
+    <label index="reconciliation">Reconciliation</label>
+    <label index="statistics">Statistics</label>
+    <label index="statistics.donations">Donations</label>
+    <label index="statistics.visitors">Visitors</label>
+    <label index="statistics.discussion">Discussion</label>
+    <label index="configuration">Configuration</label>
+    <label index="configuration.general">General</label>
+    <label index="payments">Payments</label>
+    <label index="payment.orders">Payment Orders</label>
+    <label index="payment.pending">Pending</label>
+    <label index="payment.completed">Completed</label>
+    <label index="payment.failed">Failed</label>
+    <label index="payment.reversed">Reversed</label>
+    <label index="finance">Finance</label>
+    <label index="finance.budget">Budget Lines</label>
+    <label index="budget_line_id.label">Budgetline ID</label>
+    <label index="finance.allocatefunds">Allocate Funds</label>
+    <label index="financier_name.label">Financier</label>
+    <label index="creationTime.label">Posted Time</label>
+    <label index="name.label">Name</label>
+    <label index="balance.label">Balance</label>
+
+</language>

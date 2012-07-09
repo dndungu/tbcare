@@ -24,7 +24,6 @@ class Routing {
 			$this->sandbox->fire('routing.passed', $response);
 		} catch(BaseException $e) {
 			$message = $e->getMessage();
-			error_log($message);
 			return $this->sandbox->fire('routing.failed', $message);
 		}
 	}

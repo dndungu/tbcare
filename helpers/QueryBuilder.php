@@ -7,7 +7,7 @@ class QueryBuilder {
 	private $sandbox = NULL;
 	
 	private $definition = NULL;
-	
+		
 	private $offset = 0;
 	
 	private $limit = 25;
@@ -22,21 +22,47 @@ class QueryBuilder {
 		$this->definition = &$definition;
 	}
 	
-	public function buildQuery(){
-		$query['Fields'] = $this->buildFields();
-		$query['From'] = $this->buildFrom();
-		$query['LeftJoins'] = $this->buildLeftJoins();
-		$query['OrderBy'] = $this->buildOrderBy();
-		$query['Limit'] = $this->buildLimit();
-		return $query;
+	public function browseQuery(){
+		$query[] = 'SELECT';
+		$query[] = $this->buildFields();
+		$query[] = $this->buildFrom();
+		$query[] = $this->buildLeftJoins();
+		$query[] = $this->buildOrderBy();
+		$query[] = $this->buildLimit();
+		return implode(' ', $query);
 	}
 	
+	public function countQuery(){
+		$query[] = 'SELECT';
+		$key = (string) $this->definition->columns->attributes()->primarykey;
+		$query[] = 'COUNT(*) `rowCount`';
+		$query[] = $this->buildFrom();
+		$query[] = $this->buildLeftJoins();
+		return implode(' ', $query);
+	}
+	
+	public function getOffset(){
+		return $this->offset;
+	}
+	
+	public function getLimit(){
+		return $this->limit;
+	}
+	
+	public function getOrderColumn(){
+		return $this->order['column'];
+	}
+	
+	public function getOrderDirection(){
+		return $this->order['direction'];
+	}	
+	
 	protected function buildFields(){
-		$primarykey = (string) $this->definition->columns->attributes()->primarykey;
-		$columns[] = "`$primarykey` AS `primarykey`";
+		$key = (string) $this->definition->columns->attributes()->primarykey;
+		$columns[] = "`" . substr_count($key, '`') ? $key : "`$key`" . "` AS `primarykey`";
 		foreach($this->definition->columns->column as $column){
-			$field = (string) $column->attributes()->name;
-			$columns[] = "`$field`";
+			$field = (string) $column->attributes()->field;
+			$columns[] = substr_count($field, '`') ? "$field" : "`$field`";
 		}
 		return isset($columns) ? join(", ", $columns) : "*";
 	}

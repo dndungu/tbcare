@@ -44,6 +44,39 @@ class Grid {
 		$this->setup();
 	}
 	
+	public function browseRecords(){
+		$countQuery = $this->queryBuilder->countQuery();
+		$rowCount = $this->getStorage()->query($countQuery);
+		$result['footer']['rowCount'] = $rowCount[0]['rowCount'];
+		$result['footer']['rowOffset'] = $this->queryBuilder->getOffset();
+		$result['footer']['rowLimit'] = $this->queryBuilder->getLimit();
+		
+		$result['body'] = $this->getStorage()->query($this->queryBuilder->browseQuery());
+		$result['ordercolumn'] = $this->queryBuilder->getOrderColumn();
+		$result['orderdirection'] = $this->queryBuilder->getOrderDirection();
+		$result['primarykey'] = (string) $this->definition->columns->attributes()->primarykey;
+		
+		return json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+	}
+	
+	public function getStorage(){
+		$storage = (string) $this->definition->attributes()->storage;
+		switch($storage){
+			case "global":
+				return $this->sandbox->getGlobalStorage();
+				break;
+			case "parent":
+				return $this->sandbox->getParentStorage();
+				break;
+			case "local":
+				return $this->sandbox->getLocalStorage();
+				break;
+			default:
+				return $this->sandbox->getLocalStorage();
+				break;
+		}
+	}	
+	
 	private function setup(){
 		$attributes = $this->definition->attributes();
 		$this->name = (string) $attributes->name;
@@ -107,9 +140,9 @@ class Grid {
 		}
 	}	
 	
-	private function asHTML(){
+	public function asHTML(){
 		$name = $this->name;
-		$class = $this->isEditable() ? "$name editable table" : "$name table";
+		$class = $this->isEditable() ? "$name editable grid" : "$name grid";
 		$html[] = "\n";
 		$html[] = "<div class=\"$class\" name=\"$name\">";
 		$html[] = $this->headerBar();
@@ -123,7 +156,7 @@ class Grid {
 	
 	private function headerBar(){
 		$title = $this->getTitle($this->definition);
-		$html[] = "\t<div class=\"tableHeader\">";
+		$html[] = "\t<div class=\"gridHeader\">";
 		if($this->isSearchable()){
 			$html[] = "\t\t<div class=\"column grid4of10\">$title</div><div class=\"column grid6of10\">".$this->searchForm()."</div>";
 		}else{
@@ -135,7 +168,7 @@ class Grid {
 	
 	private function columnsBar(){
 		if($this->hasColumnBar()){
-			$html[] = "\t<div class=\"tableColumns\">";
+			$html[] = "\t<div class=\"gridColumns gradientSilver\">";
 			foreach($this->definition->columns->column as $column){
 				$class = (string) $column->attributes()->class;
 				$title = $this->getTitle($column);
@@ -151,12 +184,12 @@ class Grid {
 	}
 	
 	private function recordsBody(){
-		$html[] = "\t<div class=\"tableBody\">";
-		$html[] = "\t\t<div class=\"tableRecord\">";
+		$html[] = "\t<div class=\"gridContent\">";
+		$html[] = "\t\t<div class=\"gridContentRecord\" title=\"{{primarykey}}\">";
 		foreach($this->definition->columns->column as $column){
 			$class = (string) $column->attributes()->class;
 			$name = (string) $column->attributes()->name;
-			$html[] = "\t\t\t<div class=\"$class\" name=\"$name\"></div>";
+			$html[] = "\t\t\t<div class=\"$class\" name=\"$name\">{{".$name."}}</div>";
 		}
 		$html[] = "\t\t</div>";
 		$html[] = "\t</div>";
@@ -166,17 +199,15 @@ class Grid {
 	private function footerBar(){
 		if($this->hasFooterBar()){
 			$translator = $this->sandbox->getHelper('translation');
-			$html[] = "\t<div class=\"tableFooter\">";
+			$html[] = "\t<div class=\"gridFooter\">";
 			if($this->isPaginatable()){
 				$legend = $translator->translate('pagination.legend');
 				$html[] = "\t\t<span>$legend</span>";
 				$html[] = "\t\t<ul>";
-				$html[] = "\t\t\t<li>";
-				$html[] = "\t\t\t\t<a name=\"first\" class=\"first button\">".$translator->translate('pagination.first')."</a>";
-				$html[] = "\t\t\t\t<a name=\"previous\" class=\"previous button\">".$translator->translate('pagination.previous')."</a>";
-				$html[] = "\t\t\t\t<a name=\"next\" class=\"next button\">".$translator->translate('pagination.next')."</a>";
-				$html[] = "\t\t\t\t<a name=\"last\" class=\"last button\">".$translator->translate('pagination.last')."</a>";
-				$html[] = "\t\t\t</li>";
+				$html[] = "\t\t\t\t<li><a name=\"first\" class=\"first pagenavigator\">".$translator->translate('pagination.first')."</a></li>";
+				$html[] = "\t\t\t\t<li><a name=\"previous\" class=\"previous pagenavigator\">".$translator->translate('pagination.previous')."</a></li>";
+				$html[] = "\t\t\t\t<li><a name=\"next\" class=\"next pagenavigator\">".$translator->translate('pagination.next')."</a></li>";
+				$html[] = "\t\t\t\t<li><a name=\"last\" class=\"last pagenavigator\">".$translator->translate('pagination.last')."</a></li>";
 				$html[] = "\t\t</ul>";
 			}
 			$html[] = "\t</div>";
@@ -190,6 +221,7 @@ class Grid {
 		$translator = $this->sandbox->getHelper('translation');
 		$searchText = $translator->translate('action.search');
 		$addText = $translator->translate('action.add');
+		$URI = $this->sandbox->getMeta('URI');
 		$html[] = "<form action=\"$URI\" method=\"POST\">";
 		$html[] = "<input type=\"text\" name=\"keywords\" placeholder=\"$searchText\"/>";
 		$html[] = "<input type=\"submit\" value=\"&nbsp;\" class=\"searchButton button\"/>&nbsp;";

@@ -31,7 +31,9 @@ class Sandbox {
 	}
 	
 	public function listen($types = NULL, $method = NULL, $instance = NULL){
-		if(is_string($types)) $types = array($types);
+		if(is_string($types)) {
+			$types = array($types);
+		}
 		foreach($types as $type){
 			$this->events[$type][] = array('instance' => $instance, 'method' => $method);
 		}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+    <portal type="html" template="index.xsl">
+        <navigation parent="root" group="top" uri="/" label="home"></navigation>
+        <portlet module="core" controller="SiteSetting">
+		    <access><user>everyone</user></access>	        	        
+        </portlet>
+	    <portlet module="core" controller="Navigation">
+	        <access><user>everyone</user></access>
+	    </portlet>        
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="index.xsl">
+	    <navigation id="summary" parent="root" group="panel" uri="/summary" label="summary" weight="10" class="nav-top-item"></navigation>
+	    <portlet module="core" controller="Navigation">
+	        <access><user>everyone</user></access>
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="summary" group="panel" uri="/overview" label="overview" weight="11"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><user>everyone</user></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation id="users" parent="root" group="panel" uri="/users" label="users" weight="20" class="nav-top-item"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="users" group="panel" uri="/administrators" label="users.administrators" weight="21"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="users" group="panel" uri="/readers" label="users.readers" weight="24"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role></access>
+	</portal>				
+	<portal type="html" template="panel.xsl">
+	    <navigation id="finance" parent="root" group="panel" uri="/finance" label="finance" weight="30" class="nav-top-item"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="raw">
+	    <navigation parent="finance" group="panel" uri="/grid/budget" label="finance.budget" weight="31"></navigation>
+	    <portlet module="content" controller="GridStudio">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="finance" group="panel" uri="/allocatefunds" label="finance.allocatefunds" weight="32"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>		
+	<portal type="html" template="panel.xsl">
+	    <navigation id="payments" parent="root" group="panel" uri="/payments" label="payments" weight="40" class="nav-top-item"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="payments" group="panel" uri="/complete" label="payment.completed" weight="41"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>	
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="payments" group="panel" uri="/pending" label="payment.pending" weight="42"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="payments" group="panel" uri="/failed" label="payment.failed" weight="43"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation parent="payments" group="panel" uri="/reversed" label="payment.reversed" weight="44"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>	
+	<portal type="html" template="panel.xsl">
+	    <navigation id="reconciliation" parent="root" group="panel" uri="/reconciliation" label="reconciliation" weight="50" class="nav-top-item"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><user>everyone</user></access>
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>
+	<portal type="html" template="panel.xsl">
+	    <navigation id="configuration" parent="root" group="panel" uri="/configuration" label="configuration" weight="60" class="nav-top-item"></navigation>
+	    <portlet module="core" controller="Navigation">
+		    <access><user>everyone</user></access>	        	        
+	    </portlet>
+	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	</portal>	
+	<portal type="html" template="user.xsl">
+	    <navigation parent="root" group="authentication" uri="/signin" label="signin"></navigation>
+	    <portlet module="user" controller="SignIn">
+	        <access><user>everyone</user></access>
+	    </portlet>
+	    <portlet module="core" controller="Navigation">
+	        <access><user>everyone</user></access>
+	    </portlet>
+        <portlet module="core" controller="SiteSetting">
+		    <access><user>everyone</user></access>	        	        
+        </portlet>	    
+	    <access><user>everyone</user></access>
+	</portal>
+	<portal type="html" template="user.xsl">
+	    <navigation parent="root" group="authentication" uri="/signup" label="signup"></navigation>
+	    <portlet module="user" controller="SignUp">
+	        <access><user>everyone</user></access>
+	    </portlet>
+	    <portlet module="core" controller="Navigation">
+	        <access><user>everyone</user></access>
+	    </portlet>
+        <portlet module="core" controller="SiteSetting">
+		    <access><user>everyone</user></access>	        	        
+        </portlet>	    
+	    <access><user>everyone</user></access>
+	</portal>
+	<portal type="html" template="user.xsl">
+	    <navigation parent="root" group="authentication" uri="/resetpassword" label="resetpassword"></navigation>
+	    <portlet module="user" controller="ResetPassword">
+	        <access><user>everyone</user></access>
+	    </portlet>
+	    <portlet module="core" controller="Navigation">
+	        <access><user>everyone</user></access>
+	    </portlet>
+        <portlet module="core" controller="SiteSetting">
+		    <access><user>everyone</user></access>	        	        
+        </portlet>	    
+	    <access><user>everyone</user></access>
+	</portal>
+</package>

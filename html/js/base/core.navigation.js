@@ -9,8 +9,8 @@ core.navigation = {
 		$('.panelNavigation>ul>li>ul>li>a').click(function(event){
 			event.stopPropagation();
 			var anchor = $(this);
-			anchor.parent('li').addClass('current');
-			$('.panelNavigation a').not(anchor).parent('li').removeClass('current');
+			anchor.addClass('current');
+			$('.panelNavigation a').not(anchor).removeClass('current');
 			var href = $(this).attr('href');
 			extension.sandbox.fire({type: 'navigation.primary', data: href});
 			event.preventDefault();

@@ -11,6 +11,7 @@ class SiteSetting extends \apps\Application {
 	}
 	private function doPage(){
 		$settings = $this->sandbox->getMeta('settings');
+		$page['uri'] = $this->sandbox->getMeta('URI');
 		$page['title'] = $settings['title'];
 		$page['locale'] = $this->sandbox->getHelper('translation')->getLocale();
 		return $page;

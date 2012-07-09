@@ -6,7 +6,7 @@ core.control.extend('form', function(){
 		record: new Object(),
 		command: new String(),
 		grid: new String(),
-		sandbox: new sandbox(),
+		sandbox: new core.sandbox(),
 		primarykey: 0,
 		formObject: new Object(),
 		getTemplate: function(){
