@@ -1045,7 +1045,7 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 }
 
 .gridHeader>div {
-	padding:8px 0 4px 0;
+	padding:12px 0 8px 0;
 }
 
 .gridColumns {
@@ -1087,8 +1087,9 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 }
 
 .gridContent {
-	background:#fff;
+	background:#fcfcfc;
 	z-index:10;
+	min-height:480px;
 }
 
 .gridContentRecord {
@@ -1121,9 +1122,10 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 	font-size:.875em;
 	bottom: 0;
 	padding: 6px 0 3px 0;
-	-webkit-border-radius: 0 0 4px 4px;
-	-moz-border-radius: 0 0 4px 4px;
-	border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	background:#fcfcfc;
 }
 
 #main-content .gridFooter ul li, #main-content .gridFooter ul {
@@ -1137,7 +1139,9 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 }
 
 .gridFooter ul {
-	float:right;
+	text-align:right;
+	width:48%;
+	display:inline-block;
 	list-style:none;
 }
 
@@ -1150,28 +1154,46 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 }
 
 .gridFooter span {
+	width:50%;
 	display:inline-block;
-	margin:8px 0 0 0;
+	margin:8px 0 0 10px;
+	padding-bottom:10px;
+}
+
+.gridHeader, .gridColumns, .gridButton {
+	background: #E8E8E8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFFFF), to(#E8E8E8) );
+	background: -webkit-linear-gradient(#FFFFFF, #E8E8E8);
+	background: -moz-linear-gradient(#FFFFFF, #E8E8E8);
+	background: -ms-linear-gradient(#FFFFFF, #E8E8E8);
+	background: -o-linear-gradient(#FFFFFF, #E8E8E8);
+	background: linear-gradient(#FFFFFF, #E8E8E8);
+	-pie-background: linear-gradient(#FFFFFF, #E8E8E8);
+	behavior: url(/skins/tbcare/images/pie.htc);
+}
+
+.grid input[type="submit"], .grid input[type="button"], .pagenavigator {
+	text-align: center;
+	cursor: pointer;
 }
 
 .pagenavigator {
-	cursor: pointer;
-	border: 1px solid #cccccc;
 	padding: 8px 12px;
-	text-align: center;
+}
+
+.grid .searchButton {
+	width:30px;
+	background: url(../images/style.png) -2px -142px no-repeat transparent;
+}
+
+.gridHeader form {
+	text-align:right;
+}
+
+.grid input, .grid select, .grid textarea {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;	
-}
-
-.gridHeader, .gridColumns, .pagenavigator {
-	background: #fefefe;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fefefe), to(#e7e7e7) );
-	background: -webkit-linear-gradient(#fefefe, #e7e7e7);
-	background: -moz-linear-gradient(#fefefe, #e7e7e7);
-	background: -ms-linear-gradient(#fefefe, #e7e7e7);
-	background: -o-linear-gradient(#fefefe, #e7e7e7);
-	background: linear-gradient(#fefefe, #e7e7e7);
-	-pie-background: linear-gradient(#fefefe, #e7e7e7);
-	behavior: url(/skins/tbcare/images/pie.htc);
+	border: 1px solid #CCC;
+	padding: 4px 12px;
 }

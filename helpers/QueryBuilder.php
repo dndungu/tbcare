@@ -14,6 +14,8 @@ class QueryBuilder {
 	
 	private $order = array('column' => NULL, 'direction' => NULL);
 	
+	private $storage = NULL;
+	
 	public function __construct(&$sandbox) {
 		$this->sandbox = &$sandbox;
 	}
@@ -22,8 +24,15 @@ class QueryBuilder {
 		$this->definition = &$definition;
 	}
 	
+	public function setStorage(&$storage){
+		$this->storage = &$storage;
+	}
+	
+	public function getStorage(){
+		return $this->storage;
+	}
+	
 	public function browseQuery(){
-		$query[] = 'SELECT';
 		$query[] = $this->buildFields();
 		$query[] = $this->buildFrom();
 		$query[] = $this->buildLeftJoins();
@@ -33,9 +42,8 @@ class QueryBuilder {
 	}
 	
 	public function countQuery(){
-		$query[] = 'SELECT';
 		$key = (string) $this->definition->columns->attributes()->primarykey;
-		$query[] = 'COUNT(*) `rowCount`';
+		$query[] = 'SELECT COUNT(*) `rowCount`';
 		$query[] = $this->buildFrom();
 		$query[] = $this->buildLeftJoins();
 		return implode(' ', $query);
@@ -64,7 +72,8 @@ class QueryBuilder {
 			$field = (string) $column->attributes()->field;
 			$columns[] = substr_count($field, '`') ? "$field" : "`$field`";
 		}
-		return isset($columns) ? join(", ", $columns) : "*";
+		$fields = isset($columns) ? join(", ", $columns) : "*";
+		return sprintf("SELECT %s", $fields);
 	}
 
 	protected function buildFrom(){
@@ -87,7 +96,7 @@ class QueryBuilder {
 		$direction = array_key_exists('orderdirection', $_POST) ? trim(strtoupper($_POST['orderdirection'])) : NULL;
 		$this->order['direction'] = in_array($direction, array('DESC', 'ASC')) ? $direction : $this->order['direction'];
 		$table = (string) $this->definition->attributes()->name;
-		$columns = $this->sandbox->getLocalStorage()->getColumns($table);
+		$columns = $this->getStorage()->getColumns($table);
 		$column = array_key_exists('ordercolumn', $_POST) ? trim($_POST['ordercolumn']) : NULL;
 		$this->order['column'] = array_key_exists($column, $columns) ? $column : $this->order['column'];
 		return sprintf("ORDER BY `%s`.`%s` %s", $table, $this->order['column'], $this->order['direction']);

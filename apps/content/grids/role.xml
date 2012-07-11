@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="role" title="users.accounts" editable="true" searchable="true" sortable="true" paginatable="true" columnBar="true" footerBar="true" storage="global">
+    <records>
+        <ordercolumn>login</ordercolumn>
+        <orderdirection>asc</orderdirection>
+        <search parameters="5">`ID` = %d OR `login` LIKE '%%s%' OR `email` LIKE '%%s%' OR `firstname` LIKE '%%s%' OR `lastname` LIKE '%%s%'</search>
+    </records>
+    <columns primarykey="ID">
+        <column name="ID" field="ID" title="id" class="grid1of10 column"></column>
+        <column name="login" field="login" title="login.label" class="grid3of10 column"></column>
+        <column name="firstname" field="firstname" title="firstname.label" class="grid2of10 column"></column>
+        <column name="lastname" field="lastname" title="lastname.label" class="grid2of10 column"></column>
+        <column name="creationTime" field="creationTime" title="creationTime.label" class="grid2of10 column"></column>
+    </columns>
+</grid>

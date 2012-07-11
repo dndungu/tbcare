@@ -9,6 +9,7 @@
     <label index="video">video</label>
     <label index="videos">videos</label>
     <label index="home">Home</label>
+    <label index="id">ID</label>
     <label index="myaccount">My Account</label>
     <label index="accountcreated">Your account at TB Care</label>
     <label index="donation">Donate</label>
@@ -124,10 +125,13 @@
     <label index="summary">Summary</label>
     <label index="overview">Overview</label>
     <label index="users">Users</label>
+    <label index="security">Permissions</label>
     <label index="users.administrators">Administrators</label>
     <label index="users.editors">Editors</label>
     <label index="users.patients">Patients</label>
     <label index="users.readers">Readers</label>
+    <label index="users.accounts">Users</label>
+    <label index="users.roles">Teams</label>
     <label index="contacts">Contacts</label>
     <label index="funds">Funds</label>
     <label index="funds.overview">Funds</label>
@@ -157,7 +161,7 @@
     <label index="budget_line_id.label">Budgetline ID</label>
     <label index="finance.allocatefunds">Allocate Funds</label>
     <label index="financier_name.label">Financier</label>
-    <label index="creationTime.label">Posted Time</label>
+    <label index="creationTime.label">Time Created</label>
     <label index="name.label">Name</label>
     <label index="balance.label">Balance</label>
 

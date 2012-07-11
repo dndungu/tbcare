@@ -55,7 +55,7 @@ class Grid {
 		$result['ordercolumn'] = $this->queryBuilder->getOrderColumn();
 		$result['orderdirection'] = $this->queryBuilder->getOrderDirection();
 		$result['primarykey'] = (string) $this->definition->columns->attributes()->primarykey;
-		
+
 		return json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 	}
 	
@@ -83,6 +83,8 @@ class Grid {
 		require_once('QueryBuilder.php');
 		$this->queryBuilder = new QueryBuilder($this->sandbox);
 		$this->queryBuilder->setDefinition($this->definition);
+		$storage = $this->getStorage();
+		$this->queryBuilder->setStorage($storage);
 		$this->isEditable(trim(strtolower((string) $attributes->editable)) === "true" ? true : false);
 		$this->isSearchable(trim(strtolower((string) $attributes->searchable)) === "true" ? true : false);
 		$this->isSortable(trim(strtolower((string) $attributes->sortable)) === "true" ? true : false);
@@ -224,8 +226,8 @@ class Grid {
 		$URI = $this->sandbox->getMeta('URI');
 		$html[] = "<form action=\"$URI\" method=\"POST\">";
 		$html[] = "<input type=\"text\" name=\"keywords\" placeholder=\"$searchText\"/>";
-		$html[] = "<input type=\"submit\" value=\"&nbsp;\" class=\"searchButton button\"/>&nbsp;";
-		$html[] = "<input type=\"button\" name=\"addButton\" value=\"$addText\" class=\"addButton\"/>";
+		$html[] = "<input type=\"submit\" value=\"&nbsp;\" class=\"searchButton\"/>&nbsp;";
+		$html[] = "<input type=\"button\" name=\"addButton\" value=\"$addText\" class=\"addButton gridButton\"/>";
 		$html[] = "</form>";
 		return join("", $html);
 	}

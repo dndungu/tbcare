@@ -47,6 +47,12 @@ class Application {
 		$class = "apps\\$app\\$model";
 		return new $class($this->sandbox);
 	}
+	
+	public function checkCommand(){
+		if(!array_key_exists('command', $_POST)){
+			throw new \helpers\HelperException('missing command in post parameters');
+		}
+	}
 }
 
 ?>

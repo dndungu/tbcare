@@ -499,3 +499,46 @@ Stack trace:
 #6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
 #7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication.... in /var/www/tbcare/helpers/Storage.php on line 35
 [09-Jul-2012 14:47:37 UTC] Access to portal not allowed
+[11-Jul-2012 05:54:22 UTC] Access to portal not allowed
+[11-Jul-2012 07:18:50 UTC] Access to portal not allowed
+[11-Jul-2012 07:18:53 UTC] PHP Fatal error:  Call to private method apps\Application::checkCommand() from context 'apps\content\GridStudio' in /var/www/tbcare/apps/content/GridStudio.php on line 18
+[11-Jul-2012 07:22:09 UTC] PHP Fatal error:  Call to private method apps\Application::checkCommand() from context 'apps\content\GridStudio' in /var/www/tbcare/apps/content/GridStudio.php on line 18
+[11-Jul-2012 09:26:09 UTC] Access to portal not allowed
+[11-Jul-2012 09:26:18 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:26:18 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:26:25 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:26:25 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:28:58 UTC] Access to portal not allowed
+[11-Jul-2012 09:30:27 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:30:27 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:31:31 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:31:31 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
+[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
+[11-Jul-2012 09:48:59 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 09:48:59 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:30:16 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:30:16 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:30:19 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:30:19 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:30:22 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:30:22 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:31:52 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:31:52 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:32:04 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 10:32:04 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
+[11-Jul-2012 13:14:39 UTC] Access to portal not allowed

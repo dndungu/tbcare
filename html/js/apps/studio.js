@@ -27,6 +27,7 @@ core.register('studio', function(sandbox){
 		isGrid: function(href){
 			var grids = new Array();
 			grids.push('/grid/budget');
+			grids.push('/grid/user');
 			if(grids.indexOf(href) === -1){
 				return false;
 			}else{

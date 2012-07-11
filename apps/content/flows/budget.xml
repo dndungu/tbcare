@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="budget">
+    <insert>
+        <access>
+            <role>everyone</role>
+        </access>
+    </insert>
+    <select>
+        <access>
+            <role>everyone</role>
+        </access>
+    </select>
+    <update>
+        <access>
+            <role>everyone</role>
+        </access>
+    </update>
+    <delete>
+        <access>
+            <role>everyone</role>
+        </access>
+    </delete>
+</flow>

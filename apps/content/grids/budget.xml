@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grid name="budget" title="finance.budget" editable="true" searchable="false" sortable="true" paginatable="true" columnBar="true" footerBar="true">
+<grid name="budget" title="finance.budget" editable="true" searchable="true" sortable="true" paginatable="true" columnBar="true" footerBar="true">
     <records>
         <leftjoin>`financier` on (`budget`.`financier_code` = `financier`.`financier_code`)</leftjoin>
         <ordercolumn>title</ordercolumn>
