@@ -1,164 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package>
-    <portal type="html" template="index.xsl">
-        <navigation parent="root" group="top" uri="/" label="home"></navigation>
-        <portlet module="core" controller="SiteSetting">
-		    <access><user>everyone</user></access>	        	        
-        </portlet>
-	    <portlet module="core" controller="Navigation">
-	        <access><user>everyone</user></access>
-	    </portlet>        
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+    <portal type="html" template="index.xsl" access="permission.system.access">
+        <navigation parent="root" group="top" uri="/" label="home"/>
+        <portlet module="core" controller="SiteSetting" access="permission.system.access"/>
+	    <portlet module="core" controller="Navigation" access="permission.system.access"/>        
 	</portal>
-	<portal type="html" template="index.xsl">
+	<portal type="html" template="index.xsl" access="permission.system.access">
 	    <navigation id="summary" parent="root" group="panel" uri="/summary" label="summary" weight="10" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="Navigation">
-	        <access><user>everyone</user></access>
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
 	</portal>
-	<portal type="html" template="panel.xsl">
+	<portal type="html" template="index.xsl" access="permission.system.access">
 	    <navigation parent="summary" group="panel" uri="/overview" label="overview" weight="11"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><user>everyone</user></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="core" controller="Navigation" access="permission.system.access"></portlet>
 	</portal>
-	<portal type="html" template="panel.xsl">
+	<portal type="html" template="index.xsl" access="permission.finance.section">
 	    <navigation id="finance" parent="root" group="panel" uri="/finance" label="finance" weight="20" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="core" controller="Navigation" access="permission.finance.section"></portlet>
 	</portal>
-	<portal type="raw">
+	<portal type="raw" access="permission.budget">
 	    <navigation parent="finance" group="panel" uri="/grid/budget" label="finance.budget" weight="21"></navigation>
-	    <portlet module="content" controller="GridStudio">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="content" controller="GridStudio" access="permission.budget"/>
+	</portal>	
+	<portal type="raw" access="permission.funds_allocation">
+	    <navigation parent="finance" group="panel" uri="/grid/funds_allocation" label="finance.funds_allocation" weight="22"></navigation>
+	    <portlet module="core" controller="Navigation" access="permission.funds_allocation"/>
 	</portal>
-	<portal type="raw">
-	    <navigation parent="finance" group="panel" uri="/allocatefunds" label="finance.allocatefunds" weight="22"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
-	</portal>
-	<portal type="raw">
-	    <navigation parent="finance" group="panel" uri="/financiers" label="finance.financiers" weight="22"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	<portal type="raw" access="permission.financier">
+	    <navigation parent="finance" group="panel" uri="/grid/financier" label="financiers.label" weight="23"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.financier"/>
 	</portal>			
-	<portal type="html" template="panel.xsl">
+	<portal type="raw" access="permission.payments.section">
 	    <navigation id="payments" parent="root" group="panel" uri="/payments" label="payments" weight="30" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="core" controller="GridStudio" access="permission.payments.section"/>
 	</portal>
-	<portal type="html" template="panel.xsl">
+	<portal type="raw" access="permission.payments.completed">
 	    <navigation parent="payments" group="panel" uri="/complete" label="payment.completed" weight="31"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="core" controller="GridStudio" access="permission.payments.completed"/>
 	</portal>	
-	<portal type="html" template="panel.xsl">
+	<portal type="raw" access="permission.payments.pending">
 	    <navigation parent="payments" group="panel" uri="/pending" label="payment.pending" weight="32"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="core" controller="GridStudio" access="permission.payments.pending"/>
 	</portal>
-	<portal type="html" template="panel.xsl">
+	<portal type="raw" access="permission.payments.failed">
 	    <navigation parent="payments" group="panel" uri="/failed" label="payment.failed" weight="33"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="core" controller="GridStudio" access="permission.payments.failed"/>
 	</portal>
-	<portal type="html" template="panel.xsl">
-	    <navigation parent="payments" group="panel" uri="/reversed" label="payment.reversed" weight="34"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role><role>editor</role><role>reader</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	<portal type="raw" access="permission.payments.reversed">
+	    <navigation parent="payments" group="panel" uri="/reversed" label="payments.reversed" weight="34"></navigation>
+	    <portlet module="core" controller="GridStudio" access="permission.payments.reversed"/>
 	</portal>	
-	<portal type="html" template="panel.xsl">
-	    <navigation id="reconciliation" parent="root" group="panel" uri="/reconciliation" label="reconciliation" weight="40" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><user>everyone</user></access>
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	<portal type="raw" access="permission.reconciliation.section">
+	    <navigation id="reconciliation" parent="root" group="panel" uri="/null" label="reconciliation" weight="40" class="nav-top-item"></navigation>
+	    <portlet module="core" controller="GridStudio" access="permission.reconciliation.section"/>
 	</portal>
-	<portal type="html" template="panel.xsl">
+	<portal type="raw" access="permission.reconciliation.gateway">
+		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="41"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gateway"/>
+	</portal>
+	<portal type="raw" access="permission.reconciliation.mpesa">
+		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_mpesa" label="reconciliation.mpesa" weight="42"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.mpesa"/>
+	</portal>
+	<portal type="raw" access="permission.reconciliation.gatewaynotmpesa">
+		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gatewaynotmpesa" label="reconciliation.gatewaynotmpesa" weight="43"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gatewaynotmpesa"/>
+	</portal>
+	<portal type="raw" access="permission.reconciliation.mpesanotgateway">
+		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="44"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gateway"/>
+	</portal>	
+	<portal type="raw" access="permission.configuration">
 	    <navigation id="configuration" parent="root" group="panel" uri="/configuration" label="configuration" weight="50" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><user>everyone</user></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role><role>editor</role><role>reader</role></access>
+	    <portlet module="core" controller="GridStudio" access="permission.configuration"/>
 	</portal>
-	<portal type="raw">
-	    <navigation id="users" parent="root" group="panel" uri="/users" label="security" weight="60" class="nav-top-item"></navigation>
-	    <portlet module="content" controller="GridStudio">
-		    <access><role>administrator</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role></access>
+	<portal type="raw" access="permission.users.section">
+	    <navigation id="users" parent="root" group="panel" uri="/null" label="security" weight="60" class="nav-top-item"></navigation>
 	</portal>
-	<portal type="raw">
+	<portal type="raw" access="permission.users">
 	    <navigation parent="users" group="panel" uri="/grid/user" label="users.accounts" weight="61"></navigation>
-	    <portlet module="content" controller="GridStudio">
-		    <access><role>administrator</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role></access>
-	</portal>				
-	<portal type="html" template="panel.xsl">
-	    <navigation parent="users" group="panel" uri="/roles" label="users.roles" weight="62"></navigation>
-	    <portlet module="core" controller="Navigation">
-		    <access><role>administrator</role></access>	        	        
-	    </portlet>
-	    <access><role>administrator</role></access>
+	    <portlet module="content" controller="GridStudio" access="permission.users"/>
 	</portal>
-	<portal type="html" template="user.xsl">
+	<portal type="raw" access="permission.users">
+	    <navigation parent="users" group="hidden" uri="/form/user" label="users.accounts" weight="61"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.users"/>
+	</portal>					
+	<portal type="raw" access="permission.roles">
+	    <navigation parent="users" group="panel" uri="/grid/role" label="users.roles" weight="62"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.roles"/>
+	</portal>
+	<portal type="html" template="user.xsl" access="permission.signin">
 	    <navigation parent="root" group="authentication" uri="/signin" label="signin"></navigation>
-	    <portlet module="user" controller="SignIn">
-	        <access><user>everyone</user></access>
-	    </portlet>
-	    <portlet module="core" controller="Navigation">
-	        <access><user>everyone</user></access>
-	    </portlet>
-        <portlet module="core" controller="SiteSetting">
-		    <access><user>everyone</user></access>	        	        
-        </portlet>	    
-	    <access><user>everyone</user></access>
+	    <portlet module="user" controller="SignIn" access="permission.signin"/>
+	    <portlet module="core" controller="Navigation" access="permission.signin"/>
+        <portlet module="core" controller="SiteSetting" access="permission.signin"/>
 	</portal>
-	<portal type="html" template="user.xsl">
+	<portal type="html" template="user.xsl" access="permission.signup">
 	    <navigation parent="root" group="authentication" uri="/signup" label="signup"></navigation>
-	    <portlet module="user" controller="SignUp">
-	        <access><user>everyone</user></access>
-	    </portlet>
-	    <portlet module="core" controller="Navigation">
-	        <access><user>everyone</user></access>
-	    </portlet>
-        <portlet module="core" controller="SiteSetting">
-		    <access><user>everyone</user></access>	        	        
-        </portlet>	    
-	    <access><user>everyone</user></access>
+	    <portlet module="user" controller="SignUp" access="permission.signup"/>
+	    <portlet module="core" controller="Navigation" access="permission.signup"/>
+        <portlet module="core" controller="SiteSetting" access="permission.signup"/>
 	</portal>
-	<portal type="html" template="user.xsl">
+	<portal type="html" template="user.xsl" access="permission.resetpassword">
 	    <navigation parent="root" group="authentication" uri="/resetpassword" label="resetpassword"></navigation>
-	    <portlet module="user" controller="ResetPassword">
-	        <access><user>everyone</user></access>
-	    </portlet>
-	    <portlet module="core" controller="Navigation">
-	        <access><user>everyone</user></access>
-	    </portlet>
-        <portlet module="core" controller="SiteSetting">
-		    <access><user>everyone</user></access>	        	        
-        </portlet>	    
-	    <access><user>everyone</user></access>
+	    <portlet module="user" controller="ResetPassword" access="permission.resetpassword"/>
+	    <portlet module="core" controller="Navigation" access="permission.resetpassword"/>
+        <portlet module="core" controller="SiteSetting" access="permission.resetpassword"/>
 	</portal>
+	<portal type="html" template="user.xsl" access="permission.system.access">
+	    <navigation parent="root" group="authentication" uri="/signout" label="signout"></navigation>
+	    <portlet module="user" controller="SignOut" access="permission.system.access"/>
+	    <portlet module="core" controller="Navigation" access="permission.system.access"/>
+        <portlet module="core" controller="SiteSetting" access="permission.system.access"/>
+	</portal>	
 </package>

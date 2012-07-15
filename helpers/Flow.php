@@ -15,7 +15,7 @@ class Flow {
 		$this->user = $this->sandbox->getHelper('user');
 	}
 	
-	public function setSource(){
+	public function setSource($filename){
 		if(!is_readable($filename)) {
 			throw new HelperException("'$filename' is not readable");
 		}
@@ -24,33 +24,24 @@ class Flow {
 			throw new HelperException("'$filename' is not a valid XML table definition");
 		}
 	}
-
-	public function attestUser($action){
-		$access = $this->definition->$action->access;
-		if(isset($access->user)){
-			foreach($access->user as $user){
-				if((string) $user === "everyone") return true;
-				if($this->user->getLogin() === (string) $user) return true;
-			}
-			return false;
-		} else {
-			return false;
-		}
+	
+	public function isInsertable(){
+		$permission = (string) $this->definition->insert->attributes()->access;
+		return $this->attestPermissions($permission);
 	}
 	
-	public function attestRole($action){
-		$access = $this->definition->$action->access;
-		if(isset($access->role)){
-			foreach($access->role as $role){
-				if((string) $role === "everyone") return true;
-				$roles = $this->user->getRoles();
-				if(is_null($roles)) return false;
-				if(in_array((string) $role, $roles)) return true;
-			}
-			return false;
-		} else {
-			return false;
-		}
+	public function isUpdateable(){
+		$permission = (string) $this->definition->update->attributes()->access;
+		return $this->attestPermissions($permission);
 	}
+	
+	public function isDeleteable(){
+		$permission = (string) $this->definition->delete->attributes()->access;
+		return $this->attestPermissions($permission);
+	}
+	
+	public function attestPermissions($permission){
+		return in_array($permission, $this->user->getPermissions());
+	}	
 	
 }

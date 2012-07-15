@@ -67,7 +67,7 @@ class QueryBuilder {
 	
 	protected function buildFields(){
 		$key = (string) $this->definition->columns->attributes()->primarykey;
-		$columns[] = "`" . substr_count($key, '`') ? $key : "`$key`" . "` AS `primarykey`";
+		$columns[] = (substr_count($key, '.') || substr_count($key, '`') ? $key : "`$key`") . " AS `primarykey`";
 		foreach($this->definition->columns->column as $column){
 			$field = (string) $column->attributes()->field;
 			$columns[] = substr_count($field, '`') ? "$field" : "`$field`";
@@ -99,7 +99,8 @@ class QueryBuilder {
 		$columns = $this->getStorage()->getColumns($table);
 		$column = array_key_exists('ordercolumn', $_POST) ? trim($_POST['ordercolumn']) : NULL;
 		$this->order['column'] = array_key_exists($column, $columns) ? $column : $this->order['column'];
-		return sprintf("ORDER BY `%s`.`%s` %s", $table, $this->order['column'], $this->order['direction']);
+		$orderColumn = substr_count($this->order['column'], '.') || substr_count($this->order['column'], '`') ? $this->order['column'] : '`'.$this->order['column'].'`';
+		return sprintf("ORDER BY %s %s", $orderColumn, $this->order['direction']);
 	}
 	
 	protected function buildLimit(){

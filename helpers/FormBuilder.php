@@ -91,14 +91,14 @@ class FormBuilder {
 		foreach($field->element as $element){
 			$type = (string) $element->attributes()->type;
 			$label = $translator->translate($element->attributes()->label);
-			if(strlen($label)) {
+			if($type == 'options'){
+				$html[] = $this->createElement($field, $element, $type);
+			} else {
 				$labelClass = $this->getClasses($element);
 				$html[] = "\t\t<label $labelClass>";
 				$html[] = "\t\t\t<span>$label</span>";
 				$html[] = $this->createElement($field, $element, $type);
 				$html[] = "\t\t</label>";
-			}else{
-				$html[] = $this->createElement($field, $element, $type);
 			}
 		}
 		return join("\n", $html);
@@ -117,6 +117,8 @@ class FormBuilder {
 			break;
 			case "checkbox":
 				return "\t\t\t".$this->createInputCheckbox($field, $element);
+			case "options":
+				return "\t\t\t".$this->createCheckboxOptions($field, $element);
 			break;
 			case "hidden":
 				return "\t\t\t".$this->createInputHidden($field, $element);
@@ -192,6 +194,35 @@ class FormBuilder {
 		}
 		$html[] = "\t\t\t</select>";
 		return join("\n", $html);
+	}
+	
+	protected function createCheckboxOptions(&$field, &$element){
+		$options = $this->getOptions($element);
+		if($options == NULL) return;
+		$translator = $this->sandbox->getHelper('translation');
+		$labelClass = $this->getClasses($element);
+		$name = (string) $element->attributes()->name;
+		$label = (string) $element->attributes()->label;
+		$value = (string) $element->attributes()->value;
+		$class = $this->getClasses($element);
+		foreach($options as $option){
+			$html[] = "<label $labelClass>";
+			$title = $option[$label].'.label';
+			$html[] = "\t\t\t".'<span>'.$translator->translate($title).'</span>';
+			$html[] = "\t\t\t".'<input type="checkbox" name="'.$name.'[]" value="'.$option[$value].'"' . $class . '/>';
+			$html[] = "\t\t</label>";
+		}
+		return implode("\n", $html);
+	}
+	
+	protected function getOptions(&$element){
+		$table = (string) $element->attributes()->lookup;
+		$select['table'] = $table;
+		$filter = (string) $element->attributes()->filter;
+		if(strlen($filter)){
+			$select['constraints'] = json_decode($filter);
+		}
+		return $this->getStorage()->select($select);
 	}
 	
 	protected function createTextarea(&$field, &$element){
@@ -300,21 +331,69 @@ class FormBuilder {
 	
 	public function createRecord(){
 		$input = $this->sandbox->getHelper('input');
-		$record['table'] = (string) $this->definition->attributes()->name;
+		$name = (string) $this->definition->attributes()->name;
+		$record['table'] = $name;
 		$fields = $this->getFields();
 		foreach($fields as $field){
 			$type = (string) $field->attributes()->type;
 			if(strlen($type)) {
 				$key = (string) $field->attributes()->name;
-				$record['content'][$key] = $this->getContent($key);
+				if($type != "options"){
+					$record['content'][$key] = $this->getContent($key);
+				}
 			}
 		}
 		try {
-			return $this->getStorage()->insert($record);
+			$insertID = $this->getStorage()->insert($record);
+			$this->createRecordOptions($insertID);
+			return json_encode(array("success" => $insertID), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 		}catch(HelperException $e){
 			throw new \apps\ApplicationException($e->getMessage());
 		}
 	}
+	
+	private function createRecordOptions($insertID){
+		$fields = $this->getOptionFields();
+		if(!$fields) return;
+		$name = (string) $this->definition->attributes()->name;
+		foreach($fields as $field){
+			$key = (string) $field->attributes()->name;
+			if(!array_key_exists($key, $_POST)) continue;
+			$join = (string) $field->attributes()->join;
+			foreach($_POST[$key] as $option){
+				if((integer) $option > 0){
+					$insert['table'] = $join;
+					if((string) $this->definition->attributes()->storage != 'local'){
+						$content['site'] = $this->sandbox->getHelper('site')->getID();
+					}
+					$content[$key] = $option;
+					$content['creationTime'] = time();
+					$content[$name] = $insertID;
+					$insert['content'] = $content;
+					$this->getStorage()->insert($insert);
+				}
+			}
+		}
+	}
+	
+	private function updateOptionRecords(){
+		$fields = $this->getOptionFields();
+		if(!$fields) return;
+		foreach($fields as $field){
+			$name = (string) $field->attributes()->name;
+			if(!array_key_exists($name, $_POST)) continue;
+			$join = (string) $field->attributes()->join;
+			foreach($_POST[$key] as $option){
+				if((integer) $option == 0) continue;
+				$insert['table'] = $join;
+				if((string) $this->definition->attributes()->storage != 'local'){
+					$content['site'] = $this->sandbox->getHelper('site')->getID();
+				}
+				$content[$name] = $option;
+				$content['creationTime'] = time();
+			}
+		}
+	}	
 	
 	public function getContent($key){
 		if(in_array($key, array('creationTime', 'site', 'user'))){
@@ -335,14 +414,43 @@ class FormBuilder {
 	}
 	
 	public function selectRecord(){
-		if(!array_key_exists('primarykey', $_POST)) return;
-		$value = $this->getStorage()->sanitize($_POST['primarykey']);
+		$primarykey = $this->sandbox->getHelper('input')->postInteger('primarykey');
+		if(!$primarykey) return;
 		$key = (string) $this->definition->attributes()->primarykey;
 		$table = (string) $this->definition->attributes()->name;
 		$columns = $this->getColumns();
-		$sql = sprintf("SELECT %s FROM `%s` WHERE `%s` = %d", join(", ", $columns), $table, $key, $value);
-		$rows = $this->getStorage()->query($sql);
+		$sql = sprintf("SELECT %s, %s FROM `%s` WHERE `%s` = %d", $key, implode(", ", $columns), $table, $key, $primarykey);
+		$rows = $this->getOptionValues($this->getStorage()->query($sql));
 		return json_encode($rows, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);		
+	}
+	
+	protected function getOptionValues($rows){
+		$fields = $this->getOptionFields();
+		if(!$fields) return $rows;
+		$table = (string) $this->definition->attributes()->name;
+		$storage = (string) $this->definition->attributes()->storage;
+		$key = (string) $this->definition->attributes()->primarykey;
+		foreach($fields as $field){
+			$join = (string) $field->attributes()->join;
+			$name = (string) $field->attributes()->name;
+			if(strlen($join)){
+				$select['table'] = $join;
+				$constraints[$table] = $rows[0][$key];
+				if($storage != 'local'){
+					$constraints['site'] = $this->sandbox->getHelper('site')->getID();
+				}
+				$select['constraints'] = $constraints;
+				$records = $this->getStorage()->select($select);
+				if($records){
+					$values = array();
+					foreach($records as $record){
+						$values[] = $record[$name];
+					}
+					$rows[0][$name] = implode(', ', $values);
+				}
+			}
+		}
+		return $rows;
 	}
 	
 	public function updateRecord(){
@@ -351,8 +459,11 @@ class FormBuilder {
 		$key = (string) $this->definition->attributes()->primarykey;
 		$update['table'] = (string) $this->definition->attributes()->name;
 		$update['constraints'][$key] = $this->getStorage()->sanitize($_POST['primarykey']);
+		if((string) $this->definition->attributes()->storage != 'local'){
+			$update['constraints']['site'] = $this->sandbox->getHelper('site')->getID();
+		}
 		foreach ($columns as $column) {
-			$update['content'][$column] = $this->postVariable($column);
+			$update['content'][$column] = $this->sandbox->getHelper('input')->postString($column);
 		}
 		$result['success'] = $this->getStorage()->update($update);
 		return json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);		
@@ -362,8 +473,8 @@ class FormBuilder {
 		$fields = $this->getFields();
 		foreach($fields as $field){
 			$type = (string) $field->attributes()->type;
-			if(strlen($type)){
-				$columns[] = (string) $field->attributes()->name;
+			if(strlen($type) && $type != 'options'){
+				$columns[] = (string) $field->attributes()->name;				
 			}
 		}
 		return $columns;
@@ -376,16 +487,25 @@ class FormBuilder {
 					$fields[] = $field;
 				}
 			}
-			return $fields;
 		} else if (property_exists($this->definition, "field")) {
 			foreach ($this->definition->field as $field) {
 				$fields[] = $field;
 			}
-			return $fields;
 		} else {
 			throw new HelperException("No fields defined for form : ".$this->name);
 		}
-	}	
+		return $fields;
+	}
+	
+	protected function getOptionFields(){
+		$fields = $this->getFields();
+		foreach($fields as $field){
+			if((string) $field->attributes()->type == 'options'){
+				$result[] = $field;
+			}
+		}
+		return isset($result) ? $result : false;
+	}
 
 	public function setContent($content){
 		$this->content = $content;

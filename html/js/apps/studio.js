@@ -10,9 +10,9 @@ core.register('studio', function(sandbox){
 		route: function(event){
 			var href = event.data;
 			var control = sandbox.module.initControl(href);
-			if(control){
+			control.onReady(function(){
 				sandbox.fire({type: 'navigation.staging', data: {"stage": "primary", "control": control}});
-			}
+			});
 		},
 		initControl: function(href){
 			var control = false;
@@ -25,23 +25,10 @@ core.register('studio', function(sandbox){
 			return control;					
 		},
 		isGrid: function(href){
-			var grids = new Array();
-			grids.push('/grid/budget');
-			grids.push('/grid/user');
-			if(grids.indexOf(href) === -1){
-				return false;
-			}else{
-				return true;
-			}
+			return href.indexOf('/grid/') == -1 ? false : true;
 		},
 		isForm: function(href){
-			var forms = new Array();
-			forms.push('/form/budget');
-			if(forms.indexOf(href) === -1){
-				return false;
-			}else{
-				return true;
-			}
+			return href.indexOf('/form/') == -1 ? false : true;
 		}
 	};
 });

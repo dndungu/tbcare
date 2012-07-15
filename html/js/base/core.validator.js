@@ -129,7 +129,6 @@ core.validator = {
 		rules.push('email');
 		rules.push('domain');
 		rules.push('subdomain');
-		rules.push('aliasexists');
 		rules.push('loginexists');
 		rules.push('html');
 		rules.push('url');
@@ -194,9 +193,6 @@ core.validator = {
 			case 'subdomain':
 				return extension.testSubDomain(value);
 				break;
-			case 'aliasexists':
-				return extension.testAliasExists(value);
-				break;
 			case 'loginexists':
 				return extension.testLoginExists(value);
 				break;
@@ -244,7 +240,6 @@ core.validator = {
 		return pattern.test(arguments[0]);
 	},
 	testPhone: function(){
-//		var pattern = /^\+?[\d\s]+\(?[\d\s]{10,}$/;
 		var pattern = /^\+?[0-9\s]{8,16}/;
 		return pattern.test(arguments[0]);
 	},
@@ -278,22 +273,6 @@ core.validator = {
 	testSubDomain: function(){
 		var pattern = /^[a-z\d]+([-_][a-z\d]+)*$/i;
 		return pattern.test(arguments[0]);
-	},
-	testAliasExists: function(){
-		var test = String(arguments[0]);
-		if(test.length<3) return false;
-		core.ajax.post('/aliasexists', {alias_title: test}, function(){
-			if(arguments[0].readyState != 4 || arguments[0].status != 200) return;
-			var extension = core.validator;
-			var response = core.ajax.parseJSON(arguments[0].responseText);
-			if(response.launcher.AliasExists[0] == "Yes"){
-				var element = $('.aliasexists');
-				element.attr('placeholder', element.val()+core.l18n.validator_aliasexists);
-				element.val('');
-				extension.redStatus(element);
-			}
-		});
-		return true;
 	},
 	testLoginExists: function(){
 		var test = arguments[0];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grid name="role" title="users.accounts" editable="true" searchable="true" sortable="true" paginatable="true" columnBar="true" footerBar="true" storage="global">
+<grid name="role" title="users.accounts" searchable="true" sortable="true" paginatable="true" showColumnBar="true" showFooterBar="true" storage="global">
     <records>
         <ordercolumn>login</ordercolumn>
         <orderdirection>asc</orderdirection>

@@ -2,7 +2,7 @@
 
 namespace apps\content;
 
-class FormController extends \apps\Application {
+class FormStudio extends \apps\Application {
 	
 	public function doGet(){
 		try {

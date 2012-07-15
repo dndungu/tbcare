@@ -19,7 +19,7 @@ core.sandbox = function(){
 						try {
 							listeners[i](event);
 						} catch (e) {
-							this.log(e.message + ' : ' + event.type, 3);
+							this.log(e.message + ' : ' + event.type + ' : ' + event.data + ' : ' + listeners[i], 3);
 						}
 					}
 				} while (i--);

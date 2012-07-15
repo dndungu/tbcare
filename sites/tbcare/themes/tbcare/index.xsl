@@ -14,7 +14,9 @@
 				<script src="/js/libraries/jquery-1.7.2.min.js" type="text/javascript"></script>
 				<script src="/js/base/core.js" type="text/javascript"></script>
 				<script src="/js/base/core.sandbox.js" type="text/javascript"></script>
+				<script src="/js/base/core.ajax.js" type="text/javascript"></script>
 				<script src="/js/base/core.navigation.js" type="text/javascript"></script>
+				<script src="/js/base/core.validator.js" type="text/javascript"></script>
 				<script src="/js/base/core.control.js" type="text/javascript"></script>				
 				<script src="/js/base/core.control.grid.js" type="text/javascript"></script>
 				<script src="/js/base/core.control.form.js" type="text/javascript"></script>

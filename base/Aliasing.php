@@ -74,16 +74,17 @@ class Aliasing {
 	}
 
 	protected function matchPortal($package){
-		$URI = $this->sandbox->getMeta('URI');
+		$request = $this->sandbox->getMeta('URI');
 		$handler = NULL;
 		foreach($package->portal as $portal){
 			foreach($portal->navigation as $match){
-				$request = (string) $match->attributes()->uri;
-				if($URI === $request) {
+				$resource = (string) $match->attributes()->uri;
+				if($request === $resource) {
 					return $portal;
 				}
-				if($request[strlen($request)-1] === "*") {
-					if(substr_count($URI, rtrim($request, "*")) > 0){
+				$lastkey = strlen($resource) - 1;
+				if($resource[$lastkey] === "*") {
+					if(substr_count($request, rtrim($resource, "*")) > 0){
 						$handler = $portal;
 					}
 				}

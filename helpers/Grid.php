@@ -12,7 +12,13 @@ class Grid {
 	
 	private $name = NULL;
 	
-	private $editable = NULL;
+	private $flow = NULL;
+	
+	private $insertable = NULL;
+	
+	private $updateable = NULL;
+	
+	private $deleteable = NULL;
 	
 	private $searchable = NULL;
 	
@@ -20,9 +26,9 @@ class Grid {
 		
 	private $paginatable = NULL;
 	
-	private $columnBar = NULL;
+	private $showColumnBar = NULL;
 	
-	private $footerBar = NULL;
+	private $showFooterBar = NULL;
 	
 	private $queryBuilder = NULL;
 	
@@ -78,29 +84,38 @@ class Grid {
 	}	
 	
 	private function setup(){
-		$attributes = $this->definition->attributes();
-		$this->name = (string) $attributes->name;
-		require_once('QueryBuilder.php');
+		$this->initOptions();
+		$this->initFlow();
+		$this->initQueryBuilder();
+	}
+	
+	private function initFlow(){
+		$base = $this->sandbox->getMeta('base');
+		require_once("$base/helpers/Flow.php");
+		$name = $this->name;
+		$this->flow = new Flow($this->sandbox);
+		$this->flow->setSource("$base/apps/content/flows/$name.xml");
+	}	
+	
+	private function initQueryBuilder(){
+		$base = $this->sandbox->getMeta('base');
+		require_once("$base/helpers/QueryBuilder.php");
 		$this->queryBuilder = new QueryBuilder($this->sandbox);
 		$this->queryBuilder->setDefinition($this->definition);
 		$storage = $this->getStorage();
 		$this->queryBuilder->setStorage($storage);
-		$this->isEditable(trim(strtolower((string) $attributes->editable)) === "true" ? true : false);
+	}
+	
+	private function initOptions(){
+		$attributes = $this->definition->attributes();
+		$this->name = (string) $attributes->name;
 		$this->isSearchable(trim(strtolower((string) $attributes->searchable)) === "true" ? true : false);
 		$this->isSortable(trim(strtolower((string) $attributes->sortable)) === "true" ? true : false);
 		$this->isPaginatable(trim(strtolower((string) $attributes->paginatable)) === "true" ? true : false);
-		$this->hasColumnBar(trim(strtolower((string) $attributes->columnBar)) === "true" ? true : false);
-		$this->hasFooterBar(trim(strtolower((string) $attributes->footerBar)) === "true" ? true : false);
+		$this->hasColumnBar(trim(strtolower((string) $attributes->showColumnBar)) === "true" ? true : false);
+		$this->hasFooterBar(trim(strtolower((string) $attributes->showFooterBar)) === "true" ? true : false);
 	}
-		
-	public function isEditable($editable=NULL){
-		if(is_bool($editable)){
-			$this->editable = $editable;
-		}else{
-			return $this->editable;
-		}
-	}
-	
+			
 	public function isSearchable($searchable=NULL){
 		if(is_bool($searchable)){
 			$this->searchable = $searchable;
@@ -121,46 +136,68 @@ class Grid {
 		if(is_bool($paginatable)){
 			$this->paginatable = $paginatable;
 		}else{
-			return $this->paginatable;
+			return ($this->paginatable && $this->showFooterBar);
 		}
 		
 	}
 	
-	public function hasColumnBar($columnBar = NULL){
-		if(is_bool($columnBar)){
-			$this->columnBar = $columnBar;
+	public function hasColumnBar($showColumnBar = NULL){
+		if(is_bool($showColumnBar)){
+			$this->showColumnBar = $showColumnBar;
 		}else{
-			return $this->columnBar;
+			return $this->showColumnBar;
 		}
 	}
 	
-	public function hasFooterBar($footerBar = NULL){
-		if(is_bool($footerBar)){
-			$this->footerBar = $footerBar;
+	public function hasFooterBar($showFooterBar = NULL){
+		if(is_bool($showFooterBar)){
+			$this->showFooterBar = $showFooterBar;
 		}else{
-			return $this->footerBar;
+			return $this->showFooterBar;
 		}
 	}	
 	
 	public function asHTML(){
-		$name = $this->name;
-		$class = $this->isEditable() ? "$name editable grid" : "$name grid";
 		$html[] = "\n";
-		$html[] = "<div class=\"$class\" name=\"$name\">";
+		$html[] = '<div class="' . $this->getClass() . '" name="' . $this->name . '">';
 		$html[] = $this->headerBar();
 		$html[] = $this->columnsBar();
 		$html[] = $this->recordsBody();
-		$html[] = $this->footerBar();
+		$html[] = $this->showFooterBar();
 		$html[] = "</div>";
 		$html[] = "\n";
 		return join("\n", $html);
+	}
+	
+	private function getClass(){
+		$class[] = 'grid';
+		$class[] = $this->name;
+		if($this->flow->isUpdateable()){
+			$class[] = 'updateable';
+		}
+		if($this->flow->isInsertable()){
+			$class[] = 'insertable';
+		}
+		if($this->flow->isDeleteable()){
+			$class[] = 'deleteable';
+		}
+		if($this->isSearchable()){
+			$class[] = 'searchable';
+		}
+		if($this->isPaginatable()){
+			$class[] = 'paginatable';
+		}
+		if($this->isSortable()){
+			$class[] = 'sortable';
+		}
+		return implode(' ', $class);
 	}
 	
 	private function headerBar(){
 		$title = $this->getTitle($this->definition);
 		$html[] = "\t<div class=\"gridHeader\">";
 		if($this->isSearchable()){
-			$html[] = "\t\t<div class=\"column grid4of10\">$title</div><div class=\"column grid6of10\">".$this->searchForm()."</div>";
+			$html[] = "\t\t<div class=\"column grid6of10\">$title</div><div class=\"column grid4of10\">".$this->searchForm()."</div>";
 		}else{
 			$html[] = "\t\t<div class=\"column grid10of10\">$title</div>";
 		}
@@ -198,7 +235,7 @@ class Grid {
 		return join("\n", $html);
 	}
 	
-	private function footerBar(){
+	private function showFooterBar(){
 		if($this->hasFooterBar()){
 			$translator = $this->sandbox->getHelper('translation');
 			$html[] = "\t<div class=\"gridFooter\">";
@@ -225,9 +262,11 @@ class Grid {
 		$addText = $translator->translate('action.add');
 		$URI = $this->sandbox->getMeta('URI');
 		$html[] = "<form action=\"$URI\" method=\"POST\">";
+		if($this->flow->isInsertable()){
+			$html[] = "<input type=\"button\" name=\"addButton\" value=\"$addText\" class=\"addButton gridPrimaryButton\"/>";
+		}
 		$html[] = "<input type=\"text\" name=\"keywords\" placeholder=\"$searchText\"/>";
-		$html[] = "<input type=\"submit\" value=\"&nbsp;\" class=\"searchButton\"/>&nbsp;";
-		$html[] = "<input type=\"button\" name=\"addButton\" value=\"$addText\" class=\"addButton gridButton\"/>";
+		$html[] = "<input type=\"submit\" value=\"&nbsp;\" class=\"searchButton gridSecondaryButton\"/>&nbsp;";
 		$html[] = "</form>";
 		return join("", $html);
 	}

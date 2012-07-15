@@ -9,7 +9,7 @@
     <label index="video">video</label>
     <label index="videos">videos</label>
     <label index="home">Home</label>
-    <label index="id">ID</label>
+    <label index="id.label">ID</label>
     <label index="myaccount">My Account</label>
     <label index="accountcreated">Your account at TB Care</label>
     <label index="donation">Donate</label>
@@ -65,7 +65,11 @@
     <label index="changepassword">Change Password</label>
     <label index="password.changed">You have successfully changed your password, sign in to continue</label>
     <label index="firstname.label">First name</label>
+    <label index="firstname.placeholder">Enter first name</label>
     <label index="lastname.label">Last name</label>
+    <label index="lastname.placeholder">Enter last name</label>
+    <label index="expiryTime.label">Expiry Time</label>
+    <label index="expiryTime.placeholder">MM/DD/YYYY</label>
     <label index="phone.label">Contact number</label>
     <label index="mobile.label">Mobile number</label>
     <label index="confirmationcode.label">Transaction code</label>
@@ -75,9 +79,9 @@
     <label index="DOB.label">Date of birth</label>
     <label index="country.label">Country</label>
     <label index="login.label">Username</label>
-    <label index="login.placeholder">Please choose a username</label>
+    <label index="login.placeholder">Choose a username</label>
     <label index="email.label">E-mail</label>
-    <label index="email.placeholder">Please enter your email address</label>
+    <label index="email.placeholder">Enter email address</label>
     <label index="password.label">Password</label>
     <label index="password.placeholder"></label>
     <label index="password.label">Password</label>
@@ -89,6 +93,9 @@
     <label index="action.signin">Sign In</label>
     <label index="action.resetpassword">Reset Password</label>
     <label index="action.changepassword">Change Password</label>
+    <label index="action.continue">Continue</label>
+    <label index="action.create">Create</label>
+    <label index="action.dismiss">Dismiss</label>
     <label index="pagination.legend">Showing {{rowOffset}} to {{rowLimit}} of {{rowCount}} entries</label>
     <label index="pagination.first"> |&lt; </label>
     <label index="pagination.previous"> &lt;&lt; </label>
@@ -155,14 +162,21 @@
     <label index="payment.pending">Pending</label>
     <label index="payment.completed">Completed</label>
     <label index="payment.failed">Failed</label>
-    <label index="payment.reversed">Reversed</label>
+    <label index="payments.reversed">Reversed</label>
     <label index="finance">Finance</label>
+    <label index="finance.budget.label">Budget Line</label>
     <label index="finance.budget">Budget Lines</label>
     <label index="budget_line_id.label">Budgetline ID</label>
-    <label index="finance.allocatefunds">Allocate Funds</label>
+    <label index="finance.funds_allocation">Funds Allocation</label>
+    <label index="financiers.label">Financiers</label>
+    <label index="financier_code.label">Abbreviation</label>
     <label index="financier_name.label">Financier</label>
     <label index="creationTime.label">Time Created</label>
     <label index="name.label">Name</label>
     <label index="balance.label">Balance</label>
-
+	<label index="permission.system.access">Access System</label>
+	<label index="permission.system.access">Access System</label>
+	<label index="administrator.label">Administrator</label>
+	<label index="accountant.label">Accountant</label>
+	<label index="auditor.label">Auditor</label>
 </language>

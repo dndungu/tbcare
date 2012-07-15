@@ -31,7 +31,6 @@ class Authentication {
 			$this->sandbox->fire('authentication.passed', $this->portal);
 		} else {
 			$message = "Access to any portlets not allowed";
-			error_log($message);
 			$this->sandbox->fire('authentication.failed', $message);
 		}
 	}
@@ -41,7 +40,7 @@ class Authentication {
 		$package = $this->sandbox->getMeta('package');
 		$sitemap = NULL;
 		foreach ($package as $portal){
-			if(!$this->attestUser($portal->access) && !$this->attestRole($portal->access)) continue;
+			if(!$this->attestPermissions((string) $portal->attributes()->access)) continue;
 			foreach($portal->navigation as $match){
 				$uri['id'] = (string) $match->attributes()->id;
 				$uri['uri'] = (string) $match->attributes()->uri;
@@ -57,21 +56,24 @@ class Authentication {
 	}
 	
 	protected function shieldPortal(){
-		if(isset($this->portal->access)){
-			return ($this->attestUser($this->portal->access) || $this->attestRole($this->portal->access));
-		} else {
-			return false;
-		}
+		return $this->attestPermissions((string) $this->portal->attributes()->access);
 	}
 	
 	protected function shieldPortlets(){
 		foreach($this->portal->portlet as $portlet){
-			if($this->attestUser($portlet->access) || $this->attestRole($portlet->access)) {
+			if($this->attestPermissions((string) $portlet->attributes()->access)) {
 				$portlets[] = $portlet->asXML();
 			}
 		}
-		
-		if(!isset($portlets)) return false;
+		if(isset($portlets)) {
+			$this->setDefinition($portlets);
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	protected function setDefinition(&$portlets){
 		$attributes = array();
 		foreach($this->portal->attributes() as $key => $value){
 			$attributes[] = "$key = \"$value\"";
@@ -82,8 +84,7 @@ class Authentication {
 			$portal[] = "\t".$portlet;
 		}
 		$portal[] = "</portal>";
-		$this->portal = simplexml_load_string(implode("\n", $portal));
-		return true;		
+		$this->portal = simplexml_load_string(implode("\n", $portal));		
 	}
 	
 	public function attestUser($access){
@@ -110,6 +111,10 @@ class Authentication {
 		} else {
 			return false;
 		}
+	}
+	
+	public function attestPermissions($permission){
+		return in_array($permission, $this->user->getPermissions());
 	}
 		
 }

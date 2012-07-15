@@ -18,6 +18,8 @@ class User {
 	
 	protected $roles = NULL;
 	
+	protected $permissions = NULL;
+	
 	protected $sandbox = NULL;
 	
 	public function __construct(&$sandbox) {
@@ -43,7 +45,20 @@ class User {
 		$this->sandbox->getGlobalStorage()->insert($insert);
 		$user['ID'] = $this->sandbox->getGlobalStorage()->getInsertID();
 		$user['login'] = 'guest-'.$user['ID'];
+		$user['permissions'] = $this->getGuestPermissions();
 		return $user;
+	}
+	
+	protected function getGuestPermissions(){
+		$select['table'] = 'role';
+		$select['fields'][] = 'permissions';
+		$select['constraints']['title'] = 'guest';
+		$rows = $this->sandbox->getGlobalStorage()->select($select);
+		if($rows){
+			return json_decode($rows[0]['permissions']);
+		} else {
+			return NULL;
+		}
 	}
 	
 	protected function setUser($user){
@@ -53,6 +68,7 @@ class User {
 		$login = array_key_exists('login', $user) ? $user['login'] : $user['email'];
 		$this->setLogin($login);
 		$this->setRoles($user['roles']);
+		$this->setPermissions($user['permissions']);
 		$this->setCreationTime($user['creationTime']);
 		$this->isGuest($user['isGuest']);
 	}
@@ -123,6 +139,7 @@ class User {
 					 'email' => $this->getEmail(),
 					 'password' => $this->getPassword(),
 					 'roles' => $this->getRoles(),
+					 'permissions' => $this->getPermissions(),
 				 	 'creationTime' => $this->getCreationTime(),
 					 'isGuest' => $this->isGuest());
 	}
@@ -192,17 +209,12 @@ class User {
 			if($input['password'] === $users[0]['password']) {
 				$user = $users[0];
 				$this->ownGuest($user['ID']);
-				$assignmentQuery = sprintf("SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = %d", $user['ID']);
+				$assignmentQuery = sprintf("SELECT `title`, `permissions` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = %d", $user['ID']);
 				$rows = $this->sandbox->getGlobalStorage()->query($assignmentQuery);
-				if(is_array($rows)){
-					foreach($rows as $row){
-						$roles[] = $row['title'];
-					}
-				}else{
-					$roles = array();
-				}
+				$roles = $this->extractRoles($rows);
 				$user['isGuest'] = 'No';
 				$user['roles'] = $roles;
+				$user['permissions'] = $this->getPermissions();
 				$this->setUser($user);
 				$this->sandbox->getHelper('session')->write('user', $this->getUser());
 			}else{
@@ -210,6 +222,26 @@ class User {
 			}
 		}catch (HelperException $e) {
 			throw new \apps\ApplicationException($e->getMessage());
+		}
+	}
+	
+	protected function extractRoles($rows){
+		$roles = array();
+		if(is_array($rows)){
+			foreach($rows as $row){
+				$roles[] = $row['title'];
+				$this->extractPermissions($row);
+			}
+		}
+		return $roles;
+	}
+	
+	protected function extractPermissions(&$row){
+		if(strlen($row['permissions'])){
+			$permissions = json_decode($row['permissions']);
+			foreach($permissions as $permission){
+				$this->permissions[] = $permission;
+			}
 		}
 	}
 	
@@ -355,6 +387,14 @@ class User {
 			$s[] = substr($chars, (rand() % 59), 1);
 		}
 		return join("", $s);		
+	}
+	
+	public function setPermissions($permissions){
+		$this->permissions = $permissions;
+	}
+	
+	public function getPermissions(){
+		return $this->permissions;
 	}
 	
 }

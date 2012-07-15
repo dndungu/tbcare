@@ -1089,7 +1089,7 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 .gridContent {
 	background:#fcfcfc;
 	z-index:10;
-	min-height:480px;
+	min-height:300px;
 }
 
 .gridContentRecord {
@@ -1102,10 +1102,6 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 
 .grid .grid1of10{
 	text-align:center;
-}
-
-.gridContentRecord:last-child {
-	border-bottom:0 none;
 }
 
 .gridContentRecord:hover {
@@ -1160,7 +1156,7 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 	padding-bottom:10px;
 }
 
-.gridHeader, .gridColumns, .gridButton {
+.gridHeader, .gridColumns, .gridSecondaryButton {
 	background: #E8E8E8;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFFFF), to(#E8E8E8) );
 	background: -webkit-linear-gradient(#FFFFFF, #E8E8E8);
@@ -1170,6 +1166,36 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 	background: linear-gradient(#FFFFFF, #E8E8E8);
 	-pie-background: linear-gradient(#FFFFFF, #E8E8E8);
 	behavior: url(/skins/tbcare/images/pie.htc);
+}
+
+.gridPrimaryButton {
+	border:1px outset #00a0ce;
+	background: #007BB8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#007BB8), to(#00589f));
+	background: -webkit-linear-gradient(#007BB8, #00589f);
+	background: -moz-linear-gradient(#007BB8, #00589f);
+	background: -ms-linear-gradient(#007BB8, #00589f);
+	background: -o-linear-gradient(#007BB8, #00589f);
+	background: linear-gradient(#007BB8, #00589f);
+	-pie-background: linear-gradient(#007BB8, #00589f);	
+	behavior: url(/skins/tbcare/images/pie.htc);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+	padding: 4px 12px;
+	color:#fff;
+}
+
+.gridSecondaryButton {
+	background: #E8E8E8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFFFF), to(#E8E8E8) );
+	background: -webkit-linear-gradient(#FFFFFF, #E8E8E8);
+	background: -moz-linear-gradient(#FFFFFF, #E8E8E8);
+	background: -ms-linear-gradient(#FFFFFF, #E8E8E8);
+	background: -o-linear-gradient(#FFFFFF, #E8E8E8);
+	background: linear-gradient(#FFFFFF, #E8E8E8);
+	-pie-background: linear-gradient(#FFFFFF, #E8E8E8);
+	behavior: url(/skins/tbcare/images/pie.htc);	
 }
 
 .grid input[type="submit"], .grid input[type="button"], .pagenavigator {
@@ -1190,10 +1216,36 @@ input[type="text"].datepicker, .primaryContent select, .gridContentRecord select
 	text-align:right;
 }
 
-.grid input, .grid select, .grid textarea {
+.grid input[type="password"], .grid input[type="text"], .grid select, .grid textarea, .gridSecondaryButton {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;	
 	border: 1px solid #CCC;
 	padding: 4px 12px;
+}
+
+.gridContent form {
+	margin:0 1%;
+	padding:0 0 10px 0;
+}
+
+.gridContent form label span {
+	width:23%;
+	margin:0 1%;
+	display:inline-block;
+	text-align:right;
+}
+
+.gridContent select, .gridContent  input[type="text"], .gridContent  input[type="password"], .gridContent textarea {
+	width:48%;
+	margin:0 1%;
+	display:inline-block;
+}
+
+.gridContent input[type="submit"] {
+	margin:0 0 0 26%;
+}
+
+.gridContent label {
+	margin:10px 0 0 0;
 }

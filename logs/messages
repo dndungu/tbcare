@@ -1,544 +1,66 @@
-[08-Jul-2012 06:31:03 UTC] request.passed
-[08-Jul-2012 06:31:03 UTC] aliasing.passed
-[08-Jul-2012 06:31:03 UTC] authentication.passed
-[08-Jul-2012 06:31:03 UTC] routing.passed
-[08-Jul-2012 06:31:03 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/user.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 06:31:03 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 06:31:03 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[08-Jul-2012 06:31:03 UTC] assembly.passed
-[08-Jul-2012 06:31:03 UTC] latency.log
-[08-Jul-2012 06:34:36 UTC] request.passed
-[08-Jul-2012 06:34:36 UTC] aliasing.passed
-[08-Jul-2012 06:34:36 UTC] authentication.passed
-[08-Jul-2012 06:34:36 UTC] routing.passed
-[08-Jul-2012 06:34:36 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/user.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 06:34:36 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 06:34:36 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[08-Jul-2012 06:34:36 UTC] assembly.passed
-[08-Jul-2012 06:34:36 UTC] latency.log
-[08-Jul-2012 06:34:52 UTC] request.passed
-[08-Jul-2012 06:34:52 UTC] aliasing.passed
-[08-Jul-2012 06:34:52 UTC] authentication.passed
-[08-Jul-2012 06:34:52 UTC] routing.passed
-[08-Jul-2012 06:34:52 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/user.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 06:34:52 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 06:34:52 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[08-Jul-2012 06:34:52 UTC] assembly.passed
-[08-Jul-2012 06:34:52 UTC] latency.log
-[08-Jul-2012 06:35:26 UTC] request.passed
-[08-Jul-2012 06:35:26 UTC] aliasing.passed
-[08-Jul-2012 06:35:26 UTC] authentication.passed
-[08-Jul-2012 06:35:26 UTC] routing.passed
-[08-Jul-2012 06:37:06 UTC] request.passed
-[08-Jul-2012 06:37:06 UTC] aliasing.passed
-[08-Jul-2012 06:37:06 UTC] authentication.passed
-[08-Jul-2012 06:37:06 UTC] routing.passed
-[08-Jul-2012 06:37:06 UTC] assembly.passed
-[08-Jul-2012 06:37:06 UTC] latency.log
-[08-Jul-2012 08:39:21 UTC] PHP Fatal error:  Uncaught exception 'apps\ApplicationException' with message 'Please provide a valid login' in /var/www/tbcare/helpers/User.php:286
+[15-Jul-2012 06:25:42 UTC] Access to portal not allowed
+[15-Jul-2012 06:36:22 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 214
+[15-Jul-2012 06:36:22 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 214
+[15-Jul-2012 06:54:51 UTC] PHP Warning:  Illegal offset type in /var/www/tbcare/helpers/FormBuilder.php on line 206
+[15-Jul-2012 08:13:11 UTC] Access to portal not allowed
+[15-Jul-2012 08:22:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/Storage.php on line 99
+[15-Jul-2012 08:22:27 UTC] PHP Notice:  Undefined variable: conditions in /var/www/tbcare/helpers/Storage.php on line 114
+[15-Jul-2012 08:22:27 UTC] PHP Warning:  join(): Invalid arguments passed in /var/www/tbcare/helpers/Storage.php on line 114
+[15-Jul-2012 08:22:27 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 : SELECT * FROM role WHERE ' in /var/www/tbcare/helpers/Storage.php:35
 Stack trace:
-#0 /var/www/tbcare/apps/user/ResetPassword.php(19): helpers\User->resetPassword()
-#1 [internal function]: apps\user\ResetPassword->doPost()
-#2 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#3 /var/www/tbcare/base/Routing.php(21): base\Routing->route('user', 'ResetPassword')
-#4 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#5 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#6 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#7 [internal function]: base\Authentication->init(NULL)
-#8 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#9 /var/www/tbcare/base/Aliasing.php(22): helpers\Sandbox->fire('aliasing.passed')
-#10 [internal function]: base\Aliasing->init(NULL)
-#11 /var/www/tbcare/helpers/Sandbox.php(49) in /var/www/tbcare/helpers/User.php on line 286
-[08-Jul-2012 09:32:37 UTC] Access to portal not allowed
-[08-Jul-2012 10:50:54 UTC] PHP Notice:  Undefined index: site in /var/www/tbcare/helpers/Sandbox.php on line 93
-[08-Jul-2012 10:50:54 UTC] PHP Fatal error:  Call to a member function autoSetup() on a non-object in /var/www/tbcare/helpers/Sandbox.php on line 24
-[08-Jul-2012 12:23:58 UTC] Access to any portlets not allowed
-[08-Jul-2012 12:24:01 UTC] Access to any portlets not allowed
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/sites/tbcare/themes/tbcare/:1: parser error : Document is empty in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/sites/tbcare/themes/tbcare/:1: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[08-Jul-2012 12:24:33 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[08-Jul-2012 12:27:39 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message ''/var/www/tbcare/apps/content/grids/budgetlines.xml' is not readable' in /var/www/tbcare/helpers/Grid.php:35
+#0 /var/www/tbcare/helpers/Storage.php(81): helpers\Storage->query('SELECT * FROM r...')
+#1 /var/www/tbcare/helpers/FormBuilder.php(223): helpers\Storage->select(Array)
+#2 /var/www/tbcare/helpers/FormBuilder.php(205): helpers\FormBuilder->getOptions(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/FormBuilder.php(121): helpers\FormBuilder->createCheckboxOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#4 /var/www/tbcare/helpers/FormBuilder.php(95): helpers\FormBuilder->createElement(Object(SimpleXMLElement), Object(SimpleXMLElement), 'options')
+#5 /var/www/tbcare/helpers/FormBuilder.php(84): helpers\FormBuilder->createField(Object(SimpleXMLElement))
+#6 /var/www/tbcare/helpers/FormBuilder.php(73): helpers\FormB in /var/www/tbcare/helpers/Storage.php on line 35
+[15-Jul-2012 08:26:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/Storage.php on line 99
+[15-Jul-2012 08:26:00 UTC] PHP Notice:  Undefined variable: conditions in /var/www/tbcare/helpers/Storage.php on line 114
+[15-Jul-2012 08:26:00 UTC] PHP Warning:  join(): Invalid arguments passed in /var/www/tbcare/helpers/Storage.php on line 114
+[15-Jul-2012 08:26:00 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 : SELECT * FROM role WHERE ' in /var/www/tbcare/helpers/Storage.php:35
 Stack trace:
-#0 /var/www/tbcare/apps/content/GridStudio.php(13): helpers\Grid->setSource('/var/www/tbcare...')
-#1 [internal function]: apps\content\GridStudio->doGet()
-#2 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#3 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#4 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#5 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#6 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#7 [internal function]: base\Authentication->init(NULL)
-#8 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#9 /var/www/tbcare/base/Aliasing.php(22): helpers\Sandbox->fire('aliasing.passed')
-#10 [internal function]: base\Aliasing->in in /var/www/tbcare/helpers/Grid.php on line 35
-[08-Jul-2012 12:31:07 UTC] PHP Notice:  Undefined variable: URI in /var/www/tbcare/helpers/Grid.php on line 193
-[08-Jul-2012 12:31:16 UTC] PHP Notice:  Undefined variable: URI in /var/www/tbcare/helpers/Grid.php on line 193
-[08-Jul-2012 12:31:32 UTC] PHP Notice:  Undefined variable: URI in /var/www/tbcare/helpers/Grid.php on line 193
-[08-Jul-2012 12:33:32 UTC] PHP Notice:  Array to string conversion in /var/www/tbcare/helpers/Grid.php on line 194
-[08-Jul-2012 13:40:57 UTC] Access to portal not allowed
-[09-Jul-2012 00:19:09 UTC] Access to portal not allowed
-[09-Jul-2012 01:42:58 UTC] Access to portal not allowed
-[09-Jul-2012 02:12:55 UTC] PHP Fatal error:  Call to a member function buildQuery() on a non-object in /var/www/tbcare/helpers/Grid.php on line 48
-[09-Jul-2012 02:13:27 UTC] PHP Notice:  Array to string conversion in /var/www/tbcare/helpers/Grid.php on line 48
-[09-Jul-2012 02:16:44 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SHOW COLUMNS FROM `budgetlines`' in /var/www/tbcare/helpers/Storage.php:35
+#0 /var/www/tbcare/helpers/Storage.php(81): helpers\Storage->query('SELECT * FROM r...')
+#1 /var/www/tbcare/helpers/FormBuilder.php(223): helpers\Storage->select(Array)
+#2 /var/www/tbcare/helpers/FormBuilder.php(205): helpers\FormBuilder->getOptions(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/FormBuilder.php(121): helpers\FormBuilder->createCheckboxOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#4 /var/www/tbcare/helpers/FormBuilder.php(95): helpers\FormBuilder->createElement(Object(SimpleXMLElement), Object(SimpleXMLElement), 'options')
+#5 /var/www/tbcare/helpers/FormBuilder.php(84): helpers\FormBuilder->createField(Object(SimpleXMLElement))
+#6 /var/www/tbcare/helpers/FormBuilder.php(73): helpers\FormB in /var/www/tbcare/helpers/Storage.php on line 35
+[15-Jul-2012 08:46:21 UTC] PHP Notice:  Undefined variable: options in /var/www/tbcare/helpers/FormBuilder.php on line 200
+[15-Jul-2012 08:46:54 UTC] PHP Warning:  helpers\FormBuilder::getOptions(): Node no longer exists in /var/www/tbcare/helpers/FormBuilder.php on line 218
+[15-Jul-2012 08:46:54 UTC] PHP Warning:  helpers\FormBuilder::getOptions(): Node no longer exists in /var/www/tbcare/helpers/FormBuilder.php on line 218
+[15-Jul-2012 08:46:54 UTC] PHP Warning:  helpers\FormBuilder::getOptions(): Node no longer exists in /var/www/tbcare/helpers/FormBuilder.php on line 220
+[15-Jul-2012 08:46:54 UTC] PHP Warning:  helpers\FormBuilder::getOptions(): Node no longer exists in /var/www/tbcare/helpers/FormBuilder.php on line 220
+[15-Jul-2012 08:46:54 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 : SELECT * FROM ' in /var/www/tbcare/helpers/Storage.php:35
 Stack trace:
-#0 /var/www/tbcare/helpers/Storage.php(275): helpers\Storage->query('SHOW COLUMNS FR...')
-#1 /var/www/tbcare/helpers/Storage.php(284): helpers\Storage->setTableColumns('budgetlines')
-#2 /var/www/tbcare/helpers/QueryBuilder.php(65): helpers\Storage->getColumns('budgetlines')
-#3 /var/www/tbcare/helpers/QueryBuilder.php(30): helpers\QueryBuilder->buildOrderBy()
-#4 /var/www/tbcare/helpers/Grid.php(48): helpers\QueryBuilder->buildQuery()
-#5 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#6 [internal function]: apps\content\GridStudio->doPost()
-#7 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#8 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#9 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#10 /var/www/tbcare/helper in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 02:17:46 UTC] Access to portal not allowed
-[09-Jul-2012 02:29:48 UTC] PHP Fatal error:  Call to undefined method helpers\Grid::queryBuilder() in /var/www/tbcare/helpers/Grid.php on line 51
-[09-Jul-2012 02:30:21 UTC] PHP Fatal error:  Call to undefined method helpers\Grid::getOrderDirection() in /var/www/tbcare/helpers/Grid.php on line 56
-[09-Jul-2012 03:29:39 UTC] Access to portal not allowed
-[09-Jul-2012 05:04:45 UTC] Access to portal not allowed
-[09-Jul-2012 05:53:59 UTC] Access to portal not allowed
-[09-Jul-2012 05:53:59 UTC] Access to portal not allowed
-[09-Jul-2012 07:05:33 UTC] Access to portal not allowed
-[09-Jul-2012 07:05:33 UTC] Access to portal not allowed
-[09-Jul-2012 07:16:34 UTC] Access to portal not allowed
-[09-Jul-2012 07:16:34 UTC] Access to portal not allowed
-[09-Jul-2012 07:18:23 UTC] Access to portal not allowed
-[09-Jul-2012 07:18:23 UTC] Access to portal not allowed
-[09-Jul-2012 07:48:55 UTC] Access to portal not allowed
-[09-Jul-2012 08:40:35 UTC] Access to portal not allowed
-[09-Jul-2012 08:40:49 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:47:54 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:49:43 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:49:46 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:49:47 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:49:49 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:49:49 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:55:53 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 08:55:59 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 09:01:33 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 09:01:39 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 09:01:46 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 09:14:13 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 09:14:20 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 12:48:38 UTC] Access to portal not allowed
-[09-Jul-2012 12:48:47 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 12:48:50 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 12:48:53 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 13:03:31 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 13:05:52 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Table 'tbcare.budgetlines' doesn't exist : SELECT COUNT(`ID`) `rowCount` FROM `budgetlines` ' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#10 /var/www/tbcare/base/Al in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 13:32:06 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Unknown column 'firstname' in 'field list' : SELECT `ID` AS `primarykey`, `title`, `firstname`, `lastname`, `balance`, `creationTime` FROM `budget`  ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT `ID` AS ...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/ in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 13:32:10 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Unknown column 'firstname' in 'field list' : SELECT `ID` AS `primarykey`, `title`, `firstname`, `lastname`, `balance`, `creationTime` FROM `budget`  ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT `ID` AS ...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/ in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 13:34:50 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Unknown column 'firstname' in 'field list' : SELECT `ID` AS `primarykey`, `title`, `firstname`, `lastname`, `balance`, `creationTime` FROM `budget`  ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT `ID` AS ...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/ in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 13:34:54 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Unknown column 'firstname' in 'field list' : SELECT `ID` AS `primarykey`, `title`, `firstname`, `lastname`, `balance`, `creationTime` FROM `budget`  ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT `ID` AS ...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/ in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:08:46 UTC] Access to portal not allowed
-[09-Jul-2012 14:09:27 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'ID' in field list is ambiguous : SELECT COUNT(`ID`) `rowCount` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`)' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/San in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:09:40 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'ID' in field list is ambiguous : SELECT COUNT(`ID`) `rowCount` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`)' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/San in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:10:16 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'ID' in field list is ambiguous : SELECT COUNT(`ID`) `rowCount` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`)' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(49): helpers\Storage->query('SELECT COUNT(`I...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
-#8 [internal function]: base\Authentication->init(NULL)
-#9 /var/www/tbcare/helpers/San in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:12:26 UTC] PHP Fatal error:  Call to undefined method SimpleXMLElement::columns() in /var/www/tbcare/helpers/QueryBuilder.php on line 37
-[09-Jul-2012 14:12:39 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`,' at line 1 : SELECT ``budget`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`, `creationTime` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`) ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT ``budget...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->ini in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:14:21 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`,' at line 1 : SELECT ``budget`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`, `creationTime` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`) ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT ``budget...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->ini in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:15:10 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`,' at line 1 : SELECT ``budget`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`, `creationTime` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`) ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT ``budget...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->ini in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:16:41 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`,' at line 1 : SELECT ``budget`.`ID`` AS `primarykey`, `title`, `budget_line_id`, `financier_name`, `balance`, `creationTime` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`) ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT ``budget...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->ini in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:19:29 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'creationTime' in field list is ambiguous : SELECT `budget`.`ID`, `title`, `budget_line_id`, `financier_name`, `balance`, `creationTime` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`) ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT `budget`...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication.... in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:19:58 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'creationTime' in field list is ambiguous : SELECT `budget`.`ID`, `title`, `budget_line_id`, `financier_name`, `balance`, `creationTime` FROM `budget` LEFT JOIN `financier` on (`budget`.`financier_code` = `financier`.`financier_code`) ORDER BY `budget`.`title` asc LIMIT 0, 20' in /var/www/tbcare/helpers/Storage.php:35
-Stack trace:
-#0 /var/www/tbcare/helpers/Grid.php(54): helpers\Storage->query('SELECT `budget`...')
-#1 /var/www/tbcare/apps/content/GridStudio.php(32): helpers\Grid->browseRecords()
-#2 [internal function]: apps\content\GridStudio->doPost()
-#3 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
-#4 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'GridStudio')
-#5 [internal function]: base\Routing->init(Object(SimpleXMLElement))
-#6 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
-#7 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication.... in /var/www/tbcare/helpers/Storage.php on line 35
-[09-Jul-2012 14:47:37 UTC] Access to portal not allowed
-[11-Jul-2012 05:54:22 UTC] Access to portal not allowed
-[11-Jul-2012 07:18:50 UTC] Access to portal not allowed
-[11-Jul-2012 07:18:53 UTC] PHP Fatal error:  Call to private method apps\Application::checkCommand() from context 'apps\content\GridStudio' in /var/www/tbcare/apps/content/GridStudio.php on line 18
-[11-Jul-2012 07:22:09 UTC] PHP Fatal error:  Call to private method apps\Application::checkCommand() from context 'apps\content\GridStudio' in /var/www/tbcare/apps/content/GridStudio.php on line 18
-[11-Jul-2012 09:26:09 UTC] Access to portal not allowed
-[11-Jul-2012 09:26:18 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:26:18 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:18 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:26:25 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:26:25 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:26:25 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:28:58 UTC] Access to portal not allowed
-[11-Jul-2012 09:30:27 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:30:27 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:30:27 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:31:31 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:31:31 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/var/www/tbcare/sites/tbcare/themes/tbcare/panel.xsl&quot; in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::importStylesheet() expects parameter 1 to be object, boolean given in /var/www/tbcare/base/Assembly.php on line 93
-[11-Jul-2012 09:31:31 UTC] PHP Warning:  XSLTProcessor::transformToXml(): No stylesheet associated to this object in /var/www/tbcare/base/Assembly.php on line 95
-[11-Jul-2012 09:48:59 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 09:48:59 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:30:16 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:30:16 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:30:19 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:30:19 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:30:22 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:30:22 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:31:52 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:31:52 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:32:04 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 10:32:04 UTC] PHP Strict Standards:  Only variables should be passed by reference in /var/www/tbcare/helpers/Grid.php on line 86
-[11-Jul-2012 13:14:39 UTC] Access to portal not allowed
+#0 /var/www/tbcare/helpers/Storage.php(81): helpers\Storage->query('SELECT * FROM ')
+#1 /var/www/tbcare/helpers/FormBuilder.php(224): helpers\Storage->select(Array)
+#2 /var/www/tbcare/helpers/FormBuilder.php(200): helpers\FormBuilder->getOptions(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/FormBuilder.php(121): helpers\FormBuilder->createCheckboxOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#4 /var/www/tbcare/helpers/FormBuilder.php(95): helpers\FormBuilder->createElement(Object(SimpleXMLElement), Object(SimpleXMLElement), 'options')
+#5 /var/www/tbcare/helpers/FormBuilder.php(84): helpers\FormBuilder->createField(Object(SimpleXMLElement))
+#6 /var/www/tbcare/helpers/FormBuilder.php(73): helpers\FormBuilder->createF in /var/www/tbcare/helpers/Storage.php on line 35
+[15-Jul-2012 09:24:45 UTC] PHP Notice:  Undefined index: ID in /var/www/tbcare/helpers/FormBuilder.php on line 388
+[15-Jul-2012 09:24:54 UTC] PHP Notice:  Undefined index: ID in /var/www/tbcare/helpers/FormBuilder.php on line 388
+[15-Jul-2012 09:26:17 UTC] PHP Notice:  Undefined index: ID in /var/www/tbcare/helpers/FormBuilder.php on line 388
+[15-Jul-2012 10:12:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/tbcare/helpers/FormBuilder.php on line 341
+[15-Jul-2012 10:12:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/tbcare/helpers/FormBuilder.php on line 341
+[15-Jul-2012 10:40:12 UTC] PHP Notice:  Undefined variable: type in /var/www/tbcare/helpers/FormBuilder.php on line 359
+[15-Jul-2012 10:40:12 UTC] PHP Notice:  Undefined variable: type in /var/www/tbcare/helpers/FormBuilder.php on line 359
+[15-Jul-2012 10:40:12 UTC] PHP Notice:  Undefined variable: type in /var/www/tbcare/helpers/FormBuilder.php on line 359
+[15-Jul-2012 10:40:12 UTC] PHP Notice:  Undefined variable: type in /var/www/tbcare/helpers/FormBuilder.php on line 359
+[15-Jul-2012 10:40:12 UTC] PHP Notice:  Undefined variable: type in /var/www/tbcare/helpers/FormBuilder.php on line 359
+[15-Jul-2012 10:40:12 UTC] PHP Notice:  Undefined variable: type in /var/www/tbcare/helpers/FormBuilder.php on line 359
+[15-Jul-2012 10:40:12 UTC] PHP Fatal error:  Function name must be a string in /var/www/tbcare/helpers/FormBuilder.php on line 349
+[15-Jul-2012 10:45:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 10:45:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
+[15-Jul-2012 12:16:26 UTC] Access to portal not allowed

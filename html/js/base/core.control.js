@@ -13,7 +13,8 @@ core.control  = {
 		html= html.replace(pattern, function(tag){
 			var key = tag.replace('{{', '').replace('}}', '');
 			var value = record[key];
-			if(key == 'creationTime') {
+			var magicTime = ['creationTime','expiryTime'];
+			if(magicTime.indexOf(key) != -1) {
 				value = that.getDate(value); 
 			}
 			if(typeof value == 'string') {

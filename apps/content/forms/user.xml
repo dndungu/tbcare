@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="user" storage="global" class="validate" primarykey="ID">
+	<field name="firstname" type="varchar" length="255">
+	    <element name="firstname" type="text" label="firstname.label" placeholder="firstname.placeholder">
+	        <class>text-input</class>
+	    </element>
+	</field>
+	<field name="lastname" type="varchar" length="128">
+	    <element name="lastname" type="text" label="lastname.label" placeholder="lastname.placeholder">
+	        <class>text-input</class>
+	    </element>
+	</field>
+	<field name="login" type="varchar"  length="255">
+	    <element name="login" type="text" label="login.label" placeholder="login.placeholder">
+	        <class>text-input</class>
+	    </element>
+	</field>
+	<field name="email" type="varchar" length="255">
+	    <element name="email" type="text" label="email.label" placeholder="email.placeholder">
+	        <class>text-input</class>
+	    </element>
+	</field>
+	<field name="role" type="options" join="rolemap">
+		<element name="role" type="options" lookup="role" value="ID" label="title" filter='{"isSystem":"No"}'>
+			<class>joinoptions</class>
+		</element>
+	</field>
+	<field name="expiryTime" type="int">
+	    <element name="expiryTime" type="text" label="expiryTime.label" placeholder="expiryTime.placeholder">
+	        <class>text-input</class>
+	    </element>	    
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>
+</form>
