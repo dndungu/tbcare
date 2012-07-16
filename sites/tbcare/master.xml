@@ -25,36 +25,44 @@
 	    <portlet module="content" controller="FormStudio" access="permission.budget"/>
 	</portal>	
 	<portal type="raw" access="permission.funds_allocation">
-	    <navigation parent="finance" group="panel" uri="/grid/funds_allocation" label="finance.funds_allocation" weight="22"></navigation>
-	    <portlet module="core" controller="Navigation" access="permission.funds_allocation"/>
+	    <navigation parent="finance" group="panel" uri="/grid/fund_allocation" label="finance.funds_allocation" weight="22"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.funds_allocation"/>
 	</portal>
+	<portal type="raw" access="permission.funds_allocation">
+	    <navigation parent="finance" group="hidden" uri="/form/fund_allocation" label="finance.funds_allocation" weight="22"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.funds_allocation"/>
+	</portal>	
 	<portal type="raw" access="permission.financier">
 	    <navigation parent="finance" group="panel" uri="/grid/financier" label="financiers.label" weight="23"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.financier"/>
-	</portal>			
+	</portal>
+	<portal type="raw" access="permission.financier">
+	    <navigation parent="finance" group="hidden" uri="/form/financier" label="financiers.label" weight="23"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.financier"/>
+	</portal>	
 	<portal type="raw" access="permission.payments.section">
 	    <navigation id="payments" parent="root" group="panel" uri="/payments" label="payments" weight="30" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="GridStudio" access="permission.payments.section"/>
+	    <portlet module="content" controller="GridStudio" access="permission.payments.section"/>
 	</portal>
 	<portal type="raw" access="permission.payments.completed">
 	    <navigation parent="payments" group="panel" uri="/complete" label="payment.completed" weight="31"></navigation>
-	    <portlet module="core" controller="GridStudio" access="permission.payments.completed"/>
+	    <portlet module="content" controller="GridStudio" access="permission.payments.completed"/>
 	</portal>	
 	<portal type="raw" access="permission.payments.pending">
 	    <navigation parent="payments" group="panel" uri="/pending" label="payment.pending" weight="32"></navigation>
-	    <portlet module="core" controller="GridStudio" access="permission.payments.pending"/>
+	    <portlet module="content" controller="GridStudio" access="permission.payments.pending"/>
 	</portal>
 	<portal type="raw" access="permission.payments.failed">
 	    <navigation parent="payments" group="panel" uri="/failed" label="payment.failed" weight="33"></navigation>
-	    <portlet module="core" controller="GridStudio" access="permission.payments.failed"/>
+	    <portlet module="content" controller="GridStudio" access="permission.payments.failed"/>
 	</portal>
 	<portal type="raw" access="permission.payments.reversed">
 	    <navigation parent="payments" group="panel" uri="/reversed" label="payments.reversed" weight="34"></navigation>
-	    <portlet module="core" controller="GridStudio" access="permission.payments.reversed"/>
+	    <portlet module="content" controller="GridStudio" access="permission.payments.reversed"/>
 	</portal>	
 	<portal type="raw" access="permission.reconciliation.section">
 	    <navigation id="reconciliation" parent="root" group="panel" uri="/null" label="reconciliation" weight="40" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="GridStudio" access="permission.reconciliation.section"/>
+	    <portlet module="content" controller="GridStudio" access="permission.reconciliation.section"/>
 	</portal>
 	<portal type="raw" access="permission.reconciliation.gateway">
 		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="41"></navigation>
@@ -74,7 +82,7 @@
 	</portal>	
 	<portal type="raw" access="permission.configuration.section">
 	    <navigation id="configuration" parent="root" group="panel" uri="/configuration" label="configuration" weight="50" class="nav-top-item"></navigation>
-	    <portlet module="core" controller="GridStudio" access="permission.configuration"/>
+	    <portlet module="content" controller="GridStudio" access="permission.configuration"/>
 	</portal>
 	<portal type="raw" access="permission.users.section">
 	    <navigation id="users" parent="root" group="panel" uri="/null" label="security" weight="60" class="nav-top-item"></navigation>

@@ -3,6 +3,7 @@
 namespace html {
 	session_name('_g');
 	session_start();
+	purge();exit;
 	$start = microtime(true);
 	ob_start();
 	require_once("../setup.php");
@@ -13,7 +14,6 @@ namespace html {
 	$latency = (microtime(true) - $start)*1000;
 	$controller->log($latency);
 	ob_flush();
-	
 	function purge(){
 		$_SESSION = array();
 		if (isset($_COOKIE[session_name()])) {

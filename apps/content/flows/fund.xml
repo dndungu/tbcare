@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<flow name="fund">
-    <select access="finance.fund"></select>
-    <insert access="finance.fund.insert"></insert>
-    <update access="finance.fund.update"></update>
-    <delete access="finance.fund.delete"></delete>
-</flow>

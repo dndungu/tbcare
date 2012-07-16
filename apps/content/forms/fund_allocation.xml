@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="fund_allocation" class="validate" storage="local" primarykey="ID">
+	<field name="credit" type="decimal" length="12,2">
+		<element name="credit" type="text" label="amount.label" placeholder="amount.placeholder"></element>
+	</field>
+	<field name="budget_id" type="int" length="5">
+		<element name="budget_id" type="select" lookup="budget" display="title" value="budget_id" label="finance.budget.label" placeholder="finance.budget.label"></element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>		
+</form>

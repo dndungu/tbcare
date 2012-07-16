@@ -42,6 +42,7 @@ core.control.extend('form', function(){
 				var url = that.source;
 				core.ajax.post(url, data, function(){
 					if(arguments[0].readyState != 4 || arguments[0].status != 200) return;
+					console.info(arguments[0].responseText);
 					that.grid.refresh();
 					if(command == "update"){
 						that.html.slideUp();

@@ -173,6 +173,8 @@
     <label index="finance.budget">Budget Lines</label>
     <label index="budget_line_id.label">Budgetline ID</label>
     <label index="finance.funds_allocation">Funds Allocation</label>
+    <label index="amount.label">Amount</label>
+    <label index="amount.placeholder">0.00</label>
     <label index="financiers.label">Financiers</label>
     <label index="financier_code.label">Abbreviation</label>
     <label index="financier_code.placeholder">Enter abbreviation</label>
@@ -204,6 +206,15 @@
 	<label index="permission.users.update">Edit users</label>
 	<label index="permission.users.delete">Delete users</label>
 	<label index="administrator.label">Administrator</label>
+	<label index="permission.budget.insert">Create budget line</label>
+	<label index="permission.budget.update">Edit budget line</label>
+	<label index="permission.budget.delete">Delete budget line</label>
+	<label index="permission.funds_allocation.insert">Create funds allocation</label>
+	<label index="permission.funds_allocation.update">Edit funds allocation</label>
+	<label index="permission.funds_allocation.delete">Delete funds allocation</label>
+	<label index="permission.financier.insert">Create financiers</label>
+	<label index="permission.financier.update">Edit financiers</label>
+	<label index="permission.financier.delete">Delete financiers</label>
 	<label index="accountant.label">Accountant</label>
 	<label index="auditor.label">Auditor</label>
 </language>
