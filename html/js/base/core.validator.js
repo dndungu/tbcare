@@ -23,7 +23,6 @@ core.validator = {
 	setSubmitCheck: function(){
 		var form = $(arguments[0]);
 		form.submit(function(event){
-			event.preventDefault();
 			var subject = $(this);
 			var extension = core.validator;
 			var name = String(subject.attr('name'));
@@ -38,17 +37,14 @@ core.validator = {
 				var dateField = subject.find('input.date');
 				var dateFormat = dateField.val();
 				dateField.val(Date.parse(dateFormat)/1000);
-				var uri = String(subject.find('input[name="gereji"]').val());
-				var type = name + '.submit';
-				var data = {data: subject.serialize(), action: uri};
-				dateField.val(dateFormat);
-				var event = {type: type, data: data};
-				core.validator.sandbox.fire(event);
+			}else{
+				event.preventDefault();
 			}
 		});		
 	},
 	setStepCheck: function(){
 		var steps = $('.step', arguments[0]);
+		if(!steps.length) return;
 		var extension = core.validator;
 		steps.find('input.stepNext').click(function(){
 			var step = $(this).parents('form>.step');

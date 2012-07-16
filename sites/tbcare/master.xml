@@ -126,5 +126,9 @@
 	    <portlet module="user" controller="SignOut" access="permission.system.access"/>
 	    <portlet module="core" controller="Navigation" access="permission.system.access"/>
         <portlet module="core" controller="SiteSetting" access="permission.system.access"/>
-	</portal>	
+	</portal>
+	<portal type="raw" access="permission.system.access">
+		<navigation parent="l18n" group="l18n" uri="/l18n" label="l18n"></navigation>
+		<portlet module="core" controller="L18n" access="permission.system.access"/>
+	</portal>
 </package>

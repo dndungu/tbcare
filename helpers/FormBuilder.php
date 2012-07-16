@@ -245,7 +245,8 @@ class FormBuilder {
 	
 	protected function createTextarea(&$field, &$element){
 		$name = (string) $field->attributes()->name;
-		return "<textarea name=\"$name\">{{$name}}</textarea>";
+		$value = $this->elementValue($element);
+		return "<textarea name=\"$name\">$value</textarea>";
 	}
 	
 	protected function createButtons(&$buttons){

@@ -11,6 +11,7 @@ core.control.extend('form', function(){
 		primarykey: false,
 		readyCallback: false,
 		activity: {},
+		validation: false,
 		getTemplate: function(){
 			var that = this;
 			core.ajax.get(that.source, function(){
@@ -36,18 +37,17 @@ core.control.extend('form', function(){
 		initPoster: function(){
 			var command = this.command;
 			var that = this;
-			that.html.unbind('submit').submit(function(event){
-				event.preventDefault();
+			that.html.submit(function(event){
 				var data = that.postParameters();
 				var url = that.source;
 				core.ajax.post(url, data, function(){
 					if(arguments[0].readyState != 4 || arguments[0].status != 200) return;
-					console.info(arguments[0].responseText);
 					that.grid.refresh();
 					if(command == "update"){
 						that.html.slideUp();
 					}
 				});
+				event.preventDefault();
 			});
 			that.html.find('input[name="cancel"]').unbind('mousedown').mousedown(function(event){
 				event.stopPropagation();
@@ -102,6 +102,9 @@ core.control.extend('form', function(){
 			getHTML: function(){
 				_private.html.css({display: 'block'});
 				_private.initPoster();
+				_private.validation = setTimeout(function(){
+					_private.sandbox.fire({type: "validate.form", data: _private.html});
+				}, 1500);
 				return _private.html;
 			},
 			setGrid: function(){

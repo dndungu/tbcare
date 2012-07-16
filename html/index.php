@@ -3,7 +3,7 @@
 namespace html {
 	session_name('_g');
 	session_start();
-	purge();exit;
+
 	$start = microtime(true);
 	ob_start();
 	require_once("../setup.php");

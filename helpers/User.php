@@ -208,7 +208,7 @@ class User {
 			if($input['password'] === $users[0]['password']) {
 				$user = $users[0];
 				$this->ownGuest($user['ID']);
-				$permissionQuery = sprintf("SELECT `title` FROM `permissionmap` LEFT JOIN `permission` ON (`permissionmap`.`permission` = `permission`.`ID`) WHERE `site` = %d AND `role` IN (SELECT `role` FROM `rolemap` WHERE `site` = %d AND `user` = %d)", $site, $site, $user['ID']);
+				$permissionQuery = sprintf("SELECT `title` FROM `permissionmap` LEFT JOIN `permission` ON (`permissionmap`.`permission` = `permission`.`ID`) WHERE `site` = %d AND `role` IN (SELECT `role` FROM `rolemap` WHERE `site` = %d AND `user` = %d)", $site, $site, $user['ID']);	
 				$permissions = $this->sandbox->getGlobalStorage()->query($permissionQuery);
 				$this->permissions = array();
 				if($permissions){
@@ -216,7 +216,7 @@ class User {
 						$this->permissions[] = $row['title'];
 					}
 				}
-				$roles = $this->sandbox->getGlobalStorage()->query(sprintf("SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = %d AND `site` = %d", $user['ID'], $site));
+				$roles = $this->sandbox->getGlobalStorage()->query(sprintf("SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = %d AND `rolemap`.`site` = %d", $user['ID'], $site));
 				$this->roles = array();
 				if($roles){
 					foreach($roles as $row){

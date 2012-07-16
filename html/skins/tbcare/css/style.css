@@ -1024,16 +1024,6 @@ ul.content-box-tabs li a:hover,.shortcut-button span:hover {
 	margin:0 1%;	
 }
 
-.gridContentRecord textarea, .gridContentRecord input[type="text"], .gridContentRecord input[type="password"] {
-	width:74%;
-	margin:0 1%;	
-}
-
-input[type="text"].datepicker, .primaryContent select, .gridContentRecord select {
-	width:18%;
-	margin:0 1%;
-}
-
 .gridHeader {
 	font-size:1.5em;
 	-webkit-border-radius: 4px 4px 0 0;

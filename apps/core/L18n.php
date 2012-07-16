@@ -1,6 +1,6 @@
 <?php
 
-namespace apps\l18n;
+namespace apps\core;
 
 class L18n extends \apps\Application {
 	public function doGet(){

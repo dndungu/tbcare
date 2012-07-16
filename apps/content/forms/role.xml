@@ -3,6 +3,7 @@
 	<field name="title" type="varchar" length="32">
 		<element name="title" type="text" label="role.label" placeholder="role.placeholder">
 			 <class>text-input</class>
+			 <class>required</class>
 		</element>
 	</field>
 	<field name="permission" type="options" join="permissionmap">

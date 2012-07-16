@@ -181,6 +181,7 @@
     <label index="financier.label">Financier</label>
     <label index="financier_name.label">Financier</label>
     <label index="financier_name.placeholder">Enter financier name</label>
+    <label index="select.financier_name.placeholder">Select financier</label>
     <label index="creationTime.label">Time Created</label>
     <label index="name.label">Name</label>
     <label index="balance.label">Balance</label>

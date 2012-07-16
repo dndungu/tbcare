@@ -13,6 +13,7 @@
 				<![endif]-->
 				<script src="/js/libraries/jquery-1.7.2.min.js" type="text/javascript"></script>
 				<script src="/js/base/core.js" type="text/javascript"></script>
+				<script src="/l18n" type="text/javascript"></script>
 				<script src="/js/base/core.sandbox.js" type="text/javascript"></script>
 				<script src="/js/base/core.ajax.js" type="text/javascript"></script>
 				<script src="/js/base/core.navigation.js" type="text/javascript"></script>
