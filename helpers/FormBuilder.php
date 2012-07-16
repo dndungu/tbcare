@@ -8,6 +8,8 @@ class FormBuilder {
 	
 	private $action = NULL;
 	
+	private $flow = NULL;
+	
 	private $name = NULL;
 	
 	private $sandbox = NULL;
@@ -32,7 +34,19 @@ class FormBuilder {
 		$this->name = (string) $this->definition->attributes()->name;
 		$action = is_null($this->action) ? $this->sandbox->getMeta('URI') : $this->action;
 		$this->setAction($action);
+		$this->initFlow();
 	}
+	
+	private function initFlow(){
+		$base = $this->sandbox->getMeta('base');
+		require_once("$base/helpers/Flow.php");
+		$name = $this->name;
+		$filename = "$base/apps/content/flows/$name.xml";
+		if(is_file($filename)){
+			$this->flow = new Flow($this->sandbox);
+			$this->flow->setSource($filename);
+		}
+	}	
 	
 	public function getDefinition(){
 		return $this->definition;
@@ -187,9 +201,11 @@ class FormBuilder {
 			$value = (string) $element->attributes()->value;
 			$display = (string) $element->attributes()->display;
 			$options =$this->getStorage()->select(array("table" => $table, 'constraints' => array('inTrash' => 'No')));
-			foreach($options as $option){
-				$select = $default == $option[$value] ? ' selected="selected"' : '';
-				$html[] = "\t\t\t\t".'<option value="'.$option[$value].'"'.$select.'>'.$option[$display].'</option>';
+			if($options){
+				foreach($options as $option){
+					$select = $default == $option[$value] ? ' selected="selected"' : '';
+					$html[] = "\t\t\t\t".'<option value="'.$option[$value].'"'.$select.'>'.$option[$display].'</option>';
+				}
 			}
 		}
 		$html[] = "\t\t\t</select>";
@@ -207,8 +223,10 @@ class FormBuilder {
 		$class = $this->getClasses($element);
 		foreach($options as $option){
 			$html[] = "<label $labelClass>";
-			$title = $option[$label].'.label';
-			$html[] = "\t\t\t".'<span>'.$translator->translate($title).'</span>';
+			$title = $translator->translate($option[$label]);
+			$title = strlen($title) ? $title : $translator->translate($option[$label].'.label');
+			$title = strlen($title) ? $title : $option[$label];
+			$html[] = "\t\t\t".'<span>' . $title . '</span>';
 			$html[] = "\t\t\t".'<input type="checkbox" name="'.$name.'[]" value="'.$option[$value].'"' . $class . '/>';
 			$html[] = "\t\t</label>";
 		}
@@ -231,6 +249,7 @@ class FormBuilder {
 	}
 	
 	protected function createButtons(&$buttons){
+		$html = array();
 		foreach($buttons->button as $button){
 			$type = (string) $button->attributes()->type;
 			switch($type){
@@ -330,6 +349,7 @@ class FormBuilder {
 	}
 	
 	public function createRecord(){
+		if(!$this->flow->isInsertable()) throw new HelperException('data access violation');;
 		$input = $this->sandbox->getHelper('input');
 		$name = (string) $this->definition->attributes()->name;
 		$record['table'] = $name;
@@ -345,15 +365,15 @@ class FormBuilder {
 		}
 		try {
 			$insertID = $this->getStorage()->insert($record);
-			$this->createRecordOptions($insertID);
+			$this->createOptions($insertID);
 			return json_encode(array("success" => $insertID), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 		}catch(HelperException $e){
 			throw new \apps\ApplicationException($e->getMessage());
 		}
 	}
-	
-	private function createRecordOptions($insertID){
-		$fields = $this->getOptionFields();
+		
+	private function createOptions($insertID){
+		$fields = $this->getSpecialFields('options');
 		if(!$fields) return;
 		$name = (string) $this->definition->attributes()->name;
 		foreach($fields as $field){
@@ -372,25 +392,6 @@ class FormBuilder {
 					$insert['content'] = $content;
 					$this->getStorage()->insert($insert);
 				}
-			}
-		}
-	}
-	
-	private function updateOptionRecords(){
-		$fields = $this->getOptionFields();
-		if(!$fields) return;
-		foreach($fields as $field){
-			$name = (string) $field->attributes()->name;
-			if(!array_key_exists($name, $_POST)) continue;
-			$join = (string) $field->attributes()->join;
-			foreach($_POST[$key] as $option){
-				if((integer) $option == 0) continue;
-				$insert['table'] = $join;
-				if((string) $this->definition->attributes()->storage != 'local'){
-					$content['site'] = $this->sandbox->getHelper('site')->getID();
-				}
-				$content[$name] = $option;
-				$content['creationTime'] = time();
 			}
 		}
 	}	
@@ -414,6 +415,7 @@ class FormBuilder {
 	}
 	
 	public function selectRecord(){
+		if(!$this->flow->isSelectable()) throw new HelperException('data access violation');;
 		$primarykey = $this->sandbox->getHelper('input')->postInteger('primarykey');
 		if(!$primarykey) return;
 		$key = (string) $this->definition->attributes()->primarykey;
@@ -425,7 +427,7 @@ class FormBuilder {
 	}
 	
 	protected function getOptionValues($rows){
-		$fields = $this->getOptionFields();
+		$fields = $this->getSpecialFields('options');
 		if(!$fields) return $rows;
 		$table = (string) $this->definition->attributes()->name;
 		$storage = (string) $this->definition->attributes()->storage;
@@ -454,11 +456,13 @@ class FormBuilder {
 	}
 	
 	public function updateRecord(){
+		if(!$this->flow->isUpdateable()) throw new HelperException('data access violation');;
 		if(!array_key_exists('primarykey', $_POST)) return;
 		$columns = $this->getColumns();
 		$key = (string) $this->definition->attributes()->primarykey;
 		$update['table'] = (string) $this->definition->attributes()->name;
-		$update['constraints'][$key] = $this->getStorage()->sanitize($_POST['primarykey']);
+		$ID = $this->getStorage()->sanitize($_POST['primarykey']);
+		$update['constraints'][$key] = $ID;
 		if((string) $this->definition->attributes()->storage != 'local'){
 			$update['constraints']['site'] = $this->sandbox->getHelper('site')->getID();
 		}
@@ -466,8 +470,40 @@ class FormBuilder {
 			$update['content'][$column] = $this->sandbox->getHelper('input')->postString($column);
 		}
 		$result['success'] = $this->getStorage()->update($update);
+		$this->updateOptions($this->getOptionValues(array(array($key => $ID))));
 		return json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);		
 	}
+	
+	private function updateOptions($optionValues){
+		$fields = $this->getSpecialFields('options');
+		if(!$fields) return;
+		$table = (string) $this->definition->attributes()->name;
+		$primarykey = (string) $this->definition->attributes()->primarykey;
+		$siteID = $this->sandbox->getHelper('site')->getID();
+		$content['site'] = $siteID;
+		foreach($fields as $field){
+			$name = (string) $field->attributes()->name;
+			if(!array_key_exists($name, $_POST)) continue;
+			$records = array_key_exists($name, $optionValues[0]) ? $optionValues[0][$name] : NULL;
+			$join = (string) $field->attributes()->join;
+			$dataScope = (string) $this->definition->attributes()->storage == 'local' ? "" : sprintf("AND `site` = %d", $siteID);
+			$this->getStorage()->query(sprintf("DELETE FROM `%s` WHERE `%s` = %d %s AND `%s` NOT IN (%s)", $join, $table, $optionValues[0][$primarykey], $dataScope, $name, implode(', ', $_POST[$name])));
+			foreach($_POST[$name] as $option){
+				$record = (integer) $option;
+				if($record == 0) continue;
+				if(in_array($record, explode(', ', $records))) continue;
+				if((string) $this->definition->attributes()->storage != 'local'){
+					$content['site'] = $siteID;
+				}
+				$insert['table'] = $join;
+				$content[$name] = $record;
+				$content[$table] = $optionValues[0][$primarykey];
+				$content['creationTime'] = time();
+				$insert['content'] = $content;
+				$this->getStorage()->insert($insert);
+			}
+		}
+	}	
 	
 	protected function getColumns(){
 		$fields = $this->getFields();
@@ -497,10 +533,10 @@ class FormBuilder {
 		return $fields;
 	}
 	
-	protected function getOptionFields(){
+	protected function getSpecialFields($type){
 		$fields = $this->getFields();
 		foreach($fields as $field){
-			if((string) $field->attributes()->type == 'options'){
+			if((string) $field->attributes()->type == $type){
 				$result[] = $field;
 			}
 		}

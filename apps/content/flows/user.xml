@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<flow name="budget">
-    <select access="permission.users"></select>
+<flow name="user">
+    <select access="permission.users.section"></select>
     <insert access="permission.users.insert"></insert>
     <update access="permission.users.update"></update>
     <delete access="permission.users.delete"></delete>

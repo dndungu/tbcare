@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="budget" storage="local" class="validate" primarykey="budget_id">
+	<field name="title" type="varchar" length="255">
+		<element name="title" type="text" label="finance.budget.label" placeholder="finance.budget.placeholder">
+			 <class>text-input</class>
+		</element>
+	</field>
+	<field name="notes" type="varchar" length="65536">
+		<element name="notes" type="textarea" label="description.label" placeholder="description.placeholder">
+			 <class>text-input</class>
+		</element>
+	</field>
+	<field name="financier_code" type="varchar" length="32">
+		<element name="financier_code" type="select" lookup="financier" value="financier_code" display="financier_name" label="financier_code.label" placeholder="financier_code.placeholder">
+			 <class>text-input</class>
+		</element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>	
+</form>

@@ -1,0 +1,18 @@
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.finance.section', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.budget', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.funds_allocation', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.financier', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.payments.section', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.payments.completed', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.payments.pending', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.payments.failed', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.payments.reversed', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.reconciliation', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.configuration', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.users.section', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.users', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.roles', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.users.insert', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.users.update', UNIX_TIMESTAMP());
+INSERT INTO `permission` (`ID`, `title`, `creationTime`) VALUES (NULL, 'permission.users.delete', UNIX_TIMESTAMP());
+

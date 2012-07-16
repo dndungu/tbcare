@@ -64,3 +64,593 @@ Stack trace:
 [15-Jul-2012 10:45:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
 [15-Jul-2012 10:45:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 364
 [15-Jul-2012 12:16:26 UTC] Access to portal not allowed
+[15-Jul-2012 13:47:55 UTC] PHP Notice:  Undefined variable: key in /var/www/tbcare/helpers/FormBuilder.php on line 388
+[15-Jul-2012 13:47:55 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 388
+[15-Jul-2012 13:47:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 388
+[15-Jul-2012 13:49:48 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 392
+[15-Jul-2012 13:49:48 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 400
+[15-Jul-2012 13:50:50 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 392
+[15-Jul-2012 13:50:50 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 400
+[15-Jul-2012 13:51:12 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 392
+[15-Jul-2012 13:51:12 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 400
+[15-Jul-2012 13:53:55 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 392
+[15-Jul-2012 13:53:55 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/FormBuilder.php on line 400
+[15-Jul-2012 14:08:36 UTC] PHP Notice:  Array to string conversion in /var/www/tbcare/helpers/FormBuilder.php on line 392
+[15-Jul-2012 14:09:01 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /var/www/tbcare/helpers/FormBuilder.php on line 392
+[15-Jul-2012 15:03:49 UTC] Access to portal not allowed
+[15-Jul-2012 15:03:51 UTC] Access to portal not allowed
+[15-Jul-2012 15:03:53 UTC] Access to portal not allowed
+[15-Jul-2012 15:03:55 UTC] Access to portal not allowed
+[15-Jul-2012 15:03:56 UTC] Access to portal not allowed
+[15-Jul-2012 15:04:01 UTC] Access to portal not allowed
+[15-Jul-2012 15:04:04 UTC] Access to portal not allowed
+[15-Jul-2012 15:04:04 UTC] Access to portal not allowed
+[15-Jul-2012 15:04:07 UTC] Access to portal not allowed
+[15-Jul-2012 15:04:19 UTC] Access to portal not allowed
+[15-Jul-2012 15:07:20 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:20 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:20 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:20 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:20 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:21 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:21 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:21 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:21 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:07:21 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:11 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:11 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:11 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:11 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:11 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:22 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:22 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:22 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:22 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:22 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:46 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:46 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:46 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:46 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:08:46 UTC] PHP Notice:  Use of undefined constant type - assumed 'type' in /var/www/tbcare/helpers/FormBuilder.php on line 490
+[15-Jul-2012 15:41:51 UTC] Access to portal not allowed
+[15-Jul-2012 15:41:51 UTC] Access to portal not allowed
+[15-Jul-2012 15:41:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/User.php on line 220
+[15-Jul-2012 15:41:53 UTC] Access to portal not allowed
+[15-Jul-2012 15:41:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/User.php on line 220
+[15-Jul-2012 15:41:55 UTC] Access to portal not allowed
+[15-Jul-2012 15:42:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/User.php on line 220
+[15-Jul-2012 15:42:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/User.php on line 220
+[15-Jul-2012 15:43:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/User.php on line 220
+[15-Jul-2012 15:43:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/User.php on line 221
+[15-Jul-2012 16:48:51 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message ''/var/www/tbcare/apps/content/flows/signin.xml' is not readable' in /var/www/tbcare/helpers/Flow.php:20
+Stack trace:
+#0 /var/www/tbcare/helpers/FormBuilder.php(45): helpers\Flow->setSource('/var/www/tbcare...')
+#1 /var/www/tbcare/helpers/FormBuilder.php(37): helpers\FormBuilder->initFlow()
+#2 /var/www/tbcare/apps/user/SignOut.php(14): helpers\FormBuilder->setSource('/var/www/tbcare...')
+#3 [internal function]: apps\user\SignOut->doGet()
+#4 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#5 /var/www/tbcare/base/Routing.php(21): base\Routing->route('user', 'SignOut')
+#6 [internal function]: base\Routing->init(Object(SimpleXMLElement))
+#7 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#8 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
+#9 [internal function]: base\Authentication->init(NULL)
+#10 /var/www/tbcare/helpers/Sandbox.php(49): c in /var/www/tbcare/helpers/Flow.php on line 20
+[15-Jul-2012 16:48:52 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Unknown column 'permissions' in 'field list' : SELECT `permissions` FROM role WHERE `title` = 'guest'' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/Storage.php(81): helpers\Storage->query('SELECT `permiss...')
+#1 /var/www/tbcare/helpers/User.php(56): helpers\Storage->select(Array)
+#2 /var/www/tbcare/helpers/User.php(48): helpers\User->getGuestPermissions()
+#3 /var/www/tbcare/helpers/User.php(29): helpers\User->createGuest()
+#4 /var/www/tbcare/helpers/Sandbox.php(84): helpers\User->__construct(Object(helpers\Sandbox))
+#5 /var/www/tbcare/helpers/Sandbox.php(26): helpers\Sandbox->initHelper('User')
+#6 /var/www/tbcare/html/index.php(9): helpers\Sandbox->__construct(Object(helpers\Storage))
+#7 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 35
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 16:57:43 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:13 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:20 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:22 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:00:23 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:08 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:01:09 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:01 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:01 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:01 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:01 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:02 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:07 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:17 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:43 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:43 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:43 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:02:44 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:04:25 UTC] Access to portal not allowed
+[15-Jul-2012 17:06:15 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message ''/var/www/tbcare/apps/content/flows/signin.xml' is not readable' in /var/www/tbcare/helpers/Flow.php:20
+Stack trace:
+#0 /var/www/tbcare/helpers/FormBuilder.php(45): helpers\Flow->setSource('/var/www/tbcare...')
+#1 /var/www/tbcare/helpers/FormBuilder.php(37): helpers\FormBuilder->initFlow()
+#2 /var/www/tbcare/apps/user/SignIn.php(32): helpers\FormBuilder->setSource('/var/www/tbcare...')
+#3 /var/www/tbcare/apps/user/SignIn.php(9): apps\user\SignIn->doSignInForm()
+#4 [internal function]: apps\user\SignIn->doGet()
+#5 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#6 /var/www/tbcare/base/Routing.php(21): base\Routing->route('user', 'SignIn')
+#7 [internal function]: base\Routing->init(Object(SimpleXMLElement))
+#8 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#9 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
+#10 [internal function]: bas in /var/www/tbcare/helpers/Flow.php on line 20
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:03 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:15:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:29 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:16:32 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:10 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:11 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:11 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:11 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:12 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:12 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:50 UTC] Access to portal not allowed
+[15-Jul-2012 17:17:51 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:19:58 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:14 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:15 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:21:18 UTC] Access to portal not allowed
+[15-Jul-2012 17:23:39 UTC] PHP Warning:  Missing argument 1 for helpers\Storage::query(), called in /var/www/tbcare/helpers/User.php on line 212 and defined in /var/www/tbcare/helpers/Storage.php on line 32
+[15-Jul-2012 17:23:39 UTC] PHP Notice:  Undefined variable: sql in /var/www/tbcare/helpers/Storage.php on line 33
+[15-Jul-2012 17:23:39 UTC] PHP Warning:  mysqli::query(): Empty query in /var/www/tbcare/helpers/Storage.php on line 33
+[15-Jul-2012 17:38:31 UTC] Access to portal not allowed
+[15-Jul-2012 17:39:39 UTC] PHP Warning:  Missing argument 1 for helpers\Flow::setSource(), called in /var/www/tbcare/helpers/FormBuilder.php on line 47 and defined in /var/www/tbcare/helpers/Flow.php on line 18
+[15-Jul-2012 17:39:39 UTC] PHP Notice:  Undefined variable: filename in /var/www/tbcare/helpers/Flow.php on line 19
+[15-Jul-2012 17:39:39 UTC] PHP Notice:  Undefined variable: filename in /var/www/tbcare/helpers/Flow.php on line 20
+[15-Jul-2012 17:39:45 UTC] PHP Warning:  Missing argument 1 for helpers\Flow::setSource(), called in /var/www/tbcare/helpers/FormBuilder.php on line 47 and defined in /var/www/tbcare/helpers/Flow.php on line 18
+[15-Jul-2012 17:39:45 UTC] PHP Notice:  Undefined variable: filename in /var/www/tbcare/helpers/Flow.php on line 19
+[15-Jul-2012 17:39:45 UTC] PHP Notice:  Undefined variable: filename in /var/www/tbcare/helpers/Flow.php on line 20
+[15-Jul-2012 17:40:00 UTC] PHP Notice:  Undefined variable: html in /var/www/tbcare/helpers/FormBuilder.php on line 262
+[15-Jul-2012 17:40:00 UTC] PHP Warning:  join(): Invalid arguments passed in /var/www/tbcare/helpers/FormBuilder.php on line 262
+[15-Jul-2012 18:00:03 UTC] Access to portal not allowed
+[15-Jul-2012 18:04:51 UTC] Access to portal not allowed
+[15-Jul-2012 18:33:48 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Unknown column 'inTrash' in 'where clause' : SELECT * FROM financier WHERE `inTrash` = 'No'' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/Storage.php(81): helpers\Storage->query('SELECT * FROM f...')
+#1 /var/www/tbcare/helpers/FormBuilder.php(203): helpers\Storage->select(Array)
+#2 /var/www/tbcare/helpers/FormBuilder.php(141): helpers\FormBuilder->createSelect(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/FormBuilder.php(114): helpers\FormBuilder->createElement(Object(SimpleXMLElement), Object(SimpleXMLElement), 'select')
+#4 /var/www/tbcare/helpers/FormBuilder.php(98): helpers\FormBuilder->createField(Object(SimpleXMLElement))
+#5 /var/www/tbcare/helpers/FormBuilder.php(87): helpers\FormBuilder->createFields(Object(SimpleXMLElement))
+#6 /var/www/tbcare/apps/content/FormStudio.php(10): helpers\FormBuilder->asHTML()
+#7 [internal function]: apps\content\FormStudio->doGet()
+#8 /var/www/t in /var/www/tbcare/helpers/Storage.php on line 35
+[15-Jul-2012 18:34:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/FormBuilder.php on line 204
+[15-Jul-2012 18:42:28 UTC] Access to portal not allowed
+[16-Jul-2012 06:26:53 UTC] Access to portal not allowed
+[16-Jul-2012 07:37:07 UTC] Access to portal not allowed

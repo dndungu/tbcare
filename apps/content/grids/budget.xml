@@ -10,7 +10,7 @@
         <column name="budget_id" field="budget_id" title="id.label" class="grid1of10 column"></column>
         <column name="title" field="title" title="finance.budget.label" class="grid3of10 column"></column>
         <column name="financier_name" field="financier_name" title="financier_name.label" class="grid3of10 column"></column>
+        <column name="financier_code" field="`budget`.`financier_code`" title="financier.label" class="grid2of10 column"></column>
         <column name="balance" field="balance" title="balance.label" class="grid1of10 column"></column>
-        <column name="creationTime" field="`budget`.`creationTime`" title="creationTime.label" class="grid2of10 column"></column>
     </columns>
 </grid>

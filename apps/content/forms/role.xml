@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="role" storage="global" class="validate" primarykey="ID">
+	<field name="title" type="varchar" length="32">
+		<element name="title" type="text" label="role.label" placeholder="role.placeholder">
+			 <class>text-input</class>
+		</element>
+	</field>
+	<field name="permission" type="options" join="permissionmap">
+		<element name="permission" type="options" lookup="permission" value="ID" label="title" filter='{"isSystem":"No"}'>
+			<class>joinoptions</class>
+		</element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>	
+</form>

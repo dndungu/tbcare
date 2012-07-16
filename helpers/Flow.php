@@ -25,6 +25,11 @@ class Flow {
 		}
 	}
 	
+	public function isSelectable(){
+		$permission = (string) $this->definition->select->attributes()->access;
+		return $this->attestPermissions($permission);
+	}	
+	
 	public function isInsertable(){
 		$permission = (string) $this->definition->insert->attributes()->access;
 		return $this->attestPermissions($permission);

@@ -20,6 +20,10 @@
 	    <navigation parent="finance" group="panel" uri="/grid/budget" label="finance.budget" weight="21"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.budget"/>
 	</portal>	
+	<portal type="raw" access="permission.budget">
+	    <navigation parent="finance" group="hidden" uri="/form/budget" label="finance.budget" weight="21"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.budget"/>
+	</portal>	
 	<portal type="raw" access="permission.funds_allocation">
 	    <navigation parent="finance" group="panel" uri="/grid/funds_allocation" label="finance.funds_allocation" weight="22"></navigation>
 	    <portlet module="core" controller="Navigation" access="permission.funds_allocation"/>
@@ -68,25 +72,29 @@
 		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="44"></navigation>
 		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gateway"/>
 	</portal>	
-	<portal type="raw" access="permission.configuration">
+	<portal type="raw" access="permission.configuration.section">
 	    <navigation id="configuration" parent="root" group="panel" uri="/configuration" label="configuration" weight="50" class="nav-top-item"></navigation>
 	    <portlet module="core" controller="GridStudio" access="permission.configuration"/>
 	</portal>
 	<portal type="raw" access="permission.users.section">
 	    <navigation id="users" parent="root" group="panel" uri="/null" label="security" weight="60" class="nav-top-item"></navigation>
 	</portal>
-	<portal type="raw" access="permission.users">
+	<portal type="raw" access="permission.users.section">
 	    <navigation parent="users" group="panel" uri="/grid/user" label="users.accounts" weight="61"></navigation>
-	    <portlet module="content" controller="GridStudio" access="permission.users"/>
+	    <portlet module="content" controller="GridStudio" access="permission.users.section"/>
 	</portal>
-	<portal type="raw" access="permission.users">
+	<portal type="raw" access="permission.users.section">
 	    <navigation parent="users" group="hidden" uri="/form/user" label="users.accounts" weight="61"></navigation>
-	    <portlet module="content" controller="FormStudio" access="permission.users"/>
+	    <portlet module="content" controller="FormStudio" access="permission.users.section"/>
 	</portal>					
 	<portal type="raw" access="permission.roles">
 	    <navigation parent="users" group="panel" uri="/grid/role" label="users.roles" weight="62"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.roles"/>
 	</portal>
+	<portal type="raw" access="permission.roles">
+	    <navigation parent="users" group="hidden" uri="/form/role" label="users.roles" weight="62"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.roles"/>
+	</portal>	
 	<portal type="html" template="user.xsl" access="permission.signin">
 	    <navigation parent="root" group="authentication" uri="/signin" label="signin"></navigation>
 	    <portlet module="user" controller="SignIn" access="permission.signin"/>
