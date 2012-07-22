@@ -28,6 +28,7 @@ class Sandbox {
 		$this->getHelper("site")->autoSetup();
 		$this->initHelper('Grid');
 		$this->initHelper('FormBuilder');
+		$this->initHelper('CellBuilder');
 	}
 	
 	public function listen($types = NULL, $method = NULL, $instance = NULL){

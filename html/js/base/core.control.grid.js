@@ -13,9 +13,7 @@ core.control.extend('grid', function(){
 			page: 1,
 			sortdirection: new String(),
 			sortcolumn: new String(),
-			updateable: false,
 			insertable:false,
-			deleteable: false,
 			sortable: false,
 			searchable: false,
 			paginateable: false,
@@ -24,9 +22,7 @@ core.control.extend('grid', function(){
 			renderGrid: function(){
 				if(this.activity.getRecords != 4 || this.activity.getTemplate != 4) return;
 				this.renderContent();
-				if(this.updateable){
-					this.initUpdater();
-				}				
+				this.initGridCell();
 				this.renderLegend();
 				this.renderPaginator();
 				if(this.paginateable){
@@ -154,6 +150,96 @@ core.control.extend('grid', function(){
 				this.html.find('.gridFooter').slideUp();
 				this.html.find('.addButton').fadeOut();
 			},
+			initGridCell: function(){
+				var that = this;
+				var rows = $('.gridContent .gridContentRecord', that.html);
+				rows.unbind('mousedown').mousedown(function(event){
+					event.stopPropagation();
+					var subject = $(this);
+					that.renderGridCell(subject);
+					$('>.gridCell,>form', rows.not(subject)).slideUp();
+				});
+			},
+			renderGridCell: function(){
+				var that = this;
+				var subject = arguments[0];
+				var openCell = subject.find('.gridCell');
+				var source = this.source.replace('grid', 'cell');
+				if(openCell.siblings('form:visible').length) return;
+				if(openCell.length){
+					openCell.slideDown();
+				}else{
+					var primarykey = parseInt(subject.attr('title'));
+					var lastColumn = $('.column:last-child', subject);
+					core.ajax.post(source, {primarykey: primarykey}, function(){
+						if(arguments[0].readyState != 4 || arguments[0].status != 200) return;
+						var gridCell = $(arguments[0].responseText);
+						gridCell.css({display: 'none'});
+						lastColumn.after(gridCell);
+						gridCell.slideDown();
+						that.initCellActions(gridCell);
+					});
+				}				
+			},
+			initCellActions: function(){
+				var gridCell = arguments[0];
+				var that = this;
+				$('.actionsCell input[type="button"]', gridCell).each(function(){
+					var button = $(this);
+					switch(button.attr('name')){
+						case "updater":
+							button.unbind('mousedown').mousedown(function(event){
+								event.stopPropagation();
+								that.renderUpdater(gridCell);
+							});
+							break;
+						case "deleter":
+							button.unbind('mousedown').mousedown(function(event){
+								event.stopPropagation();
+								if(confirm(core.l18n['delete.confirm.label'])){
+									var source = that.source.replace('grid', 'form');
+									var primarykey = gridCell.attr('title');
+									core.ajax.post(source, {command: 'delete', primarykey: primarykey}, function(){
+										if(arguments[0].readyState != 4 || arguments[0].status != 200) return;
+										control.refresh();
+									});
+								}
+							});
+							break;
+					}
+				});
+			},
+			renderUpdater: function(){
+				var gridCell = arguments[0];
+				var openForm = gridCell.siblings('form');
+				if(openForm.length){
+					this.reOpenForm(openForm, gridCell);
+				}else{
+					this.createUpdator(gridCell);
+				}
+			},
+			reOpenForm: function(){
+				var openForm = arguments[0];
+				var gridCell = arguments[1];
+				this.form.setHTML(openForm);
+				openForm.slideDown();
+				gridCell.slideUp();				
+			},
+			createUpdator: function(){
+				var gridCell = arguments[0];
+				var updator = this.form;
+				updator.setCommand("update");
+				var primarykey = parseInt($(gridCell).attr('title'));
+				this.form.setPrimaryKey(primarykey);
+				var that = this;
+				this.form.onReady(function(){
+					var form = $(that.form.getHTML());
+					form.css({display: 'none'});
+					gridCell.after(form);
+					form.slideDown();
+					gridCell.slideUp();
+				});				
+			},
 			initUpdater: function(){
 				var that = this;
 				var rows = $('.gridContent .gridContentRecord', this.html);
@@ -161,26 +247,6 @@ core.control.extend('grid', function(){
 					$('.gridContent .gridContentRecord', that.html).not(this).find('form').slideUp();
 					that.renderUpdater(this);
 				});
-			},
-			renderUpdater: function(){
-				var that = this;
-				var gridContentRecord = arguments[0];
-				that.form.setCommand("update");
-				var openForm = $('form', gridContentRecord);
-				if(openForm.length) {
-					that.form.setHTML(openForm);
-					openForm.slideDown();
-				} else {
-					var row = $('.column:last-child', gridContentRecord);
-					var primarykey = parseInt($(gridContentRecord).attr('title'));
-					that.form.setPrimaryKey(primarykey);
-					that.form.onReady(function(){
-						var form = $(that.form.getHTML());
-						form.css({display: 'none'});
-						row.after(form);
-						form.slideDown();
-					});
-				}				
 			},
 			postParameters: function(){
 				var parameters = {};
@@ -226,16 +292,12 @@ core.control.extend('grid', function(){
 			},
 			setUp: function(){
 				_private.insertable = _private.html.hasClass('insertable');
-				_private.updateable = _private.html.hasClass('updateable');
-				_private.deleteable = _private.html.hasClass('deleteable');
 				_private.searchable = _private.html.hasClass('searchable');
 				_private.sortable = _private.html.hasClass('sortable');
 				_private.paginateable = _private.html.hasClass('paginateable');
-				if(_private.insertable || _private.updateable){
+				if(_private.insertable){
 					control.setForm(_private.source.replace('/grid/', '/form/'));
 					_private.form.setGrid(control);
-				}
-				if(_private.insertable){
 					_private.initInserter();
 				}
 				if(_private.seachable){
@@ -269,15 +331,12 @@ core.control.extend('grid', function(){
 				_private.form.clearForm();
 				_private.html.find('.gridColumns').slideDown();
 				_private.renderContent();
-				if(_private.updateable){
-					_private.initUpdater();
-				}				
+				_private.initGridCell();
 				_private.html.find('.gridFooter').slideDown();
 				_private.html.find('.addButton').fadeIn();				
 			},
 			refresh: function(){
 				_private.html = $(_private.template);
-				_private.setUp();
 				_private.getRecords('browse');
 			}
 		};

@@ -41,4 +41,5 @@ core.navigation = {
 $(document).ready(function(){
 	if(!$('.panelNavigation').length) return;
 	core.navigation.init();
+	$('#main-nav>li:first-child>a').mousedown();
 });

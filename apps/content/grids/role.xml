@@ -3,6 +3,7 @@
     <records>
         <ordercolumn>title</ordercolumn>
         <orderdirection>asc</orderdirection>
+        <filter field="inTrash" value="No"/>
         <search parameters="5">`ID` = %d OR `login` LIKE '%%s%' OR `email` LIKE '%%s%' OR `firstname` LIKE '%%s%' OR `lastname` LIKE '%%s%'</search>
     </records>
     <columns primarykey="ID">

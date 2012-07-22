@@ -7,7 +7,7 @@
 		</element>
 	</field>
 	<field name="permission" type="options" join="permissionmap">
-		<element name="permission" type="options" lookup="permission" value="ID" label="title" filter='{"isSystem":"No"}'>
+		<element name="permission" type="options" lookup="permission" value="ID" display="title" label="permissions.label" filter='{"isSystem":"No"}'>
 			<class>joinoptions</class>
 		</element>
 	</field>

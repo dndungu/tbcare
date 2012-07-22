@@ -37,7 +37,12 @@ core.control.extend('form', function(){
 		initPoster: function(){
 			var command = this.command;
 			var that = this;
-			that.html.submit(function(event){
+			that.html.unbind('mousedown').mousedown(function(event){
+				event.stopPropagation();
+			});
+			that.html.unbind('submit').submit(function(event){
+				if(!core.validator.checkForm($(this))) return;
+				event.stopPropagation();
 				var data = that.postParameters();
 				var url = that.source;
 				core.ajax.post(url, data, function(){
@@ -103,8 +108,8 @@ core.control.extend('form', function(){
 				_private.html.css({display: 'block'});
 				_private.initPoster();
 				_private.validation = setTimeout(function(){
-					_private.sandbox.fire({type: "validate.form", data: _private.html});
-				}, 1500);
+					core.validator.setChangeCheck(_private.html);
+				}, 1000);
 				return _private.html;
 			},
 			setGrid: function(){

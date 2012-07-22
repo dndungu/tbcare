@@ -840,3 +840,462 @@ Stack trace:
 [16-Jul-2012 08:49:14 UTC] Access to portal not allowed
 [16-Jul-2012 08:49:14 UTC] Access to portal not allowed
 [16-Jul-2012 08:50:02 UTC] Access to portal not allowed
+[16-Jul-2012 11:00:29 UTC] Access to portal not allowed
+[16-Jul-2012 11:43:34 UTC] Access to portal not allowed
+[16-Jul-2012 13:12:00 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 13:12:00 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 13:12:00 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 13:12:00 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 13:12:00 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 13:12:00 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 13:20:10 UTC] Access to portal not allowed
+[16-Jul-2012 13:28:29 UTC] Access to portal not allowed
+[16-Jul-2012 14:11:16 UTC] PHP Fatal error:  Uncaught exception 'apps\ApplicationException' with message 'Duplicate entry 'GF' for key 'financier_code'' in /var/www/tbcare/helpers/FormBuilder.php:372
+Stack trace:
+#0 /var/www/tbcare/apps/content/FormStudio.php(22): helpers\FormBuilder->createRecord()
+#1 [internal function]: apps\content\FormStudio->doPost()
+#2 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#3 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'FormStudio')
+#4 [internal function]: base\Routing->init(Object(SimpleXMLElement))
+#5 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#6 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
+#7 [internal function]: base\Authentication->init(NULL)
+#8 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#9 /var/www/tbcare/base/Aliasing.php(22): helpers\Sandbox->fire('aliasing.passed')
+#10 [internal function]: base\Aliasing->init(NULL)
+#11 /var/www/ in /var/www/tbcare/helpers/FormBuilder.php on line 372
+[16-Jul-2012 14:12:12 UTC] Access to portal not allowed
+[16-Jul-2012 15:10:23 UTC] PHP Fatal error:  Uncaught exception 'apps\ApplicationException' with message 'Duplicate entry 'USAID' for key 'financier_code'' in /var/www/tbcare/helpers/FormBuilder.php:372
+Stack trace:
+#0 /var/www/tbcare/apps/content/FormStudio.php(22): helpers\FormBuilder->createRecord()
+#1 [internal function]: apps\content\FormStudio->doPost()
+#2 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#3 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'FormStudio')
+#4 [internal function]: base\Routing->init(Object(SimpleXMLElement))
+#5 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#6 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
+#7 [internal function]: base\Authentication->init(NULL)
+#8 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#9 /var/www/tbcare/base/Aliasing.php(22): helpers\Sandbox->fire('aliasing.passed')
+#10 [internal function]: base\Aliasing->init(NULL)
+#11 /var/w in /var/www/tbcare/helpers/FormBuilder.php on line 372
+[16-Jul-2012 15:27:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 15:27:44 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 15:27:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 15:27:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 15:27:44 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[16-Jul-2012 15:27:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:29:16 UTC] Access to portal not allowed
+[17-Jul-2012 05:38:01 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:01 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:01 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:01 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:01 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:01 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:08 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:08 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:08 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:08 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:08 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 05:38:08 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:15:48 UTC] Access to portal not allowed
+[17-Jul-2012 06:21:52 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:21:52 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:21:52 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:21:52 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:21:52 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:21:52 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:22:58 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:22:58 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:22:58 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:22:58 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:22:58 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:22:58 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:40:49 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:40:49 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:40:49 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:40:49 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:40:49 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 06:40:49 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 08:00:44 UTC] Access to portal not allowed
+[17-Jul-2012 08:00:44 UTC] Access to portal not allowed
+[17-Jul-2012 08:00:46 UTC] Access to portal not allowed
+[17-Jul-2012 08:00:46 UTC] Access to portal not allowed
+[17-Jul-2012 08:00:48 UTC] Access to portal not allowed
+[17-Jul-2012 08:03:10 UTC] PHP Fatal error:  Uncaught exception 'apps\ApplicationException' with message 'Duplicate entry 'GF' for key 'financier_code'' in /var/www/tbcare/helpers/FormBuilder.php:372
+Stack trace:
+#0 /var/www/tbcare/apps/content/FormStudio.php(22): helpers\FormBuilder->createRecord()
+#1 [internal function]: apps\content\FormStudio->doPost()
+#2 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#3 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'FormStudio')
+#4 [internal function]: base\Routing->init(Object(SimpleXMLElement))
+#5 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#6 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
+#7 [internal function]: base\Authentication->init(NULL)
+#8 /var/www/tbcare/helpers/Sandbox.php(49): call_user_func_array(Array, Array)
+#9 /var/www/tbcare/base/Aliasing.php(22): helpers\Sandbox->fire('aliasing.passed')
+#10 [internal function]: base\Aliasing->init(NULL)
+#11 /var/www/ in /var/www/tbcare/helpers/FormBuilder.php on line 372
+[17-Jul-2012 09:26:23 UTC] Access to portal not allowed
+[17-Jul-2012 09:26:24 UTC] Access to portal not allowed
+[17-Jul-2012 13:24:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:44 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:44 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:48 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:48 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:48 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:48 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:48 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:24:48 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:30:16 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:30:16 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:30:16 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:30:16 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:30:16 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[17-Jul-2012 13:30:16 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 08:01:03 UTC] Access to portal not allowed
+[18-Jul-2012 08:05:20 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 08:05:20 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 08:05:20 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 08:05:20 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 08:05:20 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 08:05:20 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 09:17:50 UTC] Access to portal not allowed
+[18-Jul-2012 09:52:17 UTC] Access to portal not allowed
+[18-Jul-2012 11:50:16 UTC] Access to portal not allowed
+[18-Jul-2012 12:00:31 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 12:00:31 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 12:00:31 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 12:00:31 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 12:00:31 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 12:00:31 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[18-Jul-2012 13:24:24 UTC] Access to portal not allowed
+[19-Jul-2012 07:23:47 UTC] Access to portal not allowed
+[19-Jul-2012 07:23:55 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:55 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:55 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:55 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:55 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:55 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:57 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:57 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:57 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:57 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:57 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 07:23:57 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[19-Jul-2012 08:43:05 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:52 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:52 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:52 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:53 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:53 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:54 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:54 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:55 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:55 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:56 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:56 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:57 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:57 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:57 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:57 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:58 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:58 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:58 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:58 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:59 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:59 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:59 UTC] Access to portal not allowed
+[19-Jul-2012 11:34:59 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:01 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:01 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:01 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:01 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:03 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:03 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:04 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:04 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:05 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:05 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:06 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:06 UTC] Access to portal not allowed
+[19-Jul-2012 13:41:07 UTC] Access to portal not allowed
+[19-Jul-2012 18:42:13 UTC] Access to portal not allowed
+[20-Jul-2012 13:52:24 UTC] Access to portal not allowed
+[20-Jul-2012 14:00:58 UTC] PHP Notice:  Undefined index: cellbuilder in /var/www/tbcare/helpers/Sandbox.php on line 93
+[20-Jul-2012 14:00:58 UTC] PHP Notice:  Undefined variable: key in /var/www/tbcare/apps/content/CellStudio.php on line 12
+[20-Jul-2012 14:00:58 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/apps/content/CellStudio.php on line 12
+[20-Jul-2012 14:00:58 UTC] PHP Fatal error:  Call to a member function setSource() on a non-object in /var/www/tbcare/apps/content/CellStudio.php on line 13
+[20-Jul-2012 14:02:09 UTC] PHP Notice:  Undefined variable: key in /var/www/tbcare/apps/content/CellStudio.php on line 12
+[20-Jul-2012 14:02:09 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/apps/content/CellStudio.php on line 12
+[20-Jul-2012 14:02:09 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message ''/var/www/tbcare/apps/content/forms/.xml' is not readable' in /var/www/tbcare/helpers/CellBuilder.php:23
+Stack trace:
+#0 /var/www/tbcare/apps/content/CellStudio.php(13): helpers\CellBuilder->setSource('/var/www/tbcare...')
+#1 [internal function]: apps\content\CellStudio->doPost()
+#2 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#3 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'CellStudio')
+#4 [internal function]: base\Routing->init(Object(SimpleXMLElement))
+#5 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#6 /var/www/tbcare/base/Authentication.php(31): helpers\Sandbox->fire('authentication....', Object(SimpleXMLElement))
+#7 [internal function]: base\Authentication->init(NULL)
+#8 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#9 /var/www/tbcare/base/Aliasing.php(22): helpers\Sandbox->fire('aliasing.passed')
+#10 [internal function]: base\Aliasing in /var/www/tbcare/helpers/CellBuilder.php on line 23
+[20-Jul-2012 14:02:37 UTC] PHP Warning:  Missing argument 1 for helpers\CellBuilder::createCell(), called in /var/www/tbcare/helpers/CellBuilder.php on line 71 and defined in /var/www/tbcare/helpers/CellBuilder.php on line 78
+[20-Jul-2012 14:02:37 UTC] PHP Notice:  Undefined variable: field in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Notice:  Trying to get property of non-object in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Warning:  Missing argument 1 for helpers\CellBuilder::createCell(), called in /var/www/tbcare/helpers/CellBuilder.php on line 71 and defined in /var/www/tbcare/helpers/CellBuilder.php on line 78
+[20-Jul-2012 14:02:37 UTC] PHP Notice:  Undefined variable: field in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Notice:  Trying to get property of non-object in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Warning:  Missing argument 1 for helpers\CellBuilder::createCell(), called in /var/www/tbcare/helpers/CellBuilder.php on line 71 and defined in /var/www/tbcare/helpers/CellBuilder.php on line 78
+[20-Jul-2012 14:02:37 UTC] PHP Notice:  Undefined variable: field in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Notice:  Trying to get property of non-object in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 14:02:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/CellBuilder.php on line 80
+[20-Jul-2012 16:27:02 UTC] Access to portal not allowed
+[20-Jul-2012 16:27:02 UTC] Access to portal not allowed
+[20-Jul-2012 16:27:04 UTC] Access to portal not allowed
+[21-Jul-2012 06:14:37 UTC] Access to portal not allowed
+[21-Jul-2012 13:54:13 UTC] Access to portal not allowed
+[21-Jul-2012 17:14:00 UTC] Access to portal not allowed
+[21-Jul-2012 18:13:48 UTC] PHP Notice:  Use of undefined constant console - assumed 'console' in /var/www/tbcare/helpers/CellBuilder.php on line 198
+[21-Jul-2012 18:13:48 UTC] PHP Fatal error:  Call to undefined function helpers\info() in /var/www/tbcare/helpers/CellBuilder.php on line 198
+[21-Jul-2012 18:13:49 UTC] PHP Notice:  Use of undefined constant console - assumed 'console' in /var/www/tbcare/helpers/CellBuilder.php on line 198
+[21-Jul-2012 18:13:49 UTC] PHP Fatal error:  Call to undefined function helpers\info() in /var/www/tbcare/helpers/CellBuilder.php on line 198
+[21-Jul-2012 18:16:32 UTC] {"table":"budget","contraints":{"budget_id":2}}
+[21-Jul-2012 18:16:49 UTC] {"table":"budget","constraints":{"budget_id":2}}
+[21-Jul-2012 18:16:50 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[21-Jul-2012 18:17:03 UTC] {"table":"budget","constraints":{"budget_id":2}}
+[21-Jul-2012 18:17:05 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[21-Jul-2012 18:17:22 UTC] {"table":"budget","constraints":{"budget_id":2}}
+[21-Jul-2012 18:17:45 UTC] {"table":"budget","constraints":{"budget_id":2}}
+[21-Jul-2012 18:23:47 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[21-Jul-2012 18:23:52 UTC] {"table":"budget","constraints":{"budget_id":2}}
+[22-Jul-2012 05:50:14 UTC] Access to portal not allowed
+[22-Jul-2012 05:50:34 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[22-Jul-2012 06:06:33 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[22-Jul-2012 06:07:30 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[22-Jul-2012 06:07:34 UTC] {"table":"budget","constraints":{"budget_id":2}}
+[22-Jul-2012 06:28:23 UTC] PHP Notice:  Undefined variable: name in /var/www/tbcare/helpers/QueryBuilder.php on line 91
+[22-Jul-2012 06:30:47 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[22-Jul-2012 06:31:15 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 06:31:15 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 06:31:15 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 06:31:15 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 06:31:15 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 06:31:15 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 06:33:50 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:33:50 UTC] PHP Warning:  Missing argument 1 for helpers\CellBuilder::getFilterQuery(), called in /var/www/tbcare/helpers/CellBuilder.php on line 143 and defined in /var/www/tbcare/helpers/CellBuilder.php on line 159
+[22-Jul-2012 06:33:50 UTC] PHP Notice:  Undefined variable: filter in /var/www/tbcare/helpers/CellBuilder.php on line 160
+[22-Jul-2012 06:33:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/CellBuilder.php on line 161
+[22-Jul-2012 06:33:50 UTC] PHP Notice:  Undefined variable: storage in /var/www/tbcare/helpers/CellBuilder.php on line 145
+[22-Jul-2012 06:33:50 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'site' in where clause is ambiguous : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24  AND `site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(148): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#7 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content', 'CellStudio')
+#8 in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:34:40 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:34:40 UTC] PHP Notice:  Undefined variable: storage in /var/www/tbcare/helpers/CellBuilder.php on line 145
+[22-Jul-2012 06:34:40 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'site' in where clause is ambiguous : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24 AND `isSystem` = 'No' AND `site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(148): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#7 /var/www/tbcare/base/Routing.php(21): base\Routing->route('conte in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:35:25 UTC] {"table":"user","constraints":{"ID":23}}
+[22-Jul-2012 06:35:25 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Column 'site' in where clause is ambiguous : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 23 AND `isSystem` = 'No' AND `site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(149): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#7 /var/www/tbcare/base/Routing.php(21): base\Routing->route('conte in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:36:53 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:36:53 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` = 1' at line 1 : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24 AND `isSystem` = 'No' AND `rolemap`.site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(149): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/R in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:37:08 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:37:08 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` = 1' at line 1 : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24 AND `isSystem` = 'No' AND `rolemap`.site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(149): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/R in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:37:10 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:37:10 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` = 1' at line 1 : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24 AND `isSystem` = 'No' AND `rolemap`.site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(149): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/R in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:37:12 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:37:12 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` = 1' at line 1 : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24 AND `isSystem` = 'No' AND `rolemap`.site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(149): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/R in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:37:47 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:37:47 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` = 1' at line 1 : SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24 AND `isSystem` = 'No' AND `rolemap`.site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(149): helpers\Storage->query('SELECT `title` ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(105): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/R in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:38:56 UTC] {"table":"user","constraints":{"ID":23}}
+[22-Jul-2012 06:38:56 UTC] PHP Notice:  Undefined index: role in /var/www/tbcare/helpers/CellBuilder.php on line 106
+[22-Jul-2012 06:38:56 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/tbcare/helpers/CellBuilder.php on line 106
+[22-Jul-2012 06:39:50 UTC] {"table":"user","constraints":{"ID":23}}
+[22-Jul-2012 06:39:50 UTC] PHP Notice:  Undefined index: rolemap in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:39:50 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:40:15 UTC] {"table":"user","constraints":{"ID":22}}
+[22-Jul-2012 06:40:16 UTC] {"table":"user","constraints":{"ID":22}}
+[22-Jul-2012 06:40:17 UTC] {"table":"user","constraints":{"ID":22}}
+[22-Jul-2012 06:40:26 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:40:27 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:40:27 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:40:27 UTC] {"table":"user","constraints":{"ID":23}}
+[22-Jul-2012 06:40:28 UTC] {"table":"user","constraints":{"ID":23}}
+[22-Jul-2012 06:41:04 UTC] {"table":"user","constraints":{"ID":22}}
+[22-Jul-2012 06:41:04 UTC] PHP Notice:  Undefined index: rolemap in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:41:04 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:42:46 UTC] {"table":"user","constraints":{"ID":23}}
+[22-Jul-2012 06:42:46 UTC] PHP Notice:  Undefined index: rolemap in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:42:46 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:43:11 UTC] {"table":"user","constraints":{"ID":21}}
+[22-Jul-2012 06:43:11 UTC] PHP Notice:  Undefined index: rolemap in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:43:11 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/tbcare/helpers/CellBuilder.php on line 107
+[22-Jul-2012 06:44:57 UTC] {"table":"user","constraints":{"ID":25}}
+[22-Jul-2012 06:44:57 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 25 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:23 UTC] {"table":"user","constraints":{"ID":27}}
+[22-Jul-2012 06:45:23 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 27 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:26 UTC] {"table":"user","constraints":{"ID":26}}
+[22-Jul-2012 06:45:26 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 26 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:32 UTC] {"table":"user","constraints":{"ID":5}}
+[22-Jul-2012 06:45:32 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 5 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:40 UTC] {"table":"user","constraints":{"ID":16}}
+[22-Jul-2012 06:45:40 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 16 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:41 UTC] {"table":"user","constraints":{"ID":19}}
+[22-Jul-2012 06:45:41 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 19 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:42 UTC] {"table":"user","constraints":{"ID":21}}
+[22-Jul-2012 06:45:42 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 21 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:43 UTC] {"table":"user","constraints":{"ID":24}}
+[22-Jul-2012 06:45:43 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 24 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:50 UTC] {"table":"user","constraints":{"ID":12}}
+[22-Jul-2012 06:45:50 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 12 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:45:56 UTC] {"table":"user","constraints":{"ID":4}}
+[22-Jul-2012 06:45:56 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 4 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:01 UTC] {"table":"user","constraints":{"ID":22}}
+[22-Jul-2012 06:46:01 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 22 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:04 UTC] {"table":"user","constraints":{"ID":9}}
+[22-Jul-2012 06:46:04 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 9 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:05 UTC] {"table":"user","constraints":{"ID":10}}
+[22-Jul-2012 06:46:05 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 10 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:05 UTC] {"table":"user","constraints":{"ID":13}}
+[22-Jul-2012 06:46:05 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 13 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:06 UTC] {"table":"user","constraints":{"ID":15}}
+[22-Jul-2012 06:46:06 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 15 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:07 UTC] {"table":"user","constraints":{"ID":18}}
+[22-Jul-2012 06:46:07 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 18 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:09 UTC] {"table":"user","constraints":{"ID":20}}
+[22-Jul-2012 06:46:09 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 20 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:20 UTC] {"table":"user","constraints":{"ID":17}}
+[22-Jul-2012 06:46:20 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 17 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:22 UTC] {"table":"user","constraints":{"ID":6}}
+[22-Jul-2012 06:46:22 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 6 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:25 UTC] {"table":"user","constraints":{"ID":23}}
+[22-Jul-2012 06:46:25 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 23 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:46:43 UTC] {"table":"user","constraints":{"ID":1}}
+[22-Jul-2012 06:46:43 UTC] SELECT `title` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 1 AND `isSystem` = 'No' AND `rolemap`.`site` = 1
+[22-Jul-2012 06:47:39 UTC] {"table":"role","constraints":{"ID":6}}
+[22-Jul-2012 06:47:44 UTC] {"table":"role","constraints":{"ID":2}}
+[22-Jul-2012 06:51:11 UTC] {"table":"budget","constraints":{"budget_id":2}}
+[22-Jul-2012 06:51:13 UTC] {"table":"budget","constraints":{"budget_id":1}}
+[22-Jul-2012 06:51:18 UTC] {"table":"user","constraints":{"ID":1}}
+[22-Jul-2012 06:51:18 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Unknown column '' in 'field list' : SELECT `` FROM `rolemap` LEFT JOIN `role` ON (`rolemap`.`role` = `role`.`ID`) WHERE `user` = 1 AND `isSystem` = 'No' AND `rolemap`.`site` = 1' in /var/www/tbcare/helpers/Storage.php:35
+Stack trace:
+#0 /var/www/tbcare/helpers/CellBuilder.php(153): helpers\Storage->query('SELECT `` FROM ...')
+#1 /var/www/tbcare/helpers/CellBuilder.php(106): helpers\CellBuilder->selectOptions(Object(SimpleXMLElement), Object(SimpleXMLElement))
+#2 /var/www/tbcare/helpers/CellBuilder.php(90): helpers\CellBuilder->createCell(Object(SimpleXMLElement))
+#3 /var/www/tbcare/helpers/CellBuilder.php(60): helpers\CellBuilder->createCells(Object(SimpleXMLElement))
+#4 /var/www/tbcare/apps/content/CellStudio.php(15): helpers\CellBuilder->asHTML()
+#5 [internal function]: apps\content\CellStudio->doPost()
+#6 /var/www/tbcare/base/Routing.php(58): call_user_func_array(Array, Array)
+#7 /var/www/tbcare/base/Routing.php(21): base\Routing->route('content',  in /var/www/tbcare/helpers/Storage.php on line 35
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:50 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 226
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 227
+[22-Jul-2012 06:54:57 UTC] PHP Notice:  Undefined index:  in /var/www/tbcare/helpers/FormBuilder.php on line 228
+[22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41

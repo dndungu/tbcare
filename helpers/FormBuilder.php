@@ -218,7 +218,7 @@ class FormBuilder {
 		$translator = $this->sandbox->getHelper('translation');
 		$labelClass = $this->getClasses($element);
 		$name = (string) $element->attributes()->name;
-		$label = (string) $element->attributes()->label;
+		$label = (string) $element->attributes()->display;
 		$value = (string) $element->attributes()->value;
 		$class = $this->getClasses($element);
 		foreach($options as $option){
@@ -416,7 +416,7 @@ class FormBuilder {
 	}
 	
 	public function selectRecord(){
-		if(!$this->flow->isSelectable()) throw new HelperException('data access violation');;
+		if(!$this->flow->isSelectable()) throw new HelperException('data access violation');
 		$primarykey = $this->sandbox->getHelper('input')->postInteger('primarykey');
 		if(!$primarykey) return;
 		$key = (string) $this->definition->attributes()->primarykey;
@@ -504,7 +504,19 @@ class FormBuilder {
 				$this->getStorage()->insert($insert);
 			}
 		}
-	}	
+	}
+	
+	public function deleteRecord(){
+		if(!$this->flow->isDeleteable()) throw new HelperException('data access violation');
+		$primarykey = (string) $this->definition->attributes()->primarykey;
+		$primaryvalue = $this->sandbox->getHelper('input')->postInteger('primarykey');
+		if(!$primaryvalue) throw new HelperException('No valid primaryvalue found '.json_encode($_POST));
+		$update['table'] = $this->name;
+		$update['content']['inTrash'] = 'Yes';
+		$update['constraints'][$primarykey] = $primaryvalue;
+		$result['success'] = $this->getStorage()->update($update);
+		return json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);	
+	}
 	
 	protected function getColumns(){
 		$fields = $this->getFields();

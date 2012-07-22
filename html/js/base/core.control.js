@@ -28,7 +28,7 @@ core.control  = {
 	},
 	getDate: function(value){
 		var dateObject = new Date(value*1000);
-		return dateObject.getDay() + '/' + (dateObject.getMonth() + 1) + '/' + dateObject.getFullYear() + ' ' + dateObject.getHours() + ':' + dateObject.getMinutes();
+		return dateObject.getDay() + ' - ' + (dateObject.getMonth() + 1) + ' - ' + dateObject.getFullYear() + ' ' + dateObject.getHours() + ':' + dateObject.getMinutes();
 	},
 	getHTML: function(){
 		return $('<em>It works</em>');

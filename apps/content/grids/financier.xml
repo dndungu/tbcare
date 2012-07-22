@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grid name="financier" title="financiers.label" searchable="true" sortable="true" paginatable="true" showColumnBar="true" showFooterBar="true">
 	<records>
+		<filter field="inTrash" value="No"/>
 		<ordercolumn>financier_code</ordercolumn>
 		<orderdirection>asc</orderdirection>
 	</records>

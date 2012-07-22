@@ -15,6 +15,17 @@ class Flow {
 		$this->user = $this->sandbox->getHelper('user');
 	}
 	
+	public function getWorkFlow(){
+		if(!property_exists($this->definition, 'status')) return false;
+		$translator = $this->sandbox->getHelper('translation');
+		foreach($this->definition->event as $event){
+			$label = $translator->translate((string) $event->label);
+			$name = (string) $event->name;
+			$status[$name] = $label;
+		}
+		return isset($status) ? $status : false;
+	}
+	
 	public function setSource($filename){
 		if(!is_readable($filename)) {
 			throw new HelperException("'$filename' is not readable");

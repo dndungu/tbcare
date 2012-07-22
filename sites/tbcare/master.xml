@@ -23,6 +23,10 @@
 	<portal type="raw" access="permission.budget">
 	    <navigation parent="finance" group="hidden" uri="/form/budget" label="finance.budget" weight="21"></navigation>
 	    <portlet module="content" controller="FormStudio" access="permission.budget"/>
+	</portal>
+	<portal type="raw" access="permission.budget">
+		<navigation parent="finance" group="hidden" uri="/cell/budget" label="finance.budget" weight="21"></navigation>
+		<portlet module="content" controller="CellStudio" access="permission.budget"></portlet>
 	</portal>	
 	<portal type="raw" access="permission.funds_allocation">
 	    <navigation parent="finance" group="panel" uri="/grid/fund_allocation" label="finance.funds_allocation" weight="22"></navigation>
@@ -45,19 +49,19 @@
 	    <portlet module="content" controller="GridStudio" access="permission.payments.section"/>
 	</portal>
 	<portal type="raw" access="permission.payments.completed">
-	    <navigation parent="payments" group="panel" uri="/complete" label="payment.completed" weight="31"></navigation>
+	    <navigation parent="payments" group="panel" uri="/grid/complete" label="payment.completed" weight="31"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.payments.completed"/>
 	</portal>	
 	<portal type="raw" access="permission.payments.pending">
-	    <navigation parent="payments" group="panel" uri="/pending" label="payment.pending" weight="32"></navigation>
+	    <navigation parent="payments" group="panel" uri="/grid/pending" label="payment.pending" weight="32"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.payments.pending"/>
 	</portal>
 	<portal type="raw" access="permission.payments.failed">
-	    <navigation parent="payments" group="panel" uri="/failed" label="payment.failed" weight="33"></navigation>
+	    <navigation parent="payments" group="panel" uri="/grid/failed" label="payment.failed" weight="33"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.payments.failed"/>
 	</portal>
 	<portal type="raw" access="permission.payments.reversed">
-	    <navigation parent="payments" group="panel" uri="/reversed" label="payments.reversed" weight="34"></navigation>
+	    <navigation parent="payments" group="panel" uri="/grid/reversed" label="payments.reversed" weight="34"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.payments.reversed"/>
 	</portal>	
 	<portal type="raw" access="permission.reconciliation.section">
@@ -94,7 +98,11 @@
 	<portal type="raw" access="permission.users.section">
 	    <navigation parent="users" group="hidden" uri="/form/user" label="users.accounts" weight="61"></navigation>
 	    <portlet module="content" controller="FormStudio" access="permission.users.section"/>
-	</portal>					
+	</portal>
+	<portal type="raw" access="permission.users.section">
+	    <navigation parent="users" group="hidden" uri="/cell/user" label="users.accounts" weight="61"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.users.section"/>
+	</portal>						
 	<portal type="raw" access="permission.roles">
 	    <navigation parent="users" group="panel" uri="/grid/role" label="users.roles" weight="62"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.roles"/>
@@ -102,7 +110,11 @@
 	<portal type="raw" access="permission.roles">
 	    <navigation parent="users" group="hidden" uri="/form/role" label="users.roles" weight="62"></navigation>
 	    <portlet module="content" controller="FormStudio" access="permission.roles"/>
-	</portal>	
+	</portal>
+	<portal type="raw" access="permission.roles">
+	    <navigation parent="users" group="hidden" uri="/cell/role" label="users.roles" weight="62"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.roles"/>
+	</portal>			
 	<portal type="html" template="user.xsl" access="permission.signin">
 	    <navigation parent="root" group="authentication" uri="/signin" label="signin"></navigation>
 	    <portlet module="user" controller="SignIn" access="permission.signin"/>

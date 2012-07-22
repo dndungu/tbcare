@@ -36,6 +36,7 @@ class QueryBuilder {
 		$query[] = $this->buildFields();
 		$query[] = $this->buildFrom();
 		$query[] = $this->buildLeftJoins();
+		$query[] = $this->buildFilter();
 		$query[] = $this->buildOrderBy();
 		$query[] = $this->buildLimit();
 		return implode(' ', $query);
@@ -46,6 +47,7 @@ class QueryBuilder {
 		$query[] = 'SELECT COUNT(*) `rowCount`';
 		$query[] = $this->buildFrom();
 		$query[] = $this->buildLeftJoins();
+		$query[] = $this->buildFilter();
 		return implode(' ', $query);
 	}
 	
@@ -78,6 +80,22 @@ class QueryBuilder {
 
 	protected function buildFrom(){
 		return sprintf("FROM `%s`", ((string) $this->definition->attributes()->name));
+	}
+	
+	protected function buildFilter(){
+		$query[] = "WHERE 1 = 1";
+		if(!property_exists($this->definition->records, 'filter')) return $query[0];
+		foreach($this->definition->records->filter as $filter){
+			$field= (string) $filter->attributes()->field;
+			$value = (string) $filter->attributes()->value;
+			$name = substr_count($field, '.') || substr_count($field, '`') ? $field : "`$field`";
+			if(is_numeric($value)){
+				$query[] = "$name = $value";
+			}else{
+				$query[] = "$name = '$value'";
+			}
+		}
+		return implode(' AND ', $query);
 	}
 	
 	protected function buildLeftJoins(){

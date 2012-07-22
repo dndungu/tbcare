@@ -15,9 +15,7 @@ class Grid {
 	private $flow = NULL;
 	
 	private $insertable = NULL;
-	
-	private $updateable = NULL;
-	
+		
 	private $deleteable = NULL;
 	
 	private $searchable = NULL;
@@ -172,14 +170,8 @@ class Grid {
 	private function getClass(){
 		$class[] = 'grid';
 		$class[] = $this->name;
-		if($this->flow->isUpdateable()){
-			$class[] = 'updateable';
-		}
 		if($this->flow->isInsertable()){
 			$class[] = 'insertable';
-		}
-		if($this->flow->isDeleteable()){
-			$class[] = 'deleteable';
 		}
 		if($this->isSearchable()){
 			$class[] = 'searchable';

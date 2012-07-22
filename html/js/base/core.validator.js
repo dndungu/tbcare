@@ -1,46 +1,40 @@
 core.validator = {
 	sandbox: new core.sandbox(),
 	elements: {},
-	init: function(event){
-		var extension = core.validator;
-		var container = event.data;
-		event.data.each(function(){
-			var container = arguments[1];
-			extension.setChangeCheck(container);
-			extension.setStepCheck(container);
-			extension.setSubmitCheck(container);
-		});
-	},
 	setChangeCheck: function(){
 		var extension = core.validator;
 		var elements = extension.findElements(arguments[0]);
 		for(i in elements){
-			elements[i].change(function(){
+			elements[i].unbind('change').change(function(){
 				extension.checkRule($(this));
 			})
 		}
 	},
 	setSubmitCheck: function(){
+		var extension = core.validator;
 		var form = $(arguments[0]);
 		form.submit(function(event){
-			var subject = $(this);
-			var extension = core.validator;
-			var name = String(subject.attr('name'));
-			var elements = extension.findElements(subject);
-			var pass = true;
-			for(i in elements){
-				if(!extension.checkRule(elements[i])) {
-					pass = false;
-				}
-			}
-			if(pass){
-				var dateField = subject.find('input.date');
-				var dateFormat = dateField.val();
-				dateField.val(Date.parse(dateFormat)/1000);
-			}else{
-				event.preventDefault();
-			}
+			extension.checkForm(form);
 		});		
+	},
+	checkForm: function(){
+		var form = arguments[0];
+		var subject = $(this);
+		var extension = core.validator;
+		var name = String(subject.attr('name'));
+		var elements = extension.findElements(subject);
+		var pass = true;
+		for(i in elements){
+			if(!extension.checkRule(elements[i])) {
+				pass = false;
+			}
+		}
+		if(pass){
+			var dateField = subject.find('input.date');
+			var dateFormat = dateField.val();
+			dateField.val(Date.parse(dateFormat)/1000);
+		}
+		return pass;		
 	},
 	setStepCheck: function(){
 		var steps = $('.step', arguments[0]);
@@ -296,10 +290,3 @@ core.validator = {
 		subject.css({border:"1px inset #59bd45"});
 	}
 };
-$(document).ready(function(){
-	core.validator.sandbox.listen(['validate.form'], core.validator.init);
-	var subject = $('form.validate');
-	if(!subject.length) return;
-	var event = {type: 'validate.form', data: subject};
-	core.validator.sandbox.fire(event);
-});

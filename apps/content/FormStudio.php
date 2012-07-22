@@ -27,6 +27,9 @@ class FormStudio extends \apps\Application {
 				case "select":
 					return $form->selectRecord();
 					break;
+				case "delete":
+					return $form->deleteRecord();
+					break;
 			}
 		}catch(\helpers\HelperException $e){
 			$this->doCrash($e);

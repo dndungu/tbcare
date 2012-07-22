@@ -1083,11 +1083,12 @@ ul.content-box-tabs li a:hover,.shortcut-button span:hover {
 
 .gridContentRecord {
 	border-bottom: 1px solid #F0F0F0;
+	cursor:pointer;
 }
 
-.editable .gridContentRecord {
+.editable {
 	cursor:text;
-} 
+}
 
 .grid .grid1of10{
 	text-align:center;
@@ -1187,6 +1188,24 @@ ul.content-box-tabs li a:hover,.shortcut-button span:hover {
 	behavior: url(/skins/tbcare/images/pie.htc);	
 }
 
+.gridDeleteButton {
+	border:1px outset #F27377;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 4px 12px;
+	color:#000;
+	background: #E8E8E8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F27377), to(#D9370D) );
+	background: -webkit-linear-gradient(#F27377, #D9370D);
+	background: -moz-linear-gradient(#F27377, #D9370D);
+	background: -ms-linear-gradient(#F27377, #D9370D);
+	background: -o-linear-gradient(#F27377, #D9370D);
+	background: linear-gradient(#F27377, #D9370D);
+	-pie-background: linear-gradient(#F27377, #D9370D);
+	behavior: url(/skins/tbcare/images/pie.htc);
+}
+
 .grid input[type="submit"], .grid input[type="button"], .pagenavigator {
 	text-align: center;
 	cursor: pointer;
@@ -1231,10 +1250,52 @@ ul.content-box-tabs li a:hover,.shortcut-button span:hover {
 	display:inline-block;
 }
 
+.gridContent select {
+	width:23%;
+}
+
 .gridContent input[type="submit"] {
 	margin:0 0 0 26%;
 }
 
 .gridContent label {
 	margin:10px 0 0 0;
+}
+
+.gridCell {
+	background:#FCFCFC;
+	display:inline-block;
+	width:98%;
+	margin:0 1% 10px 1%;
+	cursor:text;
+}
+
+.rowCell {
+	padding:5px 0;
+	width:100%;
+	display:inline-block;
+}
+
+.titleCell {
+	width:23%;
+	display:inline-block;
+	margin:0 1%;
+	text-align:right;
+	font-weight:900;
+}
+
+.contentCell {
+	width:73%;
+	margin:0 1%;
+	display:inline-block;
+}
+
+.actionsCell {
+	padding:10px 0;
+	width:73%;
+	margin:0 1% 0 26%;
+}
+
+.actionsCell input {
+	margin-right:15px;
 }

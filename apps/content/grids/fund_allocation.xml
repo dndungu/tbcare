@@ -3,6 +3,7 @@
 	<records>
 		<leftjoin>`budget` ON (`fund_allocation`.`budget_id` = `budget`.`budget_id`)</leftjoin>
 		<leftjoin>`financier` ON (`budget`.`financier_code` = `financier`.`financier_code`)</leftjoin>
+		<filter field="inTrash" value="No"/>
 		<ordercolumn>creationTime</ordercolumn>
 		<orderdirection>desc</orderdirection>
 	</records>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language code="GB" name="English UK">
+	<label index="roles.label">Roles</label>
+	<label index="permissions.label">Permissions</label>
+	<label index="approve.label">Approve</label>
+	<label index="reject.label">Reject</label>
+	<label index="authorize.label">Authorize</label>
+	<label index="unauthorize.label">Unauthorize</label>
 	<label index="description.label">Description</label>
 	<label index="description.placeholder">Enter description</label>
     <label index="age.seconds">seconds ago</label>
@@ -14,12 +20,15 @@
     <label index="id.label">ID</label>
     <label index="myaccount">My Account</label>
     <label index="accountcreated">Your account at TB Care</label>
-    <label index="donation">Donate</label>
+	<label index="action.edit">Edit</label>
+	<label index="action.delete">Delete</label>
+	<label index="action.close">Close</label>
     <label index="action.add">Add</label>
     <label index="action.search">Search</label>
     <label index="action.continue">Continue</label>
     <label index="action.donate">Donate</label>
     <label index="action.complete">Complete</label>
+    <label index="delete.confirm.label">Are you sure you want to delete this record?</label>
     <label index="date.placeholder">MM-DD-YYYY</label>
     <label index="medium.label">How do you wish to donate</label>
     <label index="login.required">You need to sign in to perform this operation</label>
@@ -136,7 +145,7 @@
     <label index="summary">Summary</label>
     <label index="overview">Overview</label>
     <label index="users">Users</label>
-    <label index="security">Permissions</label>
+    <label index="security">Access Rights</label>
     <label index="users.administrators">Administrators</label>
     <label index="users.editors">Editors</label>
     <label index="users.patients">Patients</label>

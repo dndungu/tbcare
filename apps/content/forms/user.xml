@@ -25,7 +25,7 @@
 	    </element>
 	</field>
 	<field name="role" type="options" join="rolemap">
-		<element name="role" type="options" lookup="role" value="ID" label="title" filter='{"isSystem":"No"}'>
+		<element name="role" type="options" lookup="role" value="ID" display="title" label="roles.label" filter='{"isSystem":"No"}'>
 			<class>joinoptions</class>
 		</element>
 	</field>

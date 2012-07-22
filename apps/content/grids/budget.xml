@@ -4,6 +4,7 @@
         <leftjoin>`financier` on (`budget`.`financier_code` = `financier`.`financier_code`)</leftjoin>
         <ordercolumn>`budget`.`creationTime`</ordercolumn>
         <orderdirection>desc</orderdirection>
+        <filter field="`budget`.`inTrash`" value="No"/>
         <search parameters="3">`title` LIKE '%s' OR `firstname` LIKE '%s' OR `lastname` LIKE '%s'</search>
     </records>
     <columns primarykey="`budget_id`">
