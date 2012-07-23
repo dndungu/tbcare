@@ -1299,3 +1299,56 @@ Stack trace:
 [22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
 [22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
 [22-Jul-2012 08:10:00 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:53:30 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:53:30 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:53:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:53:30 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:53:30 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 08:53:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:01:32 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:01:32 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:01:32 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:01:32 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:01:32 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:01:32 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:43 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:43 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:43 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:43 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:43 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:43 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:46 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:46 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:46 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:46 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:46 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 09:17:46 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 10:44:05 UTC] Access to portal not allowed
+[22-Jul-2012 11:19:10 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:10 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:10 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:11 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:11 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:11 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 11:19:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[22-Jul-2012 17:09:31 UTC] Access to portal not allowed
+[22-Jul-2012 17:09:31 UTC] Access to portal not allowed
+[22-Jul-2012 17:59:32 UTC] Access to portal not allowed
+[22-Jul-2012 17:59:32 UTC] Access to portal not allowed
+[22-Jul-2012 17:59:33 UTC] Access to portal not allowed
+[22-Jul-2012 17:59:33 UTC] Access to portal not allowed
+[22-Jul-2012 17:59:34 UTC] Access to portal not allowed
+[22-Jul-2012 17:59:34 UTC] Access to portal not allowed
+[22-Jul-2012 17:59:45 UTC] Access to portal not allowed
+[23-Jul-2012 06:05:40 UTC] Access to portal not allowed
+[23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41

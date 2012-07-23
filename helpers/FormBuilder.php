@@ -398,7 +398,7 @@ class FormBuilder {
 	}	
 	
 	public function getContent($key){
-		if(in_array($key, array('creationTime', 'site', 'user'))){
+		if(in_array($key, array('creationTime', 'site', 'user', 'sourceIP'))){
 			switch($key){
 				case "creationTime":
 					return time();

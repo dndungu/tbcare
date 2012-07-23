@@ -1299,3 +1299,135 @@ ul.content-box-tabs li a:hover,.shortcut-button span:hover {
 .actionsCell input {
 	margin-right:15px;
 }
+
+.dashboard {
+	margin:10px 1%;
+	width:98%;
+	display:inline-block;
+}
+
+.dashboard .atom {
+	display:inline-block;
+	padding: 20px 0;
+	width: 230px;
+	margin:20px 20px 0 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: #CBCBCB 0px 2px 3px;
+	-moz-box-shadow: #CBCBCB 0px 2px 3px;
+	box-shadow: #CBCBCB 0px 2px 3px;
+	behavior: url(/skins/tbcare/images/pie.htc);	
+}
+
+.dashboard .atom-grey {
+	border: 1px solid #BEBEBE;
+	background: transparent;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F8F8F8), to(#CBCBCB));
+	background: -webkit-linear-gradient(#F8F8F8, #CBCBCB);
+	background: -moz-linear-gradient(#F8F8F8, #CBCBCB);
+	background: -ms-linear-gradient(#F8F8F8, #CBCBCB);
+	background: -o-linear-gradient(#F8F8F8, #CBCBCB);
+	background: linear-gradient(#F8F8F8, #CBCBCB);
+	-pie-background: linear-gradient(#F8F8F8, #CBCBCB);
+}
+
+.dashboard .atom-grey .content {
+	color:#111;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	border-bottom:1px solid #999;
+}
+
+.dashboard .atom-grey .title {
+	border-top:1px solid #FFF;
+}
+
+.dashboard .atom-green {
+	border: 1px solid #498624;
+	background: transparent;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#77cc44), to(#549a2a));
+	background: -webkit-linear-gradient(#77cc44, #549a2a);
+	background: -moz-linear-gradient(#77cc44, #549a2a);
+	background: -ms-linear-gradient(#77cc44, #549a2a);
+	background: -o-linear-gradient(#77cc44, #549a2a);
+	background: linear-gradient(#77cc44, #549a2a);
+	-pie-background: linear-gradient(#77cc44, #549a2a);	
+}
+
+.dashboard .atom-green .content {
+	color:#111;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	border-bottom:1px solid #561;
+}
+
+.dashboard .atom-green .title {
+	border-top:1px solid rgba(255,255,255,.65);
+	color:#fff;
+}
+
+.dashboard .atom-orange {
+	border: 1px solid #ee8f00;
+	background: transparent;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffbb55), to(#ff9c08));
+	background: -webkit-linear-gradient(#ffbb55, #ff9c08);
+	background: -moz-linear-gradient(#ffbb55, #ff9c08);
+	background: -ms-linear-gradient(#ffbb55, #ff9c08);
+	background: -o-linear-gradient(#ffbb55, #ff9c08);
+	background: linear-gradient(#ffbb55, #ff9c08);
+	-pie-background: linear-gradient(#ffbb55, #ff9c08);	
+}
+
+.dashboard .atom-orange .content {
+	color:#111;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	border-bottom: 1px solid #D61;
+}
+
+.dashboard .atom-orange .title {
+	border-top:1px solid rgba(255,255,255,0.6);
+	color:#fff;
+}
+
+.dashboard .atom-red {
+	border: 1px solid #951e1e;
+	background: transparent;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d94141), to(#ab2222));
+	background: -webkit-linear-gradient(#d94141, #ab2222);
+	background: -moz-linear-gradient(#d94141, #ab2222);
+	background: -ms-linear-gradient(#d94141, #ab2222);
+	background: -o-linear-gradient(#d94141, #ab2222);
+	background: linear-gradient(#d94141, #ab2222);
+	-pie-background: linear-gradient(#d94141, #ab2222);	
+}
+
+.dashboard .atom-red .content {
+	color:#111;
+	border-bottom: 1px solid #A92C2C;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.dashboard .atom-red .title {
+	border-top:1px solid rgba(255,255,255,0.65);
+	color:#fff;
+}
+
+.dashboard .atom .content {
+	width:88%;
+	margin:0 6%;
+	padding:0 0 10px 0;
+	font-size:2.25em;
+	font-weight:900;
+	text-align:right;
+	display:inline-block;
+	
+}
+
+.dashboard .atom .title {
+	width:88%;
+	margin:0 6%;
+	padding:10px 0 0 0;
+	text-align:center;
+	font-size:1.25em;
+	text-transform:capitalize;
+	display:inline-block;
+}

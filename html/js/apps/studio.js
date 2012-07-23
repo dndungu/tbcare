@@ -10,6 +10,7 @@ core.register('studio', function(sandbox){
 		route: function(event){
 			var href = event.data;
 			var control = sandbox.module.initControl(href);
+			if(!control) return;
 			control.onReady(function(){
 				sandbox.fire({type: 'navigation.staging', data: {"stage": "primary", "control": control}});
 			});

@@ -85,7 +85,7 @@
 		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gateway"/>
 	</portal>	
 	<portal type="raw" access="permission.configuration.section">
-	    <navigation id="configuration" parent="root" group="panel" uri="/configuration" label="configuration" weight="50" class="nav-top-item"></navigation>
+	    <navigation id="configuration" parent="root" group="_panel" uri="/configuration" label="configuration" weight="50" class="nav-top-item"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.configuration"/>
 	</portal>
 	<portal type="raw" access="permission.users.section">
