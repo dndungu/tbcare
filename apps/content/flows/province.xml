@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="province">
+    <select access="permission.maintenance.province"></select>
+    <insert access="permission.maintenance.province.insert"></insert>
+    <update access="permission.maintenance.province.update"></update>
+    <delete access="permission.maintenance.province.delete"></delete>
+</flow>

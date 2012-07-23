@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="order_type" storage="local" class="validate" primarykey="ID">
+	<field name="title" type="varchar" length="64">
+		<element name="title" type="text" label="order_type.label" placeholder="order_type.placeholder"></element>
+	</field>
+	<field name="creationTime" type="int" length="10">
+		<element name="creationTime" type="hidden" value=""></element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>	
+</form>

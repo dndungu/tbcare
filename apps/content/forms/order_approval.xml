@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="payment" id="order_approval" class="validate" primarykey="ID" storage="local">
+	<field name="approvalUser" type="int" length="20">
+		<element name="approvalUser" type="hidden"></element>
+	</field>
+	<field name="approvalNotes" type="tinytext">
+		<element name="approvalNotes" type="textarea" label="description.label" placeholder="description.placeholder"></element>
+	</field>
+	<field name="approvalTime" type="int" length="10">
+		<element name="approvalTime" type="hidden" value=""></element>
+	</field>
+	<button name="action" type="submit" value="action.approve"><class>gridPrimaryButton</class></button>
+	<button name="action" type="submit" value="action.reject"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>	
+</form>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="order_authorisation">
+	<select access="permission.order.authorize"></select>
+	<insert access="permission.order.authorize.insert"></insert>
+	<update access="permission.order.authorize"></update>
+	<delete access="permission.order.authorize.delete"></delete>	
+</flow>

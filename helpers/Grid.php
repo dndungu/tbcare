@@ -30,6 +30,8 @@ class Grid {
 	
 	private $queryBuilder = NULL;
 	
+	private $records = NULL;
+	
 	public function __construct(&$sandbox) {
 		$this->sandbox = &$sandbox;
 	}
@@ -54,13 +56,27 @@ class Grid {
 		$result['footer']['rowCount'] = $rowCount[0]['rowCount'];
 		$result['footer']['rowOffset'] = $this->queryBuilder->getOffset();
 		$result['footer']['rowLimit'] = $this->queryBuilder->getLimit();
-		
-		$result['body'] = $this->getStorage()->query($this->queryBuilder->browseQuery());
+		$this->records = $this->getStorage()->query($this->queryBuilder->browseQuery());
+		$this->formatRecords();
+		$result['body'] = $this->records;
 		$result['ordercolumn'] = $this->queryBuilder->getOrderColumn();
 		$result['orderdirection'] = $this->queryBuilder->getOrderDirection();
 		$result['primarykey'] = (string) $this->definition->columns->attributes()->primarykey;
 
 		return json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+	}
+	
+	private function formatRecords(){
+		if(!$this->records) return;
+		$settings = $this->sandbox->getHelper('site')->getSettings();
+		foreach($this->records as $key => $record){
+			if(array_key_exists('creationTime', $record)){
+				$this->records[$key]['creationTime'] = date($settings['timeformat'], $record['creationTime']);
+			}
+			if(array_key_exists('expiryTime', $record)){
+				$this->records[$key]['expiryTime'] = date($settings['timeformat'], $record['expiryTime']);
+			}
+		}
 	}
 	
 	public function getStorage(){
@@ -90,7 +106,8 @@ class Grid {
 	private function initFlow(){
 		$base = $this->sandbox->getMeta('base');
 		require_once("$base/helpers/Flow.php");
-		$name = $this->name;
+		$id = (string) $this->definition->attributes()->id;
+		$name = strlen($id) ? $id : $this->name;
 		$this->flow = new Flow($this->sandbox);
 		$this->flow->setSource("$base/apps/content/flows/$name.xml");
 	}	

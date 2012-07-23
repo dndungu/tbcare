@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="district">
+    <select access="permission.maintenance.district"></select>
+    <insert access="permission.maintenance.district.insert"></insert>
+    <update access="permission.maintenance.district.update"></update>
+    <delete access="permission.maintenance.district.delete"></delete>
+</flow>

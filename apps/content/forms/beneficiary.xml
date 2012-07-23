@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="beneficiary" primarykey="ID" class="validate" storage="local">
+	<field name="user" type="int" length="20">
+		<element name="user" type="hidden" value=""></element>
+	</field>
+	<field name="facility" type="int" length="5">
+		<element name="facility" type="select" lookup="facility" value="ID" display="title" placeholder="facility.select.placeholder">
+			<class>required</class>
+		</element>
+	</field>
+	<field name="gender" type="enum" length="1">
+		<element name="gender" value="M" label="male.label">
+			<class>grid1of10</class>
+			<class>required</class>
+		</element>
+		<element name="gender" value="F" label="female.label">
+			<class>grid1of10</class>
+			<class>required</class>
+		</element>		
+	</field>
+	<field name="middlename" type="varchar" length="255">
+	    <element name="middlename" type="text" label="middlename.label" placeholder="middlename.placeholder">
+	        <class>text-input</class>
+	        <class>required</class>
+	    </element>
+	</field>	
+	<field name="firstname" type="varchar" length="255">
+	    <element name="firstname" type="text" label="firstname.label" placeholder="firstname.placeholder">
+	        <class>text-input</class>
+	        <class>required</class>
+	    </element>
+	</field>
+	<field name="lastname" type="varchar" length="255">
+	    <element name="lastname" type="text" label="lastname.label" placeholder="lastname.placeholder">
+	        <class>text-input</class>
+	        <class>required</class>
+	    </element>
+	</field>
+	<field name="MSISDN" type="varchar" length="16">
+		<element name="MSISDN" type="text" label="msisdn.label" placeholder="msisdn.placeholder">
+			<class>required</class>
+			<class>phone</class>
+		</element>
+	</field>
+	<field name="recipient_type" type="int" length="5">
+		<element name="recipient_type" type="select"></element>
+	</field>	
+	<field name="sourceIP" type="varchar" length="15">
+		<element name="sourceIP" type="hidden" value=""></element>
+	</field>	
+	<field name="creationTime" type="int" length="10">
+		<element name="user" type="hidden" value=""></element>
+	</field>	
+</form>

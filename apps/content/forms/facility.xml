@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="facility" storage="local" class="validate" primarykey="ID">
+	<field name="title" type="varchar" length="64">
+		<element name="title" type="text" label="facility.label" placeholder="facility.placeholder"></element>
+	</field>
+	<field name="province" type="int" length="5">
+		<element name="province" type="select" lookup="province" value="ID" display="title" placeholder="province.select.placeholder"></element>
+	</field>
+	<field name="district" type="int" length="5">
+		<element name="district" type="select" lookup="district" value="ID" display="title" placeholder="district.select.placeholder"></element>
+	</field>	
+	<field name="creationTime" type="int" length="10">
+		<element name="creationTime" type="hidden" value=""></element>
+	</field>
+</form>

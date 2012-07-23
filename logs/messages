@@ -1352,3 +1352,326 @@ Stack trace:
 [23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
 [23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
 [23-Jul-2012 06:06:38 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 06:16:15 UTC] PHP Notice:  Uninitialized string offset: -1 in /var/www/tbcare/base/Aliasing.php on line 86
+[23-Jul-2012 06:17:31 UTC] PHP Notice:  Uninitialized string offset: -1 in /var/www/tbcare/base/Aliasing.php on line 86
+[23-Jul-2012 06:17:41 UTC] PHP Notice:  Uninitialized string offset: -1 in /var/www/tbcare/base/Aliasing.php on line 86
+[23-Jul-2012 06:23:06 UTC] Access to portal not allowed
+[23-Jul-2012 06:50:57 UTC] Access to portal not allowed
+[23-Jul-2012 07:03:09 UTC] Access to portal not allowed
+[23-Jul-2012 07:03:58 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 07:03:58 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 07:03:58 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 07:03:58 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 07:03:58 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 07:03:58 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 41
+[23-Jul-2012 08:11:57 UTC] PHP Warning:  date() expects parameter 2 to be long, array given in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:13:18 UTC] PHP Warning:  date() expects parameter 2 to be long, array given in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:14:56 UTC] PHP Warning:  date() expects parameter 2 to be long, array given in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:16:42 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/tbcare/helpers/Grid.php on line 73
+[23-Jul-2012 08:24:30 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:24:30 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:24:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:24:30 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:24:30 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:24:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:34:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/Grid.php on line 71
+[23-Jul-2012 08:35:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/tbcare/helpers/Grid.php on line 71
+[23-Jul-2012 08:48:29 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:48:29 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:48:29 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:48:29 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:48:29 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 08:48:29 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:36 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:36 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:36 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:36 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:36 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:36 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:43 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:43 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:43 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:43 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:43 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:00:43 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:56:32 UTC] Access to portal not allowed
+[23-Jul-2012 10:56:32 UTC] Access to portal not allowed
+[23-Jul-2012 10:56:33 UTC] Access to portal not allowed
+[23-Jul-2012 10:56:33 UTC] Access to portal not allowed
+[23-Jul-2012 10:56:37 UTC] Access to portal not allowed
+[23-Jul-2012 10:56:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:56:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:56:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:56:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:56:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 10:56:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:40:14 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:40:14 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:40:14 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:40:14 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:40:14 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:40:14 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:46:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:46:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:46:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:46:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:46:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:46:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:52:19 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:52:19 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:52:19 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:52:19 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:52:19 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:52:19 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:55:21 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:55:21 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:55:21 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:55:21 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:55:21 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 11:55:21 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:15:18 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:15:18 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:15:18 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:15:18 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:15:18 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:15:18 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:20:18 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:20:18 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:20:18 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:20:18 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:20:18 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:20:18 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:28:51 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:28:51 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:28:51 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:28:51 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:28:51 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:28:51 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/forms/fund_allocation.xml:16: parser error : AttValue: &quot; or ' expected in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 		&lt;element name=&quot;financier&quot; type=&quot;select&quot; lookup=financier display=&quot;title&quot; value in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 		                                               ^ in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/forms/fund_allocation.xml:16: parser error : attributes construct error in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 		&lt;element name=&quot;financier&quot; type=&quot;select&quot; lookup=financier display=&quot;title&quot; value in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 		                                               ^ in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/forms/fund_allocation.xml:16: parser error : Couldn't find end of Start Tag element line 16 in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 		&lt;element name=&quot;financier&quot; type=&quot;select&quot; lookup=financier display=&quot;title&quot; value in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 		                                               ^ in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/forms/fund_allocation.xml:16: parser error : Opening and ending tag mismatch: field line 15 and element in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): label=&quot;financier.select.label&quot; placeholder=&quot;budget.select.placeholder&quot;&gt;&lt;/element in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file():                                                                                ^ in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/forms/fund_allocation.xml:17: parser error : Opening and ending tag mismatch: form line 2 and field in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 	&lt;/field&gt; in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 	        ^ in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/forms/fund_allocation.xml:18: parser error : Extra content at the end of the document in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 	&lt;field name=&quot;creationTime&quot; type=&quot;int&quot; length=&quot;10&quot;&gt; in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:28:53 UTC] PHP Warning:  simplexml_load_file(): 	^ in /var/www/tbcare/helpers/FormBuilder.php on line 27
+[23-Jul-2012 12:29:09 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:29:09 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:29:09 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:29:09 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:29:09 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:29:09 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:29:11 UTC] PHP Notice:  Undefined index: title in /var/www/tbcare/helpers/FormBuilder.php on line 207
+[23-Jul-2012 12:29:11 UTC] PHP Notice:  Undefined index: title in /var/www/tbcare/helpers/FormBuilder.php on line 207
+[23-Jul-2012 12:29:11 UTC] PHP Notice:  Undefined index: title in /var/www/tbcare/helpers/FormBuilder.php on line 207
+[23-Jul-2012 12:47:19 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:47:19 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:47:19 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:47:19 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:47:19 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:47:19 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:52:57 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:52:57 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:52:57 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:52:57 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:52:57 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 12:52:57 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:11 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:11 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:11 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:11 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:11 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:11 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:30 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:30 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:30 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:30 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 13:31:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:37 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:37 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:37 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:37 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:37 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:37 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:42 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:42 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 14:37:42 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:05:34 UTC] Access to portal not allowed
+[23-Jul-2012 15:22:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:22:53 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:22:53 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:22:53 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:22:53 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:22:53 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:43:45 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 15:43:45 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 15:43:46 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:43:46 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:43:46 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:43:46 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:43:46 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:43:46 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 15:43:48 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 15:43:48 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 15:43:50 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 15:43:50 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 15:43:50 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 15:43:51 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:15:40 UTC] Access to portal not allowed
+[23-Jul-2012 16:15:45 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:15:45 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:02 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:02 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:05 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:05 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:05 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:05 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:06 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:17:06 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /var/www/tbcare/helpers/QueryBuilder.php on line 92
+[23-Jul-2012 16:27:52 UTC] Access to portal not allowed
+[23-Jul-2012 16:52:40 UTC] PHP Notice:  Undefined index: approvalUser in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 16:52:40 UTC] PHP Notice:  Undefined index: approvalNotes in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 16:52:40 UTC] PHP Notice:  Undefined index: approvalTime in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 17:21:22 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:21:23 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:21:34 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:21:35 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:21:36 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:21:36 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:21:36 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:22:01 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:22:02 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:22:02 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:22:02 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:22:03 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 17:32:32 UTC] PHP Notice:  Undefined index: approvalNotes in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 17:34:28 UTC] PHP Notice:  Undefined index: approvalNotes in /var/www/tbcare/helpers/CellBuilder.php on line 109

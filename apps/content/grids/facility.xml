@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="facility" title="facilities.label" searchable="true" sortable="true" paginatable="true" showColumnBar="true" showFooterBar="true" storage="local">
+	<records>
+		<leftjoin>`district` ON (`facility`.`district` = `district`.`ID`)</leftjoin>
+		<leftjoin>`province` ON (`facility`.`province` = `province`.`ID`)</leftjoin>
+		<ordercolumn>`facility`.`title`</ordercolumn>
+		<orderdirection>asc</orderdirection>
+		<filter field="`facility`.`inTrash`" value="No"></filter>
+		<filter field="`province`.`inTrash`" value="No"></filter>
+		<filter field="`district`.`inTrash`" value="No"></filter>
+		<search parameters="1">`title` LIKE '%s'</search>
+	</records>
+	<columns primarykey="`facility`.`ID`">
+		<column name="ID" field="`facility`.`ID`" title="id.label" class="grid1of10 column"></column>
+		<column name="title" field="`facility`.`title`" title="facility.label" class="grid3of10 column"></column>
+		<column name="district" field="`district`.`title`" title="district.label" class="grid2of10 column"></column>
+		<column name="province" field="`province`.`title`" title="province.label" class="grid2of10 column"></column>
+		<column name="creationTime" field="`facility`.`creationTime`" title="creationTime.label" class="grid2of10 column"></column>
+	</columns>
+</grid>

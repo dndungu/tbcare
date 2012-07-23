@@ -2,9 +2,9 @@
 <grid name="fund_allocation" title="finance.funds_allocation" searchable="true" sortable="true" paginatable="true" showColumnBar="true" showFooterBar="true">
 	<records>
 		<leftjoin>`budget` ON (`fund_allocation`.`budget_id` = `budget`.`budget_id`)</leftjoin>
-		<leftjoin>`financier` ON (`budget`.`financier_code` = `financier`.`financier_code`)</leftjoin>
-		<filter field="inTrash" value="No"/>
-		<ordercolumn>creationTime</ordercolumn>
+		<leftjoin>`financier` ON (`fund_allocation`.`financier` = `financier`.`ID`)</leftjoin>
+		<filter field="`fund_allocation`.`inTrash`" value="No"/>
+		<ordercolumn>`fund_allocation`.`creationTime`</ordercolumn>
 		<orderdirection>desc</orderdirection>
 	</records>
 	<columns primarykey="`fund_allocation`.`ID`">

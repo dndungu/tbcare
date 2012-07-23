@@ -270,6 +270,7 @@ core.control.extend('grid', function(){
 				core.ajax.post(that.source, data, function(){
 					that.activity.getRecords = arguments[0].readyState;
 					if(arguments[0].readyState != 4 || arguments[0].status != 200) return;
+					console.info(arguments[0].responseText);
 					that.records = jQuery.parseJSON(arguments[0].responseText);
 					that.limit = that.records.footer.rowLimit;
 					that.offset = that.records.footer.rowOffset;

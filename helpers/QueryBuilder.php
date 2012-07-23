@@ -89,10 +89,21 @@ class QueryBuilder {
 			$field= (string) $filter->attributes()->field;
 			$value = (string) $filter->attributes()->value;
 			$name = substr_count($field, '.') || substr_count($field, '`') ? $field : "`$field`";
-			if(is_numeric($value)){
-				$query[] = "$name = $value";
+			if(in_array($value, array('{user}', '{site}'))){
+				switch($value){
+					case "{user}":
+						$query[] = sprintf("`user` = %d", $this->sandbox->getHelper('user')->getID());
+						break;
+					case "site":
+						$query[] = sprintf("`site` = %d", $this->sandbox->getHelper('site')->getID());
+						break;
+				}
 			}else{
-				$query[] = "$name = '$value'";
+				if(is_numeric($value)){
+					$query[] = "$name = $value";
+				}else{
+					$query[] = "$name = '$value'";
+				}
 			}
 		}
 		return implode(' AND ', $query);

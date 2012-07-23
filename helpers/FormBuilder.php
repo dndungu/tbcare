@@ -16,6 +16,8 @@ class FormBuilder {
 	
 	private $content = NULL;
 	
+	private $records = NULL;
+	
 	public function __construct(&$sandbox){
 		$this->sandbox = &$sandbox;
 	}
@@ -40,7 +42,8 @@ class FormBuilder {
 	private function initFlow(){
 		$base = $this->sandbox->getMeta('base');
 		require_once("$base/helpers/Flow.php");
-		$name = $this->name;
+		$id = (string) $this->definition->attributes()->id;
+		$name = strlen($id) ? $id : $this->name;
 		$filename = "$base/apps/content/flows/$name.xml";
 		if(is_file($filename)){
 			$this->flow = new Flow($this->sandbox);
@@ -357,11 +360,9 @@ class FormBuilder {
 		$fields = $this->getFields();
 		foreach($fields as $field){
 			$type = (string) $field->attributes()->type;
-			if(strlen($type)) {
-				$key = (string) $field->attributes()->name;
-				if($type != "options"){
-					$record['content'][$key] = $this->getContent($key);
-				}
+			$key = (string) $field->attributes()->name;
+			if(strlen($type) && $type != "options") {
+				$record['content'][$key] = $this->getContent($key);
 			}
 		}
 		try {
@@ -409,6 +410,9 @@ class FormBuilder {
 				case "user":
 					return $this->sandbox->getHelper('user')->getID();
 					break;
+				case "sourceIP":
+					return array_key_exists('REMOTE_ADDR', $_SERVER) ? $_SERVER['REMOTE_ADDR'] : "127.0.0.1";
+					break;
 			}
 		}else{
 			return $this->sandbox->getHelper('input')->postString($key);
@@ -423,9 +427,23 @@ class FormBuilder {
 		$table = (string) $this->definition->attributes()->name;
 		$columns = $this->getColumns();
 		$sql = sprintf("SELECT %s, %s FROM `%s` WHERE `%s` = %d", $key, implode(", ", $columns), $table, $key, $primarykey);
-		$rows = $this->getOptionValues($this->getStorage()->query($sql));
-		return json_encode($rows, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);		
+		$this->records = $this->getOptionValues($this->getStorage()->query($sql));
+		$this->formatRecords();
+		return json_encode($this->records, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);		
 	}
+	
+	private function formatRecords(){
+		if(!$this->records) return;
+		$settings = $this->sandbox->getHelper('site')->getSettings();
+		foreach($this->records as $key => $record){
+			if(array_key_exists('creationTime', $record)){
+				$this->records[$key]['creationTime'] = date($settings['timeformat'], $record['creationTime']);
+			}
+			if(array_key_exists('expiryTime', $record)){
+				$this->records[$key]['expiryTime'] = date($settings['timeformat'], $record['expiryTime']);
+			}
+		}
+	}	
 	
 	protected function getOptionValues($rows){
 		$fields = $this->getSpecialFields('options');

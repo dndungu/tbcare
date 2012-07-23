@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="payment" id="order_authorisation" class="validate" primarykey="ID" storage="local">
+	<field name="authorisationUser" type="int" length="20">
+		<element name="authorisationUser" type="hidden" value=""></element>
+	</field>
+	<field name="authorisationNotes" type="tinytext" length="255">
+		<element name="authorisationNotes" type="text" label="description.label" placeholder="description.placeholder">
+			<class>required</class>
+		</element>
+	</field>
+	<field name="authorisationTime" type="int" length="10">
+		<element name="authorisationTime" type="hidden" value=""></element>
+	</field>
+	<button name="action" type="submit" value="action.authorise"><class>gridPrimaryButton</class></button>
+	<button name="action" type="submit" value="action.unauthorise"><class>gridSecondaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>			
+</form>

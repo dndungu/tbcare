@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="fund_allocation" class="validate" storage="local" primarykey="ID">
-	<field name="credit" type="decimal" length="12,2">
+	<field name="credit" type="decimal" length="20">
 		<element name="credit" type="text" label="amount.label" placeholder="amount.placeholder">
-			<class>text-input</class>
+			<class>decimal</class>
+			<class>required</class>
+		</element>
+	</field>
+	<field name="notes" type="text" int="255">
+		<element name="notes" type="textarea" label="description.label" placeholder="description.placeholder">
 			<class>required</class>
 		</element>
 	</field>
 	<field name="budget_id" type="int" length="5">
-		<element name="budget_id" type="select" lookup="budget" display="title" value="budget_id" label="finance.budget.label" placeholder="finance.budget.label">
+		<element name="budget_id" type="select" lookup="budget" display="title" value="budget_id" label="finance.budget.label" placeholder="budget.select.placeholder">
+			<class>required</class>
+		</element>
+	</field>	
+	<field name="financier" type="int" length="5">
+		<element name="financier" type="select" lookup="financier" display="financier_name" value="ID" label="financier.label" placeholder="financier.select.placeholder">
+			<class>required</class>
 		</element>
 	</field>
+	<field name="creationTime" type="int" length="10">
+		<element name="creationTime" type="hidden" value=""></element>
+	</field>	
 	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
 	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>		
 </form>

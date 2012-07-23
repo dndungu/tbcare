@@ -16,36 +16,68 @@
 	    <navigation id="finance" parent="root" group="panel" uri="/finance" label="finance" weight="20" class="nav-top-item"></navigation>
 	    <portlet module="core" controller="Navigation" access="permission.finance.section"></portlet>
 	</portal>
+	<portal type="raw" access="permission.orders">
+	    <navigation parent="finance" group="panel" uri="/grid/payment" label="order.label" weight="21"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.orders"/>
+	</portal>
+	<portal type="raw" access="permission.orders">
+	    <navigation parent="finance" group="hidden" uri="/form/payment" label="order.label" weight="21"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.orders"/>
+	</portal>	
+	<portal type="raw" access="permission.orders">
+	    <navigation parent="finance" group="hidden" uri="/cell/payment" label="order.label" weight="21"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.orders"/>
+	</portal>
+	<portal type="raw" access="permission.order.approve">
+	    <navigation parent="finance" group="panel" uri="/grid/order_approval" label="order.approve.label" weight="23"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.order.approve"/>
+	</portal>
+	<portal type="raw" access="permission.order.approve">
+	    <navigation parent="finance" group="hidden" uri="/form/order_approval" label="order.approve.label" weight="23"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.order.approve"/>
+	</portal>	
+	<portal type="raw" access="permission.order.approve">
+	    <navigation parent="finance" group="hidden" uri="/cell/order_approval" label="order.approve.label" weight="23"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.order.approve"/>
+	</portal>
+	<portal type="raw" access="permission.order.authorize">
+	    <navigation parent="finance" group="panel" uri="/grid/order_authorisation" label="order.authorise.label" weight="24"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.order.authorize"/>
+	</portal>
+	<portal type="raw" access="permission.order.authorize">
+	    <navigation parent="finance" group="hidden" uri="/form/order_authorisation" label="order.authorise.label" weight="24"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.order.authorize"/>
+	</portal>
+	<portal type="raw" access="permission.order.authorize">
+	    <navigation parent="finance" group="hidden" uri="/cell/order_authorisation" label="order.authorise.label" weight="24"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.order.authorize"/>
+	</portal>
 	<portal type="raw" access="permission.budget">
-	    <navigation parent="finance" group="panel" uri="/grid/budget" label="finance.budget" weight="21"></navigation>
+	    <navigation parent="finance" group="panel" uri="/grid/budget" label="finance.budget" weight="25"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.budget"/>
 	</portal>	
 	<portal type="raw" access="permission.budget">
-	    <navigation parent="finance" group="hidden" uri="/form/budget" label="finance.budget" weight="21"></navigation>
+	    <navigation parent="finance" group="hidden" uri="/form/budget" label="finance.budget" weight="25"></navigation>
 	    <portlet module="content" controller="FormStudio" access="permission.budget"/>
 	</portal>
 	<portal type="raw" access="permission.budget">
-		<navigation parent="finance" group="hidden" uri="/cell/budget" label="finance.budget" weight="21"></navigation>
+		<navigation parent="finance" group="hidden" uri="/cell/budget" label="finance.budget" weight="25"></navigation>
 		<portlet module="content" controller="CellStudio" access="permission.budget"></portlet>
 	</portal>	
 	<portal type="raw" access="permission.funds_allocation">
-	    <navigation parent="finance" group="panel" uri="/grid/fund_allocation" label="finance.funds_allocation" weight="22"></navigation>
+	    <navigation parent="finance" group="panel" uri="/grid/fund_allocation" label="finance.funds_allocation" weight="26"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.funds_allocation"/>
 	</portal>
 	<portal type="raw" access="permission.funds_allocation">
-	    <navigation parent="finance" group="hidden" uri="/form/fund_allocation" label="finance.funds_allocation" weight="22"></navigation>
+	    <navigation parent="finance" group="hidden" uri="/form/fund_allocation" label="finance.funds_allocation" weight="26"></navigation>
 	    <portlet module="content" controller="FormStudio" access="permission.funds_allocation"/>
-	</portal>	
-	<portal type="raw" access="permission.financier">
-	    <navigation parent="finance" group="panel" uri="/grid/financier" label="financiers.label" weight="23"></navigation>
-	    <portlet module="content" controller="GridStudio" access="permission.financier"/>
 	</portal>
-	<portal type="raw" access="permission.financier">
-	    <navigation parent="finance" group="hidden" uri="/form/financier" label="financiers.label" weight="23"></navigation>
-	    <portlet module="content" controller="FormStudio" access="permission.financier"/>
-	</portal>	
+	<portal type="raw" access="permission.funds_allocation">
+	    <navigation parent="finance" group="hidden" uri="/cell/fund_allocation" label="finance.funds_allocation" weight="26"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.funds_allocation"/>
+	</portal>		
 	<portal type="raw" access="permission.payments.section">
-	    <navigation id="payments" parent="root" group="panel" uri="/payments" label="payments" weight="30" class="nav-top-item"></navigation>
+	    <navigation id="payments" parent="root" group="panel" uri="/payments" label="reports" weight="30" class="nav-top-item"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.payments.section"/>
 	</portal>
 	<portal type="raw" access="permission.payments.completed">
@@ -84,10 +116,70 @@
 		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="44"></navigation>
 		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gateway"/>
 	</portal>	
-	<portal type="raw" access="permission.configuration.section">
-	    <navigation id="configuration" parent="root" group="_panel" uri="/configuration" label="configuration" weight="50" class="nav-top-item"></navigation>
-	    <portlet module="content" controller="GridStudio" access="permission.configuration"/>
+	<portal type="raw" access="permission.maintenance.section">
+	    <navigation id="maintenance" parent="root" group="panel" uri="/null" label="maintenance.label" weight="50" class="nav-top-item"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.maintenance.section"/>
 	</portal>
+	<portal type="raw" access="permission.maintenance.district">
+	    <navigation id="districts" parent="maintenance" group="panel" uri="/grid/district" label="districts.label" weight="51" class="nav-top-item"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.maintenance.district"/>
+	</portal>
+	<portal type="raw" access="permission.maintenance.district">
+	    <navigation id="districts" parent="maintenance" group="hidden" uri="/form/district" label="districts.label" weight="51" class="nav-top-item"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.maintenance.district"/>
+	</portal>	
+	<portal type="raw" access="permission.maintenance.district">
+	    <navigation id="districts" parent="maintenance" group="hidden" uri="/cell/district" label="districts.label" weight="51" class="nav-top-item"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.maintenance.district"/>
+	</portal>
+	<portal type="raw" access="permission.maintenance.province">
+	    <navigation id="provinces" parent="maintenance" group="panel" uri="/grid/province" label="provinces.label" weight="52"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.maintenance.province"/>
+	</portal>
+	<portal type="raw" access="permission.maintenance.province">
+	    <navigation id="provinces" parent="maintenance" group="hidden" uri="/form/province" label="provinces.label" weight="52"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.maintenance.province"/>
+	</portal>	
+	<portal type="raw" access="permission.maintenance.province">
+	    <navigation id="provinces" parent="maintenance" group="hidden" uri="/cell/province" label="provinces.label" weight="52"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.maintenance.province"/>
+	</portal>
+	<portal type="raw" access="permission.maintenance.facility">
+	    <navigation id="facilities" parent="maintenance" group="panel" uri="/grid/facility" label="facilities.label" weight="53"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.maintenance.facility"/>
+	</portal>
+	<portal type="raw" access="permission.maintenance.facility">
+	    <navigation id="facilities" parent="maintenance" group="hidden" uri="/form/facility" label="facilities.label" weight="53"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.maintenance.facility"/>
+	</portal>	
+	<portal type="raw" access="permission.maintenance.facility">
+	    <navigation id="facilities" parent="maintenance" group="hidden" uri="/cell/facility" label="facilities.label" weight="53"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.maintenance.facility"/>
+	</portal>
+	<portal type="raw" access="permission.maintenance.order_type">
+	    <navigation parent="maintenance" group="panel" uri="/grid/order_type" label="order_types.label" weight="54"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.maintenance.order_type"/>
+	</portal>
+	<portal type="raw" access="permission.maintenance.order_type">
+	    <navigation parent="maintenance" group="hidden" uri="/form/order_type" label="order_types.label" weight="54"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.maintenance.order_type"/>
+	</portal>	
+	<portal type="raw" access="permission.maintenance.order_type">
+	    <navigation parent="maintenance" group="hidden" uri="/cell/order_type" label="order_types.label" weight="54"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.maintenance.order_type"/>
+	</portal>
+	<portal type="raw" access="permission.financier">
+	    <navigation parent="maintenance" group="panel" uri="/grid/financier" label="financiers.label" weight="55"></navigation>
+	    <portlet module="content" controller="GridStudio" access="permission.financier"/>
+	</portal>
+	<portal type="raw" access="permission.financier">
+	    <navigation parent="finance" group="hidden" uri="/form/financier" label="financiers.label" weight="55"></navigation>
+	    <portlet module="content" controller="FormStudio" access="permission.financier"/>
+	</portal>
+	<portal type="raw" access="permission.financier">
+	    <navigation parent="finance" group="hidden" uri="/cell/financier" label="financiers.label" weight="55"></navigation>
+	    <portlet module="content" controller="CellStudio" access="permission.financier"/>
+	</portal>		
 	<portal type="raw" access="permission.users.section">
 	    <navigation id="users" parent="root" group="panel" uri="/null" label="security" weight="60" class="nav-top-item"></navigation>
 	</portal>

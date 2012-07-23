@@ -11,11 +11,9 @@
 			 <class>text-input</class>
 		</element>
 	</field>
-	<field name="financier_code" type="varchar" length="32">
-		<element name="financier_code" type="select" lookup="financier" value="financier_code" display="financier_name" label="financier.label" placeholder="select.financier_name.placeholder">
-			 
-		</element>
-	</field>
+	<field name="creationTime" type="int" length="10">
+		<element name="creationTime" type="hidden" value=""></element>
+	</field>	
 	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
 	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>	
 </form>

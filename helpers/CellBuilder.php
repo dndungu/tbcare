@@ -67,12 +67,6 @@ class CellBuilder {
 	private function createActions(){
 		$translator = $this->sandbox->getHelper('translation');
 		$html[] = "\t".'<div class="actionsCell">';
-		$workflow = $this->flow->getWorkFlow();
-		if($workflow){
-			foreach($workflow as $name => $label){
-				$html[] = "\t\t".'<input type="button" name="'.$name.'" value="'.$label.'" class="gridPrimaryButton"/>';
-			}
-		}
 		if($this->flow->isUpdateable()){
 			$html[] = "\t\t".'<input type="button" name="updater" value="'.$translator->translate('action.edit').'" class="gridPrimaryButton"/>';
 		}
@@ -203,7 +197,21 @@ class CellBuilder {
 		$select['table'] = $this->name;
 		$select['constraints'][$key] = $identifier;
 		$this->record = $this->getStorage()->select($select);
+		$this->formatRecords();
 	}
+	
+	private function formatRecords(){
+		if(!$this->record) return;
+		$settings = $this->sandbox->getHelper('site')->getSettings();
+		foreach($this->record as $key => $record){
+			if(array_key_exists('creationTime', $record)){
+				$this->record[$key]['creationTime'] = date($settings['timeformat'], $record['creationTime']);
+			}
+			if(array_key_exists('expiryTime', $record)){
+				$this->record[$key]['expiryTime'] = date($settings['timeformat'], $record['expiryTime']);
+			}
+		}
+	}	
 	
 	public function getStorage(){
 		$storage = (string) $this->definition->attributes()->storage;

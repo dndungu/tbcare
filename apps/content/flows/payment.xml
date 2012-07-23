@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="order">
+    <select access="permission.orders"></select>
+    <insert access="permission.orders.insert"></insert>
+    <update access="permission.orders.update"></update>
+    <delete access="permission.orders.delete"></delete>
+</flow>

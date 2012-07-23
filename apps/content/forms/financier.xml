@@ -2,12 +2,12 @@
 <form name="financier" class="validate" primarykey="ID" storage="local">
 	<field name="financier_code" type="varchar" length="32">
 		<element name="financier_code" type="text" label="financier_code.label" placeholder="financier_code.placeholder">
-			<class>text-input</class>
+			<class>required</class>
 		</element>
 	</field>
 	<field name="financier_name" type="varchar" length="255">
 		<element name="financier_name" type="text" label="financier_name.label" placeholder="financier_name.placeholder">
-			<class>text-input</class>
+			<class>required</class>
 		</element>
 	</field>
 	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>

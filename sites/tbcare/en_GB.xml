@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language code="GB" name="English UK">
+	<label index="status.label">Status</label>
+	<label index="reports">Reports</label>
+	<label index="msisdn.label">Phone number</label>
+	<label index="msisdn.placeholder">Enter phone number</label>
 	<label index="roles.label">Roles</label>
 	<label index="permissions.label">Permissions</label>
 	<label index="approve.label">Approve</label>
@@ -28,6 +32,10 @@
     <label index="action.continue">Continue</label>
     <label index="action.donate">Donate</label>
     <label index="action.complete">Complete</label>
+    <label index="action.approve">Approve</label>
+    <label index="action.reject">Reject</label>
+    <label index="action.authorise">Authorise</label>
+    <label index="action.decline">Decline</label>
     <label index="delete.confirm.label">Are you sure you want to delete this record?</label>
     <label index="date.placeholder">MM-DD-YYYY</label>
     <label index="medium.label">How do you wish to donate</label>
@@ -79,6 +87,8 @@
     <label index="role.placeholder">Enter role name</label>
     <label index="firstname.label">First name</label>
     <label index="firstname.placeholder">Enter first name</label>
+    <label index="middle.label">Middle name</label>
+    <label index="middle.placeholder">Enter middle name</label>    
     <label index="lastname.label">Last name</label>
     <label index="lastname.placeholder">Enter last name</label>
     <label index="expiryTime.label">Expiry Time</label>
@@ -142,7 +152,7 @@
         		
 		The TB Care Team        
     </label>
-    <label index="summary">Summary</label>
+    <label index="summary">Dashboard</label>
     <label index="overview">Overview</label>
     <label index="users">Users</label>
     <label index="security">Access Rights</label>
@@ -170,6 +180,11 @@
     <label index="statistics.discussion">Discussion</label>
     <label index="configuration">Configuration</label>
     <label index="configuration.general">General</label>
+	<label index="order.label">Make Payments</label>
+	<label index="order.approve.label">Approve Payments</label>
+	<label index="order.authorise.label">Authorise Payments</label>
+	<label index="beneficiary.placeholder">Enter beneficiary's name</label>
+	<label index="beneficiary.label">Beneficiary</label>    
     <label index="payments">Payments</label>
     <label index="payment.orders">Payment Orders</label>
     <label index="payment.pending">Pending</label>
@@ -180,10 +195,16 @@
     <label index="finance.budget.label">Budget line</label>
     <label index="finance.budget.placeholder">Budget line name</label>
     <label index="finance.budget">Budget Lines</label>
+    <label index="budget.select.placeholder">Select Budget Line</label>
     <label index="budget_line_id.label">Budgetline ID</label>
-    <label index="finance.funds_allocation">Funds Allocation</label>
+    <label index="permission.orders">Browse Payment Orders</label>
+    <label index="permission.orders.insert">Make Payments</label>
+    <label index="permission.orders.update">Edit Payment Request</label>
+    <label index="permission.orders.delete">Delete Payments</label>
+    <label index="finance.funds_allocation">Allocate Funds</label>
     <label index="amount.label">Amount</label>
     <label index="amount.placeholder">0.00</label>
+    <label index="financier.select.placeholder">Select Financier</label>
     <label index="financiers.label">Financiers</label>
     <label index="financier_code.label">Abbreviation</label>
     <label index="financier_code.placeholder">Enter abbreviation</label>
@@ -225,6 +246,41 @@
 	<label index="permission.financier.insert">Create financiers</label>
 	<label index="permission.financier.update">Edit financiers</label>
 	<label index="permission.financier.delete">Delete financiers</label>
+	<label index="maintenance.label">Maintenance</label>
+	<label index="district.select.placeholder">Select District</label>
+	<label index="district.placeholder">Enter district name</label>
+	<label index="district.label">District</label>
+	<label index="districts.label">Districts</label>
+	<label index="permission.maintenance.section">Maintenance Section</label>
+	<label index="permission.maintenance.district">Browse Districts</label>
+	<label index="permission.maintenance.district.insert">Create Districts</label>
+	<label index="permission.maintenance.district.update">Edit Districts</label>
+	<label index="permission.maintenance.district.delete">Delete Districts</label>
+	<label index="province.select.placeholder">Select Province</label>
+	<label index="province.placeholder">Enter province name</label>
+	<label index="province.label">Province</label>
+	<label index="provinces.label">Provinces</label>
+	<label index="permission.maintenance.province">Browse Provinces</label>
+	<label index="permission.maintenance.province.insert">Create Provinces</label>
+	<label index="permission.maintenance.province.update">Edit Provinces</label>
+	<label index="permission.maintenance.province.delete">Delete Provinces</label>
+	<label index="facility.select.placeholder">Select Facility</label>
+	<label index="facility.placeholder">Enter facility name</label>
+	<label index="facility.label">Facility</label>
+	<label index="facilities.label">Facilities</label>
+	<label index="permission.maintenance.facility">Browse Facilities</label>
+	<label index="permission.maintenance.facility.insert">Create Facilities</label>
+	<label index="permission.maintenance.facility.update">Edit Facilities</label>
+	<label index="permission.maintenance.facility.delete">Delete Facilities</label>
+	<label index="permission.order.approve">Approve Approve</label>
+	<label index="permission.order.authorize">Authorize Payments</label>
+	<label index="order_type.placeholder">Enter payment type</label>
+	<label index="order_type.label">Payment Type</label>
+	<label index="order_types.label">Payment Types</label>
+	<label index="permission.maintenance.order_type">Browse Payment Types</label>
+	<label index="permission.maintenance.order_type.insert">Create Payment Types</label>
+	<label index="permission.maintenance.order_type.update">Edit Payment Types</label>
+	<label index="permission.maintenance.order_type.delete">Delete Payment Types</label>		
 	<label index="accountant.label">Accountant</label>
 	<label index="auditor.label">Auditor</label>
 </language>

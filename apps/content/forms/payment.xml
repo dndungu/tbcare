@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="payment" class="validate" primarykey="ID" storage="local">
+	<field name="user" type="int" length="20">
+		<element name="user" type="hidden"></element>
+	</field>
+	<field name="debit_amount" type="decimal">
+		<element name="debit_amount" type="text" label="amount.label" placeholder="amount.placeholder"></element>
+	</field>
+	<field name="proposed_recipient_name" type="varchar" length="255">
+		<element name="proposed_recipient_name" type="text" label="beneficiary.label" placeholder="beneficiary.placeholder"></element>
+	</field>
+	<field name="MSISDN" type="varchar" length="16">
+		<element name="MSISDN" type="text" label="msisdn.label" placeholder="msisdn.placeholder"></element>
+	</field>
+	<field name="order_type" type="int" length="5">
+		<element name="order_type" type="select" lookup="order_type" value="ID" display="title" label="order_type.label" placeholder="order_type.select.placeholder"></element>
+	</field>
+	<field name="notes" type="tinytext">
+		<element name="notes" type="textarea" label="description.label" placeholder="description.placeholder"></element>
+	</field>
+	<field name="creationTime" type="int" length="10">
+		<element name="creationTime" type="hidden" value=""></element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>	
+</form>
