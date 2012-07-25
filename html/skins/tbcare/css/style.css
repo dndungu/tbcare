@@ -1254,10 +1254,6 @@ ul.content-box-tabs li a:hover,.shortcut-button span:hover {
 	width:23%;
 }
 
-.gridContent input[type="submit"] {
-	margin:0 0 0 26%;
-}
-
 .gridContent label {
 	margin:10px 0 0 0;
 }
@@ -1301,6 +1297,7 @@ ul.content-box-tabs li a:hover,.shortcut-button span:hover {
 }
 
 .dashboard {
+	min-height:520px;
 	margin:10px 1%;
 	width:98%;
 	display:inline-block;

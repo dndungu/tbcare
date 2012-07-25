@@ -37,23 +37,19 @@ class Flow {
 	}
 	
 	public function isSelectable(){
-		$permission = (string) $this->definition->select->attributes()->access;
-		return $this->attestPermissions($permission);
+		return $this->attestPermissions((string) $this->definition->select->attributes()->access);
 	}	
 	
 	public function isInsertable(){
-		$permission = (string) $this->definition->insert->attributes()->access;
-		return $this->attestPermissions($permission);
+		return $this->attestPermissions((string) $this->definition->insert->attributes()->access);
 	}
 	
 	public function isUpdateable(){
-		$permission = (string) $this->definition->update->attributes()->access;
-		return $this->attestPermissions($permission);
+		return $this->attestPermissions((string) $this->definition->update->attributes()->access);
 	}
 	
 	public function isDeleteable(){
-		$permission = (string) $this->definition->delete->attributes()->access;
-		return $this->attestPermissions($permission);
+		return $this->attestPermissions((string) $this->definition->delete->attributes()->access);
 	}
 	
 	public function attestPermissions($permission){

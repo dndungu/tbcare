@@ -226,6 +226,11 @@
 	<label index="permission.payments.failed">Browse failed payments</label>
 	<label index="permission.payments.reversed">Browse reversed payments</label>
 	<label index="permission.reconciliation.section">Reconciliation Section</label>
+	<label index="reconciliation.gateway">Gateway Records</label>
+	<label index="reconciliation.mpesa">Mpesa Records</label>
+	<label index="reconciliation.gatewaynotmpesa">In Gateway Only</label>
+	<label index="reconciliation.mpesanotgateway">In Mpesa Only</label>
+	
 	<label index="permission.configuration.section">Configuration Section</label>
 	<label index="permission.roles">Browse roles</label>
 	<label index="permission.roles.insert">Browse roles</label>

@@ -100,21 +100,21 @@
 	    <navigation id="reconciliation" parent="root" group="panel" uri="/null" label="reconciliation" weight="40" class="nav-top-item"></navigation>
 	    <portlet module="content" controller="GridStudio" access="permission.reconciliation.section"/>
 	</portal>
-	<portal type="raw" access="permission.reconciliation.gateway">
-		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="41"></navigation>
-		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gateway"/>
+	<portal type="raw" access="permission.reconciliation.section">
+		<navigation parent="reconciliation" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="41"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.section"/>
 	</portal>
-	<portal type="raw" access="permission.reconciliation.mpesa">
-		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_mpesa" label="reconciliation.mpesa" weight="42"></navigation>
-		<portlet module="content" controller="GridStudio" access="permission.reconciliation.mpesa"/>
+	<portal type="raw" access="permission.reconciliation.section">
+		<navigation parent="reconciliation" group="panel" uri="/grid/reconciliation_mpesa" label="reconciliation.mpesa" weight="42"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.section"/>
 	</portal>
-	<portal type="raw" access="permission.reconciliation.gatewaynotmpesa">
-		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gatewaynotmpesa" label="reconciliation.gatewaynotmpesa" weight="43"></navigation>
-		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gatewaynotmpesa"/>
+	<portal type="raw" access="permission.reconciliation.section">
+		<navigation parent="reconciliation" group="panel" uri="/grid/reconciliation_gatewaynotmpesa" label="reconciliation.gatewaynotmpesa" weight="43"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.section"/>
 	</portal>
-	<portal type="raw" access="permission.reconciliation.mpesanotgateway">
-		<navigation id="reconciliation" parent="root" group="panel" uri="/grid/reconciliation_gateway" label="reconciliation.gateway" weight="44"></navigation>
-		<portlet module="content" controller="GridStudio" access="permission.reconciliation.gateway"/>
+	<portal type="raw" access="permission.reconciliation.section">
+		<navigation parent="reconciliation" group="panel" uri="/grid/reconciliation_mpesanotgateway" label="reconciliation.mpesanotgateway" weight="44"></navigation>
+		<portlet module="content" controller="GridStudio" access="permission.reconciliation.section"/>
 	</portal>	
 	<portal type="raw" access="permission.maintenance.section">
 	    <navigation id="maintenance" parent="root" group="panel" uri="/null" label="maintenance.label" weight="50" class="nav-top-item"></navigation>

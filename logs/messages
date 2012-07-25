@@ -1675,3 +1675,527 @@ Stack trace:
   thrown in /var/www/tbcare/helpers/Storage.php on line 28
 [23-Jul-2012 17:32:32 UTC] PHP Notice:  Undefined index: approvalNotes in /var/www/tbcare/helpers/CellBuilder.php on line 109
 [23-Jul-2012 17:34:28 UTC] PHP Notice:  Undefined index: approvalNotes in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 17:48:47 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 17:48:47 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 17:48:47 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 17:48:47 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 17:48:47 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 17:48:47 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:05:13 UTC] PHP Notice:  Undefined index: authorisationUser in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 18:05:13 UTC] PHP Notice:  Undefined index: authorisationTime in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 18:05:52 UTC] PHP Notice:  Undefined index: authorisationUser in /var/www/tbcare/helpers/CellBuilder.php on line 109
+[23-Jul-2012 18:12:43 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:12:43 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:12:43 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:12:43 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:12:43 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:12:43 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:25 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:25 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:25 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:25 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:25 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:25 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:29 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:29 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:29 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:29 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:29 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:29 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:55 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:55 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:55 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:55 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:55 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 18:16:55 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:03:56 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.0.9' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 21:04:21 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.0.9' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 21:04:24 UTC] Access to portal not allowed
+[23-Jul-2012 21:04:26 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.0.9' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[23-Jul-2012 21:04:29 UTC] Access to portal not allowed
+[23-Jul-2012 21:05:59 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:05:59 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:05:59 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:05:59 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:05:59 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:05:59 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:08:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:08:44 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:08:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:08:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/complete.xml:2: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:08:44 UTC] PHP Warning:  simplexml_load_file():  in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:08:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:17:27 UTC] PHP Fatal error:  Call to a member function isInsertable() on a non-object in /var/www/tbcare/helpers/Grid.php on line 280
+[23-Jul-2012 21:37:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/reconciliation_gatewaynotmpesa.xml:1: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:44 UTC] PHP Warning:  simplexml_load_file(): &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:44 UTC] PHP Warning:  simplexml_load_file():                                       ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:44 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/reconciliation_gatewaynotmpesa.xml:1: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:44 UTC] PHP Warning:  simplexml_load_file(): &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:44 UTC] PHP Warning:  simplexml_load_file():                                       ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:45 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/reconciliation_mpesanotgateway.xml:1: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:45 UTC] PHP Warning:  simplexml_load_file(): &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:45 UTC] PHP Warning:  simplexml_load_file():                                       ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:45 UTC] PHP Warning:  simplexml_load_file(): /var/www/tbcare/apps/content/grids/reconciliation_mpesanotgateway.xml:1: parser error : Start tag expected, '&lt;' not found in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:45 UTC] PHP Warning:  simplexml_load_file(): &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; in /var/www/tbcare/helpers/Grid.php on line 43
+[23-Jul-2012 21:37:45 UTC] PHP Warning:  simplexml_load_file():                                       ^ in /var/www/tbcare/helpers/Grid.php on line 43
+[24-Jul-2012 06:06:39 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.0.1' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 06:06:57 UTC] Access to portal not allowed
+[24-Jul-2012 06:07:02 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.0.1' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 06:07:12 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.0.1' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:24:18 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.0.65' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:26:21 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:26:22 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:26:22 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:26:23 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:27:23 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:27:23 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:27:39 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:27:40 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:28:31 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:28:32 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:28:39 UTC] Access to portal not allowed
+[24-Jul-2012 15:28:46 UTC] Access to portal not allowed
+[24-Jul-2012 15:39:12 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:15 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:15 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:16 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:16 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:16 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:25 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:25 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:25 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:26 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:26 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:26 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:26 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:27 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:27 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:27 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:27 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:28 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:28 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:29 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:29 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:30 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:30 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:31 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:31 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:31 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:39:31 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 15:40:21 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Access denied for user 'malipo'@'localhost' (using password: YES)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28
+[24-Jul-2012 17:23:43 UTC] Access to portal not allowed
+[25-Jul-2012 06:01:03 UTC] PHP Fatal error:  Uncaught exception 'helpers\HelperException' with message 'Can't connect to MySQL server on '192.168.12.7' (110)' in /var/www/tbcare/helpers/Storage.php:28
+Stack trace:
+#0 /var/www/tbcare/base/Aliasing.php(102): helpers\Storage->__construct(Array)
+#1 /var/www/tbcare/base/Aliasing.php(19): base\Aliasing->initLocalStorage()
+#2 [internal function]: base\Aliasing->init(NULL)
+#3 /var/www/tbcare/helpers/Sandbox.php(50): call_user_func_array(Array, Array)
+#4 /var/www/tbcare/base/Controller.php(15): helpers\Sandbox->fire('request.passed')
+#5 /var/www/tbcare/html/index.php(13): base\Controller->__construct(Object(helpers\Sandbox))
+#6 {main}
+  thrown in /var/www/tbcare/helpers/Storage.php on line 28

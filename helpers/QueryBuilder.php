@@ -33,6 +33,8 @@ class QueryBuilder {
 	}
 	
 	public function browseQuery(){
+		$staticQuery = (string) $this->definition->records->query;
+		if(strlen($staticQuery)) return $staticQuery;
 		$query[] = $this->buildFields();
 		$query[] = $this->buildFrom();
 		$query[] = $this->buildLeftJoins();

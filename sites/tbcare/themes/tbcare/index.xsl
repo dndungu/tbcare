@@ -28,6 +28,9 @@
 					<div id="sidebar">
 						<div id="sidebar-wrapper" class="panelNavigation">
 							<h1 class="big-logo"></h1>
+							<div id="profile-links">
+								<a href="/signout" style="font-size:1.25em;">Sign Out</a>
+							</div>
 							<ul id="main-nav">
 								<xsl:for-each select="/response/core/Navigation/*/panel/root/*">
 									<xsl:variable name="id" select="id" />
@@ -51,69 +54,21 @@
 						<div class="pageContentContent">
 							<div class="dashboard">
 								<div class="atom atom-grey">
-									<div class="content">12</div>
+									<div class="content">0</div>
 									<div class="title">orders today</div>
 								</div>
 								<div class="atom atom-green">
-									<div class="content">12</div>
+									<div class="content">0</div>
 									<div class="title">completed today</div>
 								</div>
 								<div class="atom atom-orange">
-									<div class="content">12</div>
+									<div class="content">0</div>
 									<div class="title">pending today</div>
 								</div>
 								<div class="atom atom-red">
-									<div class="content">12</div>
+									<div class="content">0</div>
 									<div class="title">failed today</div>
 								</div>
-								<div class="atom atom-grey">
-									<div class="content">12</div>
-									<div class="title">orders today</div>
-								</div>
-								<div class="atom atom-green">
-									<div class="content">12</div>
-									<div class="title">completed today</div>
-								</div>
-								<div class="atom atom-orange">
-									<div class="content">12</div>
-									<div class="title">pending today</div>
-								</div>
-								<div class="atom atom-red">
-									<div class="content">12</div>
-									<div class="title">failed today</div>
-								</div>
-								<div class="atom atom-green">
-									<div class="content">12</div>
-									<div class="title">completed today</div>
-								</div>
-								<div class="atom atom-orange">
-									<div class="content">12</div>
-									<div class="title">pending today</div>
-								</div>
-								<div class="atom atom-red">
-									<div class="content">12</div>
-									<div class="title">failed today</div>
-								</div>	
-								<div class="atom atom-green">
-									<div class="content">12</div>
-									<div class="title">completed today</div>
-								</div>
-								<div class="atom atom-orange">
-									<div class="content">12</div>
-									<div class="title">pending today</div>
-								</div>
-								<div class="atom atom-red">
-									<div class="content">12</div>
-									<div class="title">failed today</div>
-								</div>
-								<div class="atom atom-red">
-									<div class="content">12</div>
-									<div class="title">failed today</div>
-								</div>
-								<div class="atom atom-red">
-									<div class="content">12</div>
-									<div class="title">failed today</div>
-								</div>																																				
 							</div>
 						</div>
 						<div id="footer">

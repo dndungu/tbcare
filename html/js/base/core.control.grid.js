@@ -156,8 +156,12 @@ core.control.extend('grid', function(){
 				rows.unbind('mousedown').mousedown(function(event){
 					event.stopPropagation();
 					var subject = $(this);
-					that.renderGridCell(subject);
-					$('>.gridCell,>form', rows.not(subject)).slideUp();
+					if(that.source.indexOf('order_approval') == -1 && that.source.indexOf('order_authorisation') == -1){
+						that.renderGridCell(subject);
+						$('>.gridCell,>form', rows.not(subject)).slideUp();						
+					}else{
+						that.renderUpdater(subject);
+					}
 				});
 			},
 			renderGridCell: function(){
@@ -270,7 +274,6 @@ core.control.extend('grid', function(){
 				core.ajax.post(that.source, data, function(){
 					that.activity.getRecords = arguments[0].readyState;
 					if(arguments[0].readyState != 4 || arguments[0].status != 200) return;
-					console.info(arguments[0].responseText);
 					that.records = jQuery.parseJSON(arguments[0].responseText);
 					that.limit = that.records.footer.rowLimit;
 					that.offset = that.records.footer.rowOffset;
@@ -292,11 +295,12 @@ core.control.extend('grid', function(){
 				});
 			},
 			setUp: function(){
+				_private.updateable = _private.html.hasClass('updateable');
 				_private.insertable = _private.html.hasClass('insertable');
 				_private.searchable = _private.html.hasClass('searchable');
 				_private.sortable = _private.html.hasClass('sortable');
 				_private.paginateable = _private.html.hasClass('paginateable');
-				if(_private.insertable){
+				if(_private.insertable || _private.updateable){
 					control.setForm(_private.source.replace('/grid/', '/form/'));
 					_private.form.setGrid(control);
 					_private.initInserter();

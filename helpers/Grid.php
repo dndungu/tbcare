@@ -108,8 +108,11 @@ class Grid {
 		require_once("$base/helpers/Flow.php");
 		$id = (string) $this->definition->attributes()->id;
 		$name = strlen($id) ? $id : $this->name;
-		$this->flow = new Flow($this->sandbox);
-		$this->flow->setSource("$base/apps/content/flows/$name.xml");
+		$filename = "$base/apps/content/flows/$name.xml";
+		if(is_file($filename)){
+			$this->flow = new Flow($this->sandbox);
+			$this->flow->setSource($filename);
+		}
 	}	
 	
 	private function initQueryBuilder(){
@@ -187,9 +190,12 @@ class Grid {
 	private function getClass(){
 		$class[] = 'grid';
 		$class[] = $this->name;
-		if($this->flow->isInsertable()){
+		if($this->flow && $this->flow->isInsertable()){
 			$class[] = 'insertable';
 		}
+		if($this->flow && $this->flow->isUpdateable()){
+			$class[] = 'updateable';
+		}		
 		if($this->isSearchable()){
 			$class[] = 'searchable';
 		}
@@ -271,7 +277,7 @@ class Grid {
 		$addText = $translator->translate('action.add');
 		$URI = $this->sandbox->getMeta('URI');
 		$html[] = "<form action=\"$URI\" method=\"POST\">";
-		if($this->flow->isInsertable()){
+		if($this->flow && $this->flow->isInsertable()){
 			$html[] = "<input type=\"button\" name=\"addButton\" value=\"$addText\" class=\"addButton gridPrimaryButton\"/>";
 		}
 		$html[] = "<input type=\"text\" name=\"keywords\" placeholder=\"$searchText\"/>";

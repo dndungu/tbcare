@@ -3,11 +3,14 @@
 	<field name="approvalUser" type="int" length="20">
 		<element name="approvalUser" type="hidden"></element>
 	</field>
-	<field name="approvalNotes" type="tinytext">
+	<field name="approvalNotes" type="tinytext" length="255">
 		<element name="approvalNotes" type="textarea" label="description.label" placeholder="description.placeholder"></element>
 	</field>
 	<field name="approvalTime" type="int" length="10">
 		<element name="approvalTime" type="hidden" value=""></element>
+	</field>
+	<field name="status" type="status" length="32">
+		<element name="status" type="hidden" value="Approved"></element>
 	</field>
 	<button name="action" type="submit" value="action.approve"><class>gridPrimaryButton</class></button>
 	<button name="action" type="submit" value="action.reject"><class>gridPrimaryButton</class></button>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grid name="payment" id="complete" title="payment.completed" searchable="true" sortable="true" paginatable="true" showColumnBar="true" showFooterBar="true" storage="local">
+<grid name="payment" id="complete" title="payment.failed" searchable="true" sortable="true" paginatable="true" showColumnBar="true" showFooterBar="true" storage="local">
 	<records>
 		<leftjoin>`order_type` ON (`payment`.`order_type` = `order_type`.`ID`)</leftjoin>
 		<ordercolumn>creationTime</ordercolumn>

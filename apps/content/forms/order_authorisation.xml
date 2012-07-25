@@ -11,7 +11,10 @@
 	<field name="authorisationTime" type="int" length="10">
 		<element name="authorisationTime" type="hidden" value=""></element>
 	</field>
+	<field name="status" type="status" length="32">
+		<element name="status" type="hidden" value="Authorised"></element>
+	</field>	
 	<button name="action" type="submit" value="action.authorise"><class>gridPrimaryButton</class></button>
-	<button name="action" type="submit" value="action.unauthorise"><class>gridSecondaryButton</class></button>
+	<button name="action" type="submit" value="action.decline"><class>gridSecondaryButton</class></button>
 	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>			
 </form>
